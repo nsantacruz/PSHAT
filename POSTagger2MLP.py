@@ -16,10 +16,10 @@ from research.talmud_pos_research.language_classifier import cal_tools
 
 # set the seed
 random.seed(2823274491)
-
+train_test = False
 model_root = 'data/5_pos_tagged/model'
-#filename_to_load = '{}/epoch_8-12-22-dict/postagger_model_embdim50_hiddim100_lyr2_e8_trainloss0.0291745622821_trainprec96.6592804887_valprec100.0.model'.format(model_root)
-filename_to_load = ''
+filename_to_load = '{}/epoch_8-12-22-dict/postagger_model_embdim50_hiddim100_lyr2_e8_trainloss0.0291745622821_trainprec96.6592804887_valprec100.0.model'.format(model_root)
+#filename_to_load = ''
 START_EPOCH = 0
 
 # argument parse
@@ -589,8 +589,6 @@ trainer = dy.AdamTrainer(model)
 if filename_to_load:
     model.load(filename_to_load)
 
-train_test = True
-
 if train_test:
     run_network_on_validation(START_EPOCH - 1)
     pos_conf_matrix.clear()
@@ -655,7 +653,6 @@ else:
     #tag all of shas!
     mesechtot_names = ['Berakhot','Shabbat','Eruvin','Pesachim','Bava Kamma','Bava Metzia','Bava Batra']
     for mesechta in mesechtot_names:
-        util.make_folder_if_need_be('')
         mesechta_path = 'data/5_pos_tagged/json/{}'.format(mesechta)
         util.make_folder_if_need_be(mesechta_path)
 
