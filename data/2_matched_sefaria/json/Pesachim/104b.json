@@ -45,10 +45,6 @@
             "word": "אמ"
         }, 
         {
-            "index": 44, 
-            "word": "ליה"
-        }, 
-        {
             "index": 45, 
             "word": "סדרותיה"
         }, 
@@ -228,7 +224,7 @@
             "head_word": "ברא", 
             "word_num": 0, 
             "daf": "104b", 
-            "word": "ברי'", 
+            "word": "בריה", 
             "line_num": 3, 
             "cal_word": "בריה", 
             "POS": "N02", 
@@ -452,7 +448,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ליה", 
             "class": "unknown"
         }, 
         {
@@ -464,7 +464,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ליה", 
             "class": "unknown"
         }, 
         {
@@ -512,7 +516,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ליה", 
             "class": "unknown"
         }, 
         {
@@ -643,14 +651,23 @@
         }, 
         {
             "head_word": "אמר", 
-            "word_num": 4, 
+            "word_num": 2, 
             "daf": "104b", 
             "word": "ואמר", 
             "line_num": 8, 
-            "cal_word": "אמר", 
+            "cal_word": "ואמר", 
             "POS": "V01", 
+            "prefix_homograph": [
+                ""
+            ], 
             "class": "talmud", 
+            "prefix": [
+                "ו_"
+            ], 
             "pg_num": 104, 
+            "prefix_POS": [
+                "c"
+            ], 
             "ms": "01", 
             "homograph": "", 
             "book_num": 71004, 
@@ -688,8 +705,34 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
-            "class": "unknown"
+            "head_word": "אמר", 
+            "word_num": 4, 
+            "daf": "104b", 
+            "word": "אמר", 
+            "line_num": 8, 
+            "cal_word": "אמר", 
+            "POS": "V01", 
+            "class": "talmud", 
+            "pg_num": 104, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71004, 
+            "side": 2
+        }, 
+        {
+            "head_word": "ל_", 
+            "word_num": 3, 
+            "daf": "104b", 
+            "word": "ליה", 
+            "line_num": 9, 
+            "cal_word": "ליה", 
+            "POS": "p02", 
+            "class": "talmud", 
+            "pg_num": 104, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71004, 
+            "side": 2
         }, 
         {
             "word": "רברבנותיה", 

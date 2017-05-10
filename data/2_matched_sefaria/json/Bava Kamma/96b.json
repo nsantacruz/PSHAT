@@ -73,83 +73,83 @@
             "word": "שבחא"
         }, 
         {
-            "index": 130, 
+            "index": 127, 
+            "word": "אמ"
+        }, 
+        {
+            "index": 131, 
             "word": "והא"
         }, 
         {
-            "index": 143, 
+            "index": 144, 
             "word": "דאמ"
         }, 
         {
-            "index": 159, 
+            "index": 160, 
             "word": "אמרי"
         }, 
         {
-            "index": 167, 
+            "index": 168, 
             "word": "דר"
         }, 
         {
-            "index": 180, 
+            "index": 181, 
             "word": "מתני"
-        }, 
-        {
-            "index": 183, 
-            "word": "אמרי"
         }, 
         {
             "index": 184, 
-            "word": "מתני"
-        }, 
-        {
-            "index": 188, 
-            "word": "לה"
-        }, 
-        {
-            "index": 189, 
             "word": "אמרי"
         }, 
         {
+            "index": 185, 
+            "word": "מתני"
+        }, 
+        {
+            "index": 189, 
+            "word": "לה"
+        }, 
+        {
             "index": 190, 
-            "word": "אמאי"
+            "word": "אמרי"
         }, 
         {
             "index": 191, 
-            "word": "ניפוך"
+            "word": "אמאי"
         }, 
         {
             "index": 192, 
-            "word": "מתניתין"
+            "word": "ניפוך"
         }, 
         {
-            "index": 194, 
+            "index": 195, 
             "word": "בריתא"
         }, 
         {
-            "index": 196, 
+            "index": 197, 
             "word": "אפכה"
         }, 
         {
-            "index": 199, 
+            "index": 200, 
             "word": "מתני"
         }, 
         {
-            "index": 201, 
+            "index": 202, 
             "word": "אלא"
         }, 
         {
-            "index": 203, 
+            "index": 204, 
             "word": "מתני"
         }, 
         {
-            "index": 206, 
+            "index": 207, 
             "word": "ואיבע"
         }, 
         {
-            "index": 210, 
+            "index": 211, 
             "word": "אפכינן"
         }, 
         {
-            "index": 220, 
+            "index": 221, 
             "word": "אתון"
         }
     ], 
@@ -260,11 +260,19 @@
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ש", 
+            "word": "תא", 
             "class": "unknown"
         }, 
         {
-            "word": "דא\"ר", 
+            "word": "שמע", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "דאמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -272,7 +280,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ר", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -312,7 +324,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ש\"מ", 
+            "word": "שמע", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "מינה", 
             "class": "unknown"
         }, 
         {
@@ -1501,6 +1517,14 @@
             "class": "unknown"
         }, 
         {
+            "word": "זה", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "הכלל", 
+            "class": "unknown"
+        }, 
+        {
             "head_word": "אתי", 
             "word_num": 1, 
             "daf": "96b", 
@@ -1583,7 +1607,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -2237,12 +2261,16 @@
             "side": 2
         }, 
         {
-            "head_word": "אמר ל_", 
-            "word_num": 9, 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "head_word": "ל_", 
+            "word_num": 10, 
             "daf": "96b", 
-            "word": "א\"ל", 
+            "word": "ליה", 
             "line_num": 25, 
-            "cal_word": "אמ ליה", 
+            "cal_word": "ליה", 
             "POS": "p02", 
             "class": "talmud", 
             "pg_num": 96, 
@@ -2767,6 +2795,10 @@
             "side": 2
         }, 
         {
+            "word": "מתני׳", 
+            "class": "unknown"
+        }, 
+        {
             "word": "גזל", 
             "class": "unknown"
         }, 
@@ -2979,6 +3011,10 @@
             "class": "unknown"
         }, 
         {
+            "word": "גמ׳", 
+            "class": "unknown"
+        }, 
+        {
             "word": "אמר", 
             "class": "unknown"
         }, 
@@ -3011,7 +3047,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "אפי'", 
+            "word": "אפילו", 
             "class": "unknown"
         }, 
         {
@@ -3783,8 +3819,19 @@
             "class": "unknown"
         }, 
         {
-            "word": "מתני'", 
-            "class": "unknown"
+            "head_word": "מתניתא", 
+            "word_num": 7, 
+            "daf": "96b", 
+            "word": "מתניתין", 
+            "line_num": 42, 
+            "cal_word": "מתניתין", 
+            "POS": "N02", 
+            "class": "talmud", 
+            "pg_num": 96, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
         }, 
         {
             "head_word": "מקמי", 
@@ -4274,7 +4321,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -4330,7 +4377,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כר'", 
+            "word": "כרבי", 
             "class": "unknown"
         }, 
         {

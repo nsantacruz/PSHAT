@@ -33,15 +33,11 @@
             "word": "קביל"
         }, 
         {
-            "index": 64, 
+            "index": 65, 
             "word": "קא"
         }, 
         {
-            "index": 66, 
-            "word": "מיניה"
-        }, 
-        {
-            "index": 71, 
+            "index": 72, 
             "word": "או"
         }
     ], 
@@ -1095,7 +1091,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "אע\"ז", 
+            "word": "אעבודה", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "זרה", 
             "class": "unknown"
         }, 
         {
@@ -1107,7 +1107,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "דא\"ר", 
+            "word": "דאמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1190,7 +1194,11 @@
             "side": 2
         }, 
         {
-            "word": "בע\"ז", 
+            "word": "בעבודה", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "זרה", 
             "class": "unknown"
         }, 
         {
@@ -1270,7 +1278,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "דע\"ז", 
+            "word": "דעבודה", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "זרה", 
             "class": "unknown"
         }, 
         {
@@ -1737,7 +1749,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "משא\"כ", 
+            "word": "מה", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שאין", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "כן", 
             "class": "unknown"
         }, 
         {
@@ -1764,12 +1784,27 @@
             "side": 2
         }, 
         {
-            "head_word": "עד כאנ", 
+            "head_word": "עד", 
             "word_num": 9, 
             "daf": "72b", 
-            "word": "ע\"כ", 
+            "word": "עד", 
             "line_num": 33, 
-            "cal_word": "עד כאן", 
+            "cal_word": "עד", 
+            "POS": "p01", 
+            "class": "talmud", 
+            "pg_num": 72, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71002, 
+            "side": 2
+        }, 
+        {
+            "head_word": "כאנ", 
+            "word_num": 10, 
+            "daf": "72b", 
+            "word": "כאן", 
+            "line_num": 33, 
+            "cal_word": "כאן", 
             "POS": "a", 
             "class": "talmud", 
             "pg_num": 72, 
@@ -1809,8 +1844,19 @@
             "side": 2
         }, 
         {
-            "word": "מיני'", 
-            "class": "unknown"
+            "head_word": "מנ", 
+            "word_num": 14, 
+            "daf": "72b", 
+            "word": "מיניה", 
+            "line_num": 33, 
+            "cal_word": "מיניה", 
+            "POS": "p02", 
+            "class": "talmud", 
+            "pg_num": 72, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71002, 
+            "side": 2
         }, 
         {
             "word": "רבא", 

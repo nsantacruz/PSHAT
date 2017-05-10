@@ -9,10 +9,6 @@
             "word": "מתניתין"
         }, 
         {
-            "index": 11, 
-            "word": "נמי"
-        }, 
-        {
             "index": 12, 
             "word": "בשל"
         }, 
@@ -45,59 +41,63 @@
             "word": "חזיא"
         }, 
         {
-            "index": 23, 
-            "word": "ושפי"
+            "index": 20, 
+            "word": "אמרי"
         }, 
         {
             "index": 24, 
-            "word": "ליה"
-        }, 
-        {
-            "index": 29, 
             "word": "ושפי"
         }, 
         {
-            "index": 33, 
-            "word": "אתי"
-        }, 
-        {
-            "index": 34, 
-            "word": "בה"
-        }, 
-        {
-            "index": 36, 
-            "word": "אתי"
-        }, 
-        {
-            "index": 37, 
-            "word": "בה"
-        }, 
-        {
-            "index": 38, 
-            "word": "אמרי"
-        }, 
-        {
-            "index": 39, 
-            "word": "ראמי"
-        }, 
-        {
-            "index": 40, 
+            "index": 25, 
             "word": "ליה"
         }, 
         {
-            "index": 41, 
-            "word": "אי"
+            "index": 30, 
+            "word": "ושפי"
         }, 
         {
-            "index": 44, 
-            "word": "רמי"
+            "index": 34, 
+            "word": "אתי"
         }, 
         {
-            "index": 46, 
+            "index": 35, 
+            "word": "בה"
+        }, 
+        {
+            "index": 37, 
+            "word": "אתי"
+        }, 
+        {
+            "index": 38, 
+            "word": "בה"
+        }, 
+        {
+            "index": 39, 
             "word": "אמרי"
         }, 
         {
-            "index": 49, 
+            "index": 40, 
+            "word": "ראמי"
+        }, 
+        {
+            "index": 41, 
+            "word": "ליה"
+        }, 
+        {
+            "index": 42, 
+            "word": "אי"
+        }, 
+        {
+            "index": 45, 
+            "word": "רמי"
+        }, 
+        {
+            "index": 47, 
+            "word": "אמרי"
+        }, 
+        {
+            "index": 50, 
             "word": "רמי"
         }
     ], 
@@ -320,6 +320,10 @@
         }, 
         {
             "word": "לו", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "גמ׳", 
             "class": "unknown"
         }, 
         {
@@ -559,19 +563,8 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "אמר", 
-            "word_num": 0, 
-            "daf": "115b", 
             "word": "אמר", 
-            "line_num": 39, 
-            "cal_word": "אמרי", 
-            "POS": "V01", 
-            "class": "talmud", 
-            "pg_num": 115, 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71020, 
-            "side": 2
+            "class": "unknown"
         }, 
         {
             "word": "לא", 
@@ -586,7 +579,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "כדא\"ר", 
+            "word": "כדאמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -614,12 +611,27 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "הכא נמי", 
+            "head_word": "הכא", 
             "word_num": 1, 
             "daf": "115b", 
-            "word": "ה\"נ", 
+            "word": "הכי", 
             "line_num": 39, 
-            "cal_word": "הכא נמי", 
+            "cal_word": "הכא", 
+            "POS": "a", 
+            "class": "talmud", 
+            "pg_num": 115, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
+        }, 
+        {
+            "head_word": "נמי", 
+            "word_num": 2, 
+            "daf": "115b", 
+            "word": "נמי", 
+            "line_num": 39, 
+            "cal_word": "נמי", 
             "POS": "a", 
             "class": "talmud", 
             "pg_num": 115, 
@@ -981,7 +993,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ר", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1037,7 +1053,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "וכ\"ת", 
+            "word": "וכי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "תימא", 
             "class": "unknown"
         }, 
         {
@@ -1169,7 +1189,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כר'", 
+            "word": "כרבי", 
             "class": "unknown"
         }, 
         {
@@ -1329,7 +1349,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ר", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1337,7 +1361,23 @@
             "class": "unknown"
         }, 
         {
-            "word": "אריב\"ל", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "יהושע", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "בן", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "לוי", 
             "class": "unknown"
         }, 
         {
@@ -1602,7 +1642,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {

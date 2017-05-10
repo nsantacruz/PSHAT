@@ -1,0 +1,834 @@
+# -*- coding: utf-8 -*-
+import re, random, math
+import numpy as np
+from codecs import open
+import dynet as dy
+import argparse
+import os
+import os.path
+from os.path import join
+import json, codecs
+from collections import OrderedDict
+
+import util
+import local_settings
+from sefaria.model import *
+from research.talmud_pos_research.language_classifier import cal_tools
+
+# set the seed
+random.seed(2823274491)
+train_test = False
+with_early_stop = False
+beam_width = 1
+
+
+def read_data_by_segment(dir='', mesechta=None):
+    if not dir: dir = 'data/2_matched_sefaria/json/'
+    lang_dir = 'data/3_lang_tagged/json/'
+    min_seg_length = 5  # min length of segment. if shorter, append the next segment with it
+
+    all_json_files = []
+    # collect all the individual filenames
+    for dirpath, dirnames, filenames in os.walk(dir):
+        all_json_files.extend([join(dirpath, filename) for filename in filenames if
+                               filename.endswith('.json')])
+
+    all_lang_files = []
+    for dirpath, dirnames, filenames in os.walk(lang_dir):
+        all_lang_files.extend([join(dirpath, filename) for filename in filenames if
+                               filename.endswith('.json')])
+    total_words = 0
+    total_daf = 0
+    total_segs = 0
+
+    log_message('Loading path: ' + str(dir))
+
+    # iterate through all the files, and load them in
+
+    segments = []
+    for file, lang_file in zip(all_json_files, all_lang_files):
+        if mesechta and mesechta not in file:  # this is kind of hacky...but who cares?
+            continue
+
+        with open(file, 'r', encoding='utf8') as f:
+            all_text = f.read()
+
+        with open(lang_file, 'r', encoding='utf8') as lf:
+            all_lang_text = lf.read()
+        # parse
+        daf_data = json.loads(all_text)
+        lang_data = json.loads(all_lang_text)
+
+        all_words = []
+        for word, lang_word in zip(daf_data['words'], lang_data):
+            word_s = word['word']
+            # class will be 1 if talmud, 0 if unknown
+            word_known = word['class'] != 'unknown'
+            word_class = 1 if lang_word['lang'] == 'aramaic' and word_known else 0
+            word_lang = 1 if lang_word['lang'] == 'aramaic' else 0
+            word_pos = ''
+            # if the class isn't unkown
+            if word_known: word_pos = word['POS']
+
+            total_words += 1
+            if word_known and word_s == u'הכא' and word_pos != u'a':
+                print "OH NO! {}".format(file)
+            all_words.append((word_s, word_class, word_pos, word_lang))
+
+        total_daf += 1
+        # yield it
+        split_file = file.split('/')
+        mesechta_name = split_file[split_file.index('json') + 1]
+        daf_num = split_file[-1].split('.json')[0]
+        daf = {"words": all_words, "file": '{}_{}'.format(mesechta_name, daf_num)}
+
+        # break up daf into segments
+        daf_chunk = Ref("{} {}".format(mesechta_name, daf_num)).text("he")
+        ind_list, ref_list, total_len = daf_chunk.text_index_map(util.tokenize_words)
+
+        # purposefully skip first and last seg b/c they're not necessarily syntactic
+        temp_seg = None
+        for i_ind in xrange(1, len(ind_list) - 1):
+            if temp_seg:
+                temp_seg['words'] += all_words[ind_list[i_ind]:ind_list[i_ind + 1]]
+            else:
+                temp_seg = {
+                    "words": all_words[ind_list[i_ind]:ind_list[i_ind + 1]],
+                    "file": daf['file']
+                }
+
+            if len(temp_seg['words']) >= min_seg_length:
+                segments += [temp_seg]
+                temp_seg = None
+            total_segs += 1
+
+    log_message('Total words: ' + str(total_words))
+    log_message('Total daf: ' + str(total_daf))
+    log_message('Total segments: ' + str(total_segs))
+    return segments
+
+
+def read_data_by_daf(dir='', mesechta=None):
+    if not dir: dir = 'data/2_matched_sefaria/json/'
+    lang_dir = 'data/3_lang_tagged/json/'
+
+    all_json_files = []
+    # collect all the individual filenames
+    for dirpath, dirnames, filenames in os.walk(dir):
+        all_json_files.extend([join(dirpath, filename) for filename in filenames if
+                               filename.endswith('.json')])
+
+    all_lang_files = []
+    for dirpath, dirnames, filenames in os.walk(lang_dir):
+        all_lang_files.extend([join(dirpath, filename) for filename in filenames if
+                               filename.endswith('.json')])
+    total_words = 0
+    total_daf = 0
+
+    log_message('Loading path: ' + str(dir))
+
+    # iterate through all the files, and load them in
+    for file, lang_file in zip(all_json_files, all_lang_files):
+        if mesechta and mesechta not in file:  # this is kind of hacky...but who cares?
+            continue
+
+        with open(file, 'r', encoding='utf8') as f:
+            all_text = f.read()
+
+        with open(lang_file, 'r', encoding='utf8') as lf:
+            all_lang_text = lf.read()
+        # parse
+        daf_data = json.loads(all_text)
+        lang_data = json.loads(all_lang_text)
+
+        all_words = []
+        for word, lang_word in zip(daf_data['words'], lang_data):
+            word_s = word['word']
+            # class will be 1 if talmud, 0 if unknown
+            word_known = word['class'] != 'unknown'
+            word_class = 1 if lang_word['lang'] == 'aramaic' and word_known else 0
+            word_lang = 1 if lang_word['lang'] == 'aramaic' else 0
+            word_pos = ''
+            # if the class isn't unkown
+            if word_known: word_pos = word['POS']
+
+            total_words += 1
+            if word_known and word_s == u'הכא' and word_pos != u'a':
+                print "OH NO! {}".format(file)
+            all_words.append((word_s, word_class, word_pos, word_lang))
+
+        total_daf += 1
+        # yield it
+        split_file = file.split('/')
+        mesechta_name = split_file[split_file.index('json') + 1]
+        daf_num = split_file[-1].split('.json')[0]
+        yield {"words": all_words, "file": '{}_{}'.format(mesechta_name, daf_num)}
+
+    log_message('Total words: ' + str(total_words))
+    log_message('Total daf: ' + str(total_daf))
+
+
+
+for segment_fn in [read_data_by_daf]:
+    model_root = 'data/5_pos_tagged/model'
+    #filename_to_load = '{}/epoch_8-12-22-dict/postagger_model_embdim50_hiddim100_lyr2_e8_trainloss0.0291745622821_trainprec96.6592804887_valprec100.0.model'.format(model_root)
+    #filename_to_load = '{}/epoch_8-12-22-dict/postagger_model_embdim50_hiddim100_lyr2_e8_trainloss0.0291745622821_trainprec96.6592804887_valprec100.0.model'.format(model_root)
+    #filename_to_load = '{}/epoch_19-final/postagger_model_embdim50_hiddim100_lyr3_e19_trainloss0.0895603489015_trainprec97.3397911277_valprec.model'.format(model_root)
+    filename_to_load = '{}/epoch_19-final-final/postagger_model_embdim50_hiddim100_lyr3_e19_trainloss0.0938163722714_trainprec97.4204030174_valprec.model'.format(model_root)
+    #filename_to_load = ''
+    START_EPOCH = 0
+
+    # argument parse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-hiddim', '-hiddendim', help='Size of the RNN hidden layer, default 100', default=100,
+                        required=False)
+    parser.add_argument('-embeddim', '-embeddingdim', help='Size of the embeddings, default 50', default=50, required=False)
+    parser.add_argument('-layers', '-mlplayers', help='Number of MLP layers, can only be 2 or 3', default=3, required=False)
+    parser.add_argument('-bilstmlayers', '-lstmlayers', help='Number of BILSTM layers, default 2', default=2,
+                        required=False)
+    parser.add_argument('-model', '-modeltoload', help='Filename of model to load', default='', required=False)
+    args = vars(parser.parse_known_args()[0])
+
+    # get the params
+    HIDDEN_DIM = int(args['hiddim'])
+    EMBED_DIM = int(args['embeddim'])
+    BILSTM_LAYERS = int(args['bilstmlayers'])
+    fDo_3_Layers = int(args['layers']) == 3
+    sLAYERS = '3' if fDo_3_Layers else '2'
+    Filename_to_log = '{}/postagger_log_embdim{}_hiddim{}_lyr{}.txt'.format(model_root,EMBED_DIM,HIDDEN_DIM,sLAYERS) #+ str(EMBED_DIM) + '_hiddim' + str(HIDDEN_DIM) + '_lyr' + sLAYERS + '.txt'
+
+
+    def log_message(message):
+        print message
+        with open(Filename_to_log, "a", encoding="utf8") as myfile:
+            myfile.write("\n" + message)
+
+
+    if args['model']:
+        filename_to_load = args['model']
+        START_EPOCH = int(re.search("_e(\d+)", filename_to_load).group(1)) + 1
+
+    log_message('EMBED_DIM: ' + str(EMBED_DIM))
+    log_message('HIDDEN_DIM: ' + str(HIDDEN_DIM))
+    log_message('BILSTM_LAYERS: ' + str(BILSTM_LAYERS))
+    log_message('MLP Layers: ' + sLAYERS)
+    if filename_to_load:
+        log_message('Loading model: ' + filename_to_load)
+        log_message('Starting epoch: ' + str(START_EPOCH))
+
+
+
+    def make_pos_hashtable(data):
+        pos_hashtable = {}
+        for daf in data:
+            for w, w_class, w_pos, w_lang in daf["words"]:
+                if w_class:
+                    if not w in pos_hashtable:
+                        pos_hashtable[w] = set()
+                    pos_hashtable[w].add(w_pos)
+        return pos_hashtable
+
+
+    # Classes:
+    # 1] Vocabulary class (the dictionary for char-to-int)
+    # 2] WordEncoder (actually, it'll be a char encoder)
+    # 3] Simple character BiLSTM
+    # 4] MLP
+    # 5] ConfusionMatrix
+    class Vocabulary(object):
+        def __init__(self):
+            self.all_items = []
+            self.c2i = {}
+
+        def add_text(self, paragraph):
+            self.all_items.extend(paragraph)
+
+        def finalize(self, fAddBOS=True):
+            self.vocab = sorted(list(set(self.all_items)))
+            c2i_start = 1 if fAddBOS else 0
+            self.c2i = {c: i for i, c in enumerate(self.vocab, c2i_start)}
+            self.i2c = self.vocab
+            if fAddBOS:
+                self.c2i['*BOS*'] = 0
+                self.i2c = ['*BOS*'] + self.vocab
+            self.all_items = None
+
+        # debug
+        def get_c2i(self):
+            return self.c2i
+
+        def size(self):
+            return len(self.i2c)
+
+        def __getitem__(self, c):
+            return self.c2i.get(c, 0)
+
+        def getItem(self, i):
+            return self.i2c[i]
+
+
+    class WordEncoder(object):
+        def __init__(self, name, dim, model, vocab):
+            self.vocab = vocab
+            self.enc = model.add_lookup_parameters((vocab.size(), dim))
+
+        def __call__(self, char, DIRECT_LOOKUP=False):
+            char_i = char if DIRECT_LOOKUP else self.vocab[char]
+            return dy.lookup(self.enc, char_i)
+
+
+    class MLP:
+        def __init__(self, model, name, in_dim, hidden_dim, out_dim):
+            self.mw = model.add_parameters((hidden_dim, in_dim))
+            self.mb = model.add_parameters((hidden_dim))
+            if not fDo_3_Layers:
+                self.mw2 = model.add_parameters((out_dim, hidden_dim))
+                self.mb2 = model.add_parameters((out_dim))
+            if fDo_3_Layers:
+                self.mw2 = model.add_parameters((hidden_dim, hidden_dim))
+                self.mb2 = model.add_parameters((hidden_dim))
+                self.mw3 = model.add_parameters((out_dim, hidden_dim))
+                self.mb3 = model.add_parameters((out_dim))
+
+        def __call__(self, x):
+            W = dy.parameter(self.mw)
+            b = dy.parameter(self.mb)
+            W2 = dy.parameter(self.mw2)
+            b2 = dy.parameter(self.mb2)
+            mlp_output = W2 * (dy.tanh(W * x + b)) + b2
+            if fDo_3_Layers:
+                W3 = dy.parameter(self.mw3)
+                b3 = dy.parameter(self.mb3)
+                mlp_output = W3 * (dy.tanh(mlp_output)) + b3
+            return dy.softmax(mlp_output)
+
+
+    class BILSTMTransducer:
+        def __init__(self, LSTM_LAYERS, IN_DIM, OUT_DIM, model):
+            self.lstmF = dy.LSTMBuilder(LSTM_LAYERS, IN_DIM, (int)(OUT_DIM / 2), model)
+            self.lstmB = dy.LSTMBuilder(LSTM_LAYERS, IN_DIM, (int)(OUT_DIM / 2), model)
+
+        def __call__(self, seq):
+            """
+            seq is a list of vectors (either character embeddings or bilstm outputs)
+            """
+            fw = self.lstmF.initial_state()
+            bw = self.lstmB.initial_state()
+            outf = fw.transduce(seq)
+            outb = list(reversed(bw.transduce(reversed(seq))))
+            return [dy.concatenate([f, b]) for f, b in zip(outf, outb)]
+
+
+    class ConfusionMatrix:
+        def __init__(self, size, vocab):
+            self.matrix = np.zeros((size, size))
+            self.size = size
+            self.vocab = vocab
+
+        def __call__(self, x, y):
+            self.matrix[x, y] += 1
+
+        def to_html(self):
+            fp_matrix = np.sum(self.matrix, 1)
+            fn_matrix = np.sum(self.matrix, 0)
+
+            html = """
+                        <html>
+                            <head>
+                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                                <script src="confused.js"></script>
+                                <style>.good{background-color:green;color:white}.bad{background-color:red;color:white}table{table-layout:fixed}td{text-align:center;padding:10px;border:solid 1px black}</style>
+                            </head>
+                            <body><h2>A Confusing Matrix</h2><table>"""
+            first_row = "<tr><td></td>"
+            for i in range(self.size):
+                first_row += "<td data-col-head={}>{}</td>".format(i, self.vocab.getItem(i))
+            first_row += "<td>False Positives</td></tr>"
+            html += first_row
+            for i in range(self.size):
+                html += "<tr><td data-row-head={}>{}</td>".format(i, self.vocab.getItem(i))
+                for j in range(self.size):
+                    classy = "good" if i == j else "bad"
+                    opacity = self.matrix[i, j] / (np.mean(self.matrix[self.matrix > 0]))
+                    if opacity < 0.2: opacity = 0.2
+                    if opacity > 1.0: opacity = 1.0
+                    html += "<td data-i={} data-j={} class=\"{}\" style=\"opacity:{}\">{}</td>".format(i, j, classy,
+                                                                                                       opacity,
+                                                                                                       self.matrix[i, j])
+
+                html += "<td>{}</td></tr>".format(round(100.0 * (fp_matrix[i] - self.matrix[i, i]) / fp_matrix[i], 2))
+            # add confusion table for each class
+            stats = {"precision": self.precision, "recall": self.recall, "F1": self.f1}
+
+            html += "<tr><td>False Negatives</td>"
+            for i in range(self.size):
+                html += "<td>{}</td>".format(round(100.0 * (fn_matrix[i] - self.matrix[i, i]) / fn_matrix[i], 2))
+            html += "</tr>"
+
+            for k, v in stats.items():
+                html += "<tr><td>{}</td>".format(k)
+                for j in range(self.size):
+                    tp = self.matrix[j, j]
+                    fp = fp_matrix[j] - tp
+                    fn = fn_matrix[j] - tp
+                    html += "<td>{}</td>".format(round(100 * v(tp, fp, fn), 2))
+                html += "</tr>"
+            html += "</table><h2>Table of Confusion</h2>"
+            total_tp = sum([self.matrix[i, i] for i in range(self.size)])
+            total_fp = np.sum(fp_matrix) - total_tp
+            total_fn = np.sum(fn_matrix) - total_tp
+            html += "<h3>Precision: {}</h3>".format(round(100 * self.precision(total_tp, total_fp, total_fn), 2))
+            html += "<h3>Recall: {}</h3>".format(round(100 * self.recall(total_tp, total_fp, total_fn), 2))
+            html += "<h3>F1: {}</h3>".format(round(100 * self.f1(total_tp, total_fp, total_fn), 2))
+
+            html += "</body></html>"
+            return html
+
+        def f1(self, tp, fp, fn):
+            return 2.0 * tp / (2.0 * tp + fp + fn) if tp + fp + fn != 0 else 0.0
+
+        def recall(self, tp, fp, fn):
+            return 1.0 * tp / (tp + fn) if tp + fn != 0 else 0.0
+
+        def precision(self, tp, fp, fn):
+            return 1.0 * tp / (tp + fp) if tp + fn != 0 else 0.0
+
+        def clear(self):
+            self.matrix = np.zeros((self.size, self.size))
+
+
+    def CalculateLossForDaf(daf, fValidation=False, fRunning=False):
+        dy.renew_cg()
+        tagged_daf = {"words":[],"file":daf["file"]}
+        daf = daf["words"]
+
+        # add a bos before and after
+        seq = ['*BOS*'] + list(' '.join([word for word, _, _, _ in daf])) + ['*BOS*']
+
+        # get all the char encodings for the daf
+        char_embeds = [let_enc(let) for let in seq]
+
+        # run it through the bilstm
+        char_bilstm_outputs = bilstm(char_embeds)
+
+        # now iterate and get all the separate word representations by concatenating the bilstm output
+        # before and after the word
+        word_bilstm_outputs = []
+        iLet_start = 0
+        for iLet, char in enumerate(seq):
+            # if it is a bos, check if it's at the end of the sequence
+            if char == '*BOS*':
+                if iLet + 1 == len(seq):
+                    char = ' '
+                else:
+                    continue
+            # if we are at a space, take this bilstm output and the one at the letter start
+            if char == ' ':
+                cur_word_bilstm_output = dy.concatenate([char_bilstm_outputs[iLet_start], char_bilstm_outputs[iLet]])
+                # add it in
+                word_bilstm_outputs.append(cur_word_bilstm_output)
+
+                # set the iLet_start ocunter to here
+                iLet_start = iLet
+
+        # safe-check, make sure word bilstm outputs length is the same as the daf
+        if len(word_bilstm_outputs) != len(daf):
+            log_message('Size mismatch!! word_bilstm_outputs: ' + str(len(word_bilstm_outputs)) + ', daf: ' + str(len(daf)))
+
+        s_0 = prev_pos_lstm.initial_state()
+
+        beam = [(['*BOS*'],1.0,s_0,[],0.0,0.0,0.0,0.0,0.0,[])] # seq, prob, lstm_state, losses, class_prec, class_items, pos_prec, rough_pos_prec, pos_items, confidences
+        i = 0
+        for (word, gold_word_class, gold_word_pos, gold_word_lang), bilstm_output in zip(daf, word_bilstm_outputs):
+            should_backprop = gold_word_class == 1
+            new_hypos = []
+            for hypo in beam:
+                seq, hyp_prob, hyp_state, losses, class_prec, class_items, pos_prec, rough_pos_prec, pos_items, confidences = hypo
+                new_seq = seq[:]
+                new_losses = losses[:]
+                new_confidences = confidences[:]
+
+                last_pos = seq[-1]
+
+                next_hyp_state = hyp_state.add_input(pos_enc(last_pos))
+                # create the mlp input, a concatenate of the bilstm output and of the prev pos output
+                mlp_input = dy.concatenate([bilstm_output, next_hyp_state.output()])
+
+                # run through the class mlp
+                class_mlp_output = class_mlp(mlp_input)
+
+                predicted_word_class = np.argmax(class_mlp_output.npvalue())
+
+                new_confidences.append(np.max(class_mlp_output.npvalue()) / np.sum(class_mlp_output.npvalue()))
+
+
+                # prec
+                if should_backprop:
+                    class_prec += 1 if predicted_word_class == gold_word_class else 0
+                    class_items += 1
+
+                # if we aren't doing validation, calculate the loss
+                if not fValidation and not fRunning:
+                    if should_backprop: new_losses.append(-dy.log(dy.pick(class_mlp_output, gold_word_class)))
+                    word_class_ans = gold_word_class
+                # otherwise, set the answer to be the argmax
+                else:
+                    word_class_ans = predicted_word_class
+
+                # if the word_class answer is 1, do the pos!
+                # alternatively, if validating and it's aramic, do the pos!
+                if word_class_ans or (fValidation and gold_word_lang) or (fRunning and gold_word_lang):
+                    # run the pos mlp output
+                    pos_mlp_output = pos_mlp(mlp_input)
+                    try:
+                        temp_pos_array = pos_mlp_output.npvalue()
+                        possible_pos_array = np.zeros(temp_pos_array.shape)
+                        pos_list = pos_hashtable[word]
+                        # pos_list.add('') #concat 'unknown' as possible pos
+                        possible_pos_indices = [pos_vocab[temp_pos] for temp_pos in pos_list]
+                        possible_pos_array[possible_pos_indices] = temp_pos_array[possible_pos_indices]
+                    except KeyError:
+                        possible_pos_array = pos_mlp_output.npvalue()
+                        # if fValidation:
+                        #    possible_pos_array[pos_vocab['']] = 0.0 # don't allow validation to guess UNK b/c it never trained against that TODO this makes sense, right?
+
+                    poss_pos_sum = np.sum(possible_pos_array)
+
+
+                    for iprob, prob in enumerate(possible_pos_array):
+                        new_seq = seq[:]
+                        temp_picked_pos = pos_vocab.getItem(iprob)
+                        temp_confidence = possible_pos_array[iprob] / poss_pos_sum
+                        new_confidences[-1] = temp_confidence # overwrite class confidence
+                        new_pos_prec = pos_prec
+                        new_pos_items = pos_items
+                        new_rough_pos_prec = rough_pos_prec
+                        if should_backprop:
+                            new_pos_prec += 1 if temp_picked_pos == gold_word_pos else 0
+                            new_rough_pos_prec += 1 if len(temp_picked_pos) > 0 and temp_picked_pos[0] == gold_word_pos[
+                                0] else 0  # you got at least the rough pos right
+                            new_pos_items += 1
+
+                        if not fValidation and not fRunning:
+                            if should_backprop: new_losses.append(
+                                -dy.log(dy.pick(pos_mlp_output, pos_vocab[gold_word_pos])))
+                        new_seq += [temp_picked_pos]
+                        new_prob = hyp_prob + math.log(prob) if prob != 0 else hyp_prob + math.log(1E-10)  # which is log(0.00000001) or something like that
+                        new_hypos += [(new_seq, new_prob, next_hyp_state, new_losses, class_prec, class_items, new_pos_prec,
+                                      new_rough_pos_prec, new_pos_items, new_confidences)]
+                else:
+                    # assume prob is 1. It's really good at predicting hebrew / aramaic
+                    new_seq = seq[:]
+                    new_seq += ['']
+                    new_prob = hyp_prob
+                    new_hypos += [(new_seq, new_prob, next_hyp_state, new_losses, class_prec, class_items, pos_prec,
+                                  rough_pos_prec, pos_items, new_confidences)]
+
+            # pick the best hypos
+            new_probs = [p for (s, p, r, l, cp, ci, pp, rpp, pi, c) in new_hypos]
+            argmax_indices = util.argmax(new_probs, n=beam_width)
+            if type(argmax_indices) == int:
+                argmax_indices = [argmax_indices]
+            beam = [new_hypos[l] for l in argmax_indices]
+
+            i += 1
+
+
+            correct_answer_in_beam = False
+            for max_ind in argmax_indices:
+                if new_hypos[max_ind][0][-1] == gold_word_pos:
+                    correct_answer_in_beam = True
+                    break
+            if not correct_answer_in_beam and not fValidation and not fRunning and with_early_stop:
+                # early stop
+                break
+
+
+
+        final_probs = [p for (s, p, r, l, cp, ci, pp, rpp, pi, c) in beam]
+        argmax_index = util.argmax(final_probs)
+        final_seq, prob, lstm_state, all_losses, class_prec, class_items, pos_prec, rough_pos_prec, pos_items, confidences = beam[argmax_index]
+        for (word, gold_word_class, gold_word_pos, gold_word_lang), pred, conf in zip(daf, final_seq[1:], confidences): # VERY IMPORTANT. final_seq is off-by-one b/c we inited it with BOS
+            tagged_daf['words'].append({"word":word,"gold_pos":gold_word_pos,"gold_class":gold_word_class,"predicted":pred,"confidence":conf,"lang":gold_word_lang})
+            should_backprop = gold_word_class == 1
+            if should_backprop: pos_conf_matrix(pos_vocab[pred], pos_vocab[gold_word_pos])
+
+
+
+
+        if fRunning:
+            return tagged_daf
+
+        pos_prec = pos_prec / pos_items if pos_items > 0 else None
+        rough_pos_prec = rough_pos_prec / pos_items if pos_items > 0 else None
+        class_prec = class_prec / class_items if class_items > 0 else None
+
+        if fValidation:
+            return class_prec, pos_prec,tagged_daf, rough_pos_prec
+
+        total_loss = dy.esum(all_losses) if len(all_losses) > 0 else None
+        return total_loss, class_prec, pos_prec, rough_pos_prec
+
+    def print_tagged_corpus_to_html_table(tagged_dafs):
+        str = u"""<html>
+                <head>
+                <style>
+                    h1{text-align:center;background:grey}
+                    td{text-align:center}
+                    table{margin-top:20px;margin-bottom:20px;margin-right:auto;margin-left:auto;width:1200px}
+                    .aramaic{background-color: rgba(0,0,255,0.5); color: white}
+                    .mishnaic{border: solid red 2px}
+                    .notincal{background-color: blue}
+                    .gold_pos{font-weight: 800}
+                    .predicted_pos{}
+                </style><meta charset='utf-8'></head><body>"""
+        for daf in tagged_dafs:
+            str += u"<h1>DAF {}</h1>".format(daf)
+            str += u"<table>"
+            count = 0
+            while count < len(tagged_dafs[daf]['words']):
+                row_obj = tagged_dafs[daf]['words'][count:count+10]
+                word_row = u"<tr>"
+                for w in reversed(row_obj):
+                    lang_class = u'aramaic' if w['lang'] else u'mishnaic'
+                    notincal_class = u'notincal' if w['lang'] and w['gold_pos'] != '' else u''
+                    word_row += u"<td class='{} {}'>{} (<span class='gold_pos'>{}</span>/<span class='predicted_pos'>{}</span>)</td>".format(lang_class,notincal_class,w['word'],w['gold_pos'],w['predicted'])
+                word_row += u"</tr>"
+
+                conf_row = u"<tr>"
+                for w in reversed(row_obj):
+                    conf_row += u"<td>{}</td>".format(round(w['confidence'],2))
+
+                #row_sef += u"<td>({}-{})</td></tr>".format(count,count+len(row_obj)-1)
+                str += word_row
+                str += conf_row
+                count += 10
+            str += u"</table>"
+            str += u"</body></html>"
+        return str
+
+    def run_network_on_validation(epoch_num):
+        val_pos_prec, val_class_prec, val_rough_pos_prec = 0.0, 0.0, 0.0
+        val_pos_items, val_class_items = 0, 0
+        # iterate
+        num_dafs_to_save = 6
+        dafs_to_save = []
+
+        for idaf, daf in enumerate(val_data):
+            class_prec, pos_prec, tagged_daf, rough_pos_prec = CalculateLossForDaf(daf, fValidation=True)
+            # increment and continue
+            if not pos_prec is None:
+                val_pos_prec += pos_prec
+                val_rough_pos_prec += rough_pos_prec
+                val_pos_items += 1
+            if not class_prec is None:
+                val_class_prec += class_prec
+                val_class_items += 1
+
+            if epoch_num >= 0 and idaf % round(1.0 * len(val_data) / num_dafs_to_save) == 0:
+                objStr = json.dumps(tagged_daf, indent=4, ensure_ascii=False)
+                util.make_folder_if_need_be('{}/epoch_{}'.format(model_root,epoch_num))
+                with open("{}/epoch_{}/{}_tagged.json".format(model_root,epoch_num, tagged_daf["file"]), "w") as f:
+                    f.write(objStr.encode('utf-8'))
+
+        # divide
+        val_pos_prec = val_pos_prec / val_pos_items * 100 if val_pos_items > 0 else 0.0
+        val_rough_pos_prec = val_rough_pos_prec / val_pos_items * 100 if val_pos_items > 0 else 0.0
+        val_class_prec = val_class_prec / val_class_items * 100 if val_class_items > 0 else 0.0
+        # print the results
+        log_message('Validation: pos_prec: ' + str(val_pos_prec) + ', class_prec: ' + str(val_class_prec) + ', rough pos prec: ' + str(val_rough_pos_prec))
+
+        return val_pos_prec, val_class_prec, val_rough_pos_prec
+
+
+    # read in all the data
+    all_data = list(segment_fn())  # read_data_by_segment()
+
+
+    """
+    words = {}
+    for daf in all_data:
+        for w,c,p in daf:
+            if not w in words:
+                words[w] = set()
+            if c: words[w].add(p)
+
+    f = codecs.open('double_pos_after.txt','wb',encoding='utf8')
+    for w,p in words.items():
+        if len(p) > 1:
+            f.write('{} ~-~ {}\n'.format(cal_tools.heb2cal(w),str(list(p))))
+    f.close()
+    """
+
+    random.shuffle(all_data)
+    percent_training = 0.2
+    split_index = int(round(len(all_data) * percent_training))
+    train_data = all_data[split_index:]
+    val_data = all_data[:split_index]
+
+    print 'Training dafs: {}'.format(len(train_data))
+    print 'Validation dafs: {}'.format(len(val_data))
+
+    pos_hashtable = make_pos_hashtable(train_data)
+
+    # create the vocabulary
+    pos_vocab = Vocabulary()
+    let_vocab = Vocabulary()
+
+    # iterate through all the dapim and put everything in the vocabulary
+    for daf in all_data:
+        let_vocab.add_text(list(' '.join([word for word, _, _, _ in daf["words"]])))
+        pos_vocab.add_text([pos for _, _, pos, _ in daf["words"]])
+
+    pos_vocab.finalize()
+    let_vocab.finalize()
+
+    pos_conf_matrix = ConfusionMatrix(pos_vocab.size(), pos_vocab)
+
+    log_message('pos: ' + str(pos_vocab.size()))
+    log_message('let: ' + str(let_vocab.size()))
+
+    # debug - write out the vocabularies
+    # write out to files the pos vocab and the letter vocab
+    with open('{}/let_vocab.txt'.format(model_root), 'w', encoding='utf8') as f:
+        for let, id in let_vocab.get_c2i().items():
+            f.write(str(id) + ' : ' + let + '\n')
+    with open('{}/pos_vocab.txt'.format(model_root), 'w', encoding='utf8') as f:
+        for pos, id in pos_vocab.get_c2i().items():
+            f.write(str(id) + ' : ' + pos + '\n')
+
+    # to save on memory space, we will clear out all_data from memory
+    all_data = None
+
+    # create the model and all it's parameters
+    model = dy.Model()
+
+    # create the word encoders (an encoder for the chars for the bilstm, and an encoder for the prev-pos lstm)
+    pos_enc = WordEncoder("posenc", EMBED_DIM, model, pos_vocab)
+    let_enc = WordEncoder("letenc", EMBED_DIM, model, let_vocab)
+
+    # the BiLSTM for all the chars, take input of embed dim, and output of the hidden_dim minus the embed_dim because we will concatenate
+    # with output from a separate bilstm of just the word
+    bilstm = BILSTMTransducer(BILSTM_LAYERS, EMBED_DIM, HIDDEN_DIM, model)
+
+    # a prev-pos lstm. The mlp's will take this as input as well
+    prev_pos_lstm = dy.LSTMBuilder(BILSTM_LAYERS, EMBED_DIM, EMBED_DIM, model)
+
+    # now the class mlp, it will take input of 2*HIDDEN_DIM (A concatenate of the before and after the word) + EMBED_DIM from the prev-pos
+    # output of 2, unknown\talmud
+    class_mlp = MLP(model, "classmlp", 2 * HIDDEN_DIM + EMBED_DIM, HIDDEN_DIM, 2)
+    # pos mlp, same input but output the size of pos_vocab
+    pos_mlp = MLP(model, 'posmlp', 2 * HIDDEN_DIM + EMBED_DIM, HIDDEN_DIM, pos_vocab.size())
+
+    # the trainer
+    trainer = dy.MomentumSGDTrainer(model)
+
+    print "LOADING"
+    # if we are loading in a model
+    if filename_to_load:
+        model.load(filename_to_load)
+
+    print "DONE"
+
+    if train_test:
+        run_network_on_validation(START_EPOCH - 1)
+        pos_conf_matrix.clear()
+        # train!
+        for epoch in range(START_EPOCH, 20):
+            last_loss, last_pos_prec, last_class_prec, last_rough_pos_prec = 0.0, 0.0, 0.0, 0.0
+            total_loss, total_pos_prec, total_class_prec, total_rough_pos_prec = 0.0, 0.0, 0.0, 0.0
+            total_pos_items, total_class_items = 0, 0
+
+            # shuffle the train data
+            random.shuffle(train_data)
+
+            items_seen = 0
+            # iterate
+            for idaf, daf in enumerate(train_data):
+                # calculate the loss & prec
+                loss, class_prec, pos_prec, rough_pos_prec = CalculateLossForDaf(daf, fValidation=False)
+
+                # forward propagate
+                total_loss += loss.value() / len(daf["words"]) if loss else 0.0
+                # back propagate
+                if loss: loss.backward()
+                trainer.update()
+
+                # increment the prec variable
+                if not pos_prec is None:
+                    total_pos_prec += pos_prec
+                    total_rough_pos_prec += rough_pos_prec
+                    total_pos_items += 1
+                if not class_prec is None:
+                    total_class_prec += class_prec
+                    total_class_items += 1
+
+                items_seen += 1
+                # breakpoint?
+                breakpoint = 15000
+                if items_seen % breakpoint == 0 or idaf == len(train_data) - 1:
+                    last_loss = total_loss / breakpoint
+                    last_pos_prec = total_pos_prec / total_pos_items * 100
+                    last_rough_pos_prec = total_rough_pos_prec / total_pos_items * 100
+                    last_class_prec = total_class_prec / total_class_items * 100
+
+                    log_message("Segments processed: " + str(items_seen) + ", loss: " + str(last_loss) + ', pos_prec: ' + str(
+                        last_pos_prec) + ', class_prec: ' + str(last_class_prec) + ', rough pos prec: ' + str(last_rough_pos_prec))
+
+                    total_loss, total_pos_prec, total_class_prec, total_rough_pos_prec = 0.0, 0.0, 0.0, 0.0
+                    total_pos_items = 0
+                    total_class_items = 0
+
+            log_message('Finished epoch ' + str(epoch))
+            val_class_prec, val_pos_prec, val_rough_pos_prec = run_network_on_validation(epoch)
+            util.make_folder_if_need_be('{}/epoch_{}'.format(model_root,epoch))
+
+            filename_to_save = '{}/epoch_{}/postagger_model_embdim{}_hiddim{}_lyr{}_e{}_trainloss{}_trainprec{}_valprec.model'.format(model_root,epoch,EMBED_DIM,HIDDEN_DIM,sLAYERS,epoch,last_loss,last_pos_prec,val_pos_prec)
+            model.save(filename_to_save)
+
+            f = open("{}/epoch_{}/conf_matrix_e{}.html".format(model_root,epoch, epoch), 'w')
+            f.write(pos_conf_matrix.to_html())
+            f.close()
+            pos_conf_matrix.clear()
+    else:
+        #tag all of shas!
+        mesechtot_names = ['Berakhot','Shabbat','Eruvin','Pesachim','Bava Kamma','Bava Metzia','Bava Batra']
+        for mesechta in mesechtot_names:
+            mesechta_path = 'data/5_pos_tagged/json/{}'.format(mesechta)
+            util.make_folder_if_need_be(mesechta_path)
+
+
+            def sortdaf(daf_obj):
+                daf = daf_obj['file'].split('_')[-1]
+                daf_int = int(daf[:-1])
+                amud_int = 1 if daf[-1] == 'b' else 0
+                return daf_int*2 + amud_int
+            dafs = list(read_data_by_daf(mesechta=mesechta))
+            dafs.sort(key=sortdaf)
+            html_out = OrderedDict()
+            for i_f,daf_obj in enumerate(dafs):
+                tagged_daf = CalculateLossForDaf(daf_obj, fRunning=True)
+
+                fp = codecs.open("{}/{}.json".format(mesechta_path,daf_obj['file']), "wb", encoding='utf-8')
+                json.dump(tagged_daf, fp, indent=4, encoding='utf-8', ensure_ascii=False)
+                fp.close()
+
+                daf = daf_obj['file'].split('_')[-1]
+                html_out[daf] = tagged_daf
+                if i_f % 10 == 0:
+                    print '{}/{}'.format(mesechta,daf_obj['file'])
+                    html = print_tagged_corpus_to_html_table(html_out)
+                    util.make_folder_if_need_be('data/5_pos_tagged/html/{}'.format(mesechta))
+                    fp = codecs.open("data/5_pos_tagged/html/{}/{}.html".format(mesechta, daf), "wb",
+                                     encoding='utf-8')
+                    fp.write(html)
+                    fp.close()
+                    html_out = OrderedDict()
+
+
+    # AdamTrainer
+    # AdagradTrainer
+    # AdadeltaTrainer
+    # MomentumSGDTrainer
+    # SimpleSGDTrainer
+

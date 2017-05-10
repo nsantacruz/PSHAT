@@ -3,40 +3,40 @@
     "words": [
         {
             "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 0.99953333412824841, 
+            "gold_pos": "a", 
+            "confidence": 0.0, 
             "word": "דלית", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "a"
         }, 
         {
             "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 0.99995973204638466, 
+            "gold_pos": "p02", 
+            "confidence": 2.6477428372115065e-07, 
             "word": "ליה", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "p02"
         }, 
         {
             "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 1.0, 
+            "gold_pos": "N05", 
+            "confidence": 0.0, 
             "word": "גידודי", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "N05"
         }, 
         {
             "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 0.74933054302708657, 
+            "gold_pos": "P", 
+            "confidence": 0.0, 
             "word": "הא", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "P"
         }, 
         {
             "lang": 1, 
             "gold_pos": "a", 
-            "confidence": 0.99998126294534939, 
+            "confidence": 0.0, 
             "word": "דאית", 
             "gold_class": 1, 
             "predicted": "a"
@@ -44,7 +44,7 @@
         {
             "lang": 1, 
             "gold_pos": "p02", 
-            "confidence": 0.99996777049941787, 
+            "confidence": 8.6140582680190841e-07, 
             "word": "ליה", 
             "gold_class": 1, 
             "predicted": "p02"
@@ -52,7 +52,7 @@
         {
             "lang": 1, 
             "gold_pos": "N05", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "גידודי", 
             "gold_class": 1, 
             "predicted": "N05"
@@ -60,23 +60,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.8563057704701208, 
-            "word": "וא\"ר", 
+            "confidence": 2.22520473539034e-08, 
+            "word": "ואמר", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 6.9554674101238319e-07, 
+            "word": "רבי", 
+            "gold_class": 0, 
+            "predicted": "N02"
+        }, 
+        {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.61648016716961063, 
+            "confidence": 3.298460678796876e-06, 
             "word": "זירא", 
             "gold_class": 0, 
-            "predicted": "A02"
+            "predicted": "N02"
         }, 
         {
             "lang": 1, 
             "gold_pos": "P", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "אנא", 
             "gold_class": 1, 
             "predicted": "P"
@@ -84,31 +92,31 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "חזיתיה", 
             "gold_class": 1, 
             "predicted": "V01"
         }, 
         {
-            "lang": 1, 
-            "gold_pos": "PN", 
-            "confidence": 1.0, 
-            "word": "לר'", 
-            "gold_class": 1, 
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 4.5211338588933784e-07, 
+            "word": "לרבי", 
+            "gold_class": 0, 
             "predicted": "PN"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.36720384890471908, 
+            "confidence": 6.2273582930342538e-05, 
             "word": "אבהו", 
             "gold_class": 0, 
-            "predicted": "c"
+            "predicted": "P"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.9978272139021761, 
+            "confidence": 4.3999139463629491e-05, 
             "word": "שהניח", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -116,7 +124,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.64047813775657525, 
+            "confidence": 1.889162227185849e-08, 
             "word": "ידיו", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -124,7 +132,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99866513852847982, 
+            "confidence": 2.4753570270704889e-06, 
             "word": "כנגד", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -132,15 +140,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.81611270583181472, 
+            "confidence": 1.0698371809536935e-08, 
             "word": "פניו", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.54744537206609056, 
+            "confidence": 4.3633407405564993e-05, 
             "word": "של", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -148,15 +156,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.37232014867843116, 
+            "confidence": 3.9871874460633319e-08, 
             "word": "מטה", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "a", 
-            "confidence": 0.99959645298982225, 
+            "confidence": 3.1152501228667576e-07, 
             "word": "ולא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -164,7 +172,7 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "ידענא", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -172,7 +180,7 @@
         {
             "lang": 1, 
             "gold_pos": "c", 
-            "confidence": 0.99809477080842879, 
+            "confidence": 0.0, 
             "word": "אי", 
             "gold_class": 1, 
             "predicted": "c"
@@ -180,7 +188,7 @@
         {
             "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 0.98176887418043668, 
+            "confidence": 9.2267712056930914e-08, 
             "word": "נגע", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -188,7 +196,7 @@
         {
             "lang": 1, 
             "gold_pos": "c", 
-            "confidence": 0.99999366940982737, 
+            "confidence": 0.0, 
             "word": "אי", 
             "gold_class": 1, 
             "predicted": "c"
@@ -196,7 +204,7 @@
         {
             "lang": 0, 
             "gold_pos": "a", 
-            "confidence": 0.99991948292359334, 
+            "confidence": 7.3864742000567939e-09, 
             "word": "לא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -204,7 +212,7 @@
         {
             "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 0.98590801914289539, 
+            "confidence": 1.6870573304766863e-09, 
             "word": "נגע", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -212,7 +220,7 @@
         {
             "lang": 1, 
             "gold_pos": "A01", 
-            "confidence": 0.99193077848435196, 
+            "confidence": 0.0, 
             "word": "פשיטא", 
             "gold_class": 1, 
             "predicted": "A01"
@@ -220,7 +228,7 @@
         {
             "lang": 1, 
             "gold_pos": "a", 
-            "confidence": 0.9999639093164705, 
+            "confidence": 0.0, 
             "word": "דלא", 
             "gold_class": 1, 
             "predicted": "a"
@@ -228,7 +236,7 @@
         {
             "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 0.95321704852389733, 
+            "confidence": 1.0968149841495412e-10, 
             "word": "נגע", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -236,7 +244,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "דתניא", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -244,23 +252,23 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.59505019177205076, 
-            "word": "ר'", 
+            "confidence": 4.3463103898033549e-08, 
+            "word": "רבי", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.57288199969890374, 
+            "confidence": 3.1818499457418382e-05, 
             "word": "אליעזר", 
             "gold_class": 0, 
-            "predicted": "V04"
+            "predicted": "a"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.98505056039018246, 
+            "confidence": 1.4162788795978959e-07, 
             "word": "אומר", 
             "gold_class": 0, 
             "predicted": "V03"
@@ -268,7 +276,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.94366458019669996, 
+            "confidence": 1.5347402152365073e-05, 
             "word": "כל", 
             "gold_class": 0, 
             "predicted": "N01"
@@ -276,31 +284,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.96121217399556613, 
+            "confidence": 1.9401447308065636e-09, 
             "word": "האוחז", 
             "gold_class": 0, 
-            "predicted": "V03"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.55336715996803409, 
+            "confidence": 0.00066387474887845421, 
             "word": "באמה", 
             "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 0.70788369099890314, 
-            "word": "ומשתין", 
-            "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "P"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.8702956427422881, 
+            "confidence": 4.2263906882841406e-06, 
+            "word": "ומשתין", 
+            "gold_class": 0, 
+            "predicted": "V04"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 8.3877088495128744e-10, 
             "word": "כאילו", 
             "gold_class": 0, 
             "predicted": "c"
@@ -308,31 +316,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.74014012147457275, 
+            "confidence": 2.9049147740646092e-09, 
             "word": "מביא", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "A01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.32542088749137899, 
+            "confidence": 1.3228473882266591e-08, 
             "word": "מבול", 
             "gold_class": 0, 
-            "predicted": "a"
+            "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.7201096358021708, 
+            "confidence": 6.8682878150037004e-07, 
             "word": "לעולם", 
             "gold_class": 0, 
-            "predicted": "PN"
+            "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.55393426312338012, 
+            "confidence": 1.4762927050989687e-07, 
             "word": "אמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -340,31 +348,31 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.97642759259989531, 
+            "confidence": 8.7980436176801079e-05, 
             "word": "אביי", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.98325384870984289, 
+            "confidence": 5.6197732297829371e-07, 
             "word": "עשאוה", 
-            "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.89307367685051031, 
-            "word": "כבולשת", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.8430902616555243e-07, 
+            "word": "כבולשת", 
+            "gold_class": 0, 
+            "predicted": "N02"
+        }, 
+        {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99900536999259615, 
+            "confidence": 0.0, 
             "word": "דתנן", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -372,31 +380,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.97025258069048259, 
+            "confidence": 0.00079160810140878877, 
             "word": "בולשת", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "GN"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.94475901986525357, 
+            "confidence": 6.0849339548261056e-05, 
             "word": "שנכנסה", 
-            "gold_class": 0, 
-            "predicted": "V01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.59617832948313354, 
-            "word": "לעיר", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.93596988656660784, 
+            "confidence": 4.1811937741310325e-08, 
+            "word": "לעיר", 
+            "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 7.6912699381787087e-05, 
             "word": "בשעת", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -404,23 +412,23 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.61473419039784627, 
+            "confidence": 2.2813033906428705e-07, 
             "word": "שלום", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.63792517951367778, 
+            "confidence": 0.0007231345709931428, 
             "word": "חביות", 
             "gold_class": 0, 
-            "predicted": "A01"
+            "predicted": "N01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99577196736351203, 
+            "confidence": 1.1320994066704076e-05, 
             "word": "פתוחות", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -428,55 +436,55 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.32100784246680997, 
+            "confidence": 0.0024075295735936429, 
             "word": "אסורות", 
+            "gold_class": 0, 
+            "predicted": "N05"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 5.4820707141948166e-07, 
+            "word": "סתומות", 
+            "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.301017998352004e-06, 
+            "word": "מותרות", 
             "gold_class": 0, 
             "predicted": "V03"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.86107044061831595, 
-            "word": "סתומות", 
-            "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.83496677034485223, 
-            "word": "מותרות", 
-            "gold_class": 0, 
-            "predicted": "V04"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.57442674744985156, 
+            "confidence": 2.3884860901925427e-06, 
             "word": "בשעת", 
             "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 2.5025026490566868e-06, 
+            "word": "מלחמה", 
+            "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.97601546264681183, 
-            "word": "מלחמה", 
-            "gold_class": 0, 
-            "predicted": "p02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.56250639406261449, 
+            "confidence": 8.821422288185641e-05, 
             "word": "אלו", 
             "gold_class": 0, 
-            "predicted": "c"
+            "predicted": "p01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.89557331790649486, 
+            "confidence": 0.0090929047777622909, 
             "word": "ואלו", 
             "gold_class": 0, 
             "predicted": "c"
@@ -484,31 +492,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.87505916516079929, 
+            "confidence": 3.1109285000307211e-07, 
             "word": "מותרות", 
             "gold_class": 0, 
-            "predicted": "V04"
+            "predicted": "V03"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.47700500736455048, 
+            "confidence": 2.3332996193967617e-07, 
             "word": "לפי", 
             "gold_class": 0, 
-            "predicted": "p01"
+            "predicted": "a"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.75475138986118795, 
+            "confidence": 7.8650656152470738e-08, 
             "word": "שאין", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.96267283174874418, 
+            "confidence": 4.9177897900237421e-10, 
             "word": "פנאי", 
             "gold_class": 0, 
             "predicted": "N05"
@@ -516,7 +524,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.62616005605746095, 
+            "confidence": 3.2736118089241771e-08, 
             "word": "לנסך", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -524,15 +532,15 @@
         {
             "lang": 1, 
             "gold_pos": "a", 
-            "confidence": 0.67874403781319681, 
+            "confidence": 0.0, 
             "word": "אלמא", 
             "gold_class": 1, 
-            "predicted": "a"
+            "predicted": "c"
         }, 
         {
             "lang": 1, 
             "gold_pos": "c", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "כיון", 
             "gold_class": 1, 
             "predicted": "c"
@@ -540,7 +548,7 @@
         {
             "lang": 1, 
             "gold_pos": "A03", 
-            "confidence": 0.97204527401665974, 
+            "confidence": 2.9169023393108933e-08, 
             "word": "דבעיתי", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -548,7 +556,7 @@
         {
             "lang": 0, 
             "gold_pos": "a", 
-            "confidence": 0.99989038154047793, 
+            "confidence": 3.1427788207726732e-06, 
             "word": "לא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -556,7 +564,7 @@
         {
             "lang": 0, 
             "gold_pos": "V02", 
-            "confidence": 0.48554302515432474, 
+            "confidence": 1.4818217874539486e-08, 
             "word": "מנסכי", 
             "gold_class": 0, 
             "predicted": "V04"
@@ -564,15 +572,23 @@
         {
             "lang": 1, 
             "gold_pos": "a", 
-            "confidence": 0.99990418764776268, 
-            "word": "ה\"נ", 
+            "confidence": 0.0, 
+            "word": "הכא", 
+            "gold_class": 1, 
+            "predicted": "a"
+        }, 
+        {
+            "lang": 1, 
+            "gold_pos": "a", 
+            "confidence": 0.0, 
+            "word": "נמי", 
             "gold_class": 1, 
             "predicted": "a"
         }, 
         {
             "lang": 1, 
             "gold_pos": "c", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "כיון", 
             "gold_class": 1, 
             "predicted": "c"
@@ -580,7 +596,7 @@
         {
             "lang": 1, 
             "gold_pos": "A01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "דבעית", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -588,39 +604,39 @@
         {
             "lang": 0, 
             "gold_pos": "a", 
-            "confidence": 0.99996886057727719, 
+            "confidence": 1.8643320695660857e-09, 
             "word": "לא", 
             "gold_class": 0, 
             "predicted": "a"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 0.99952447247351217, 
+            "confidence": 0.0, 
             "word": "אתי", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "V02", 
-            "confidence": 0.39083512218556776, 
+            "confidence": 2.143538713093804e-08, 
             "word": "להרהורי", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "V04"
         }, 
         {
             "lang": 1, 
             "gold_pos": "a", 
-            "confidence": 1.0, 
-            "word": "והכא", 
+            "confidence": 0.0, 
+            "word": "הכא", 
             "gold_class": 1, 
             "predicted": "a"
         }, 
         {
             "lang": 1, 
             "gold_pos": "P", 
-            "confidence": 0.99674519190866906, 
+            "confidence": 0.0, 
             "word": "מאי", 
             "gold_class": 1, 
             "predicted": "P"
@@ -628,7 +644,7 @@
         {
             "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "ביעתותא", 
             "gold_class": 1, 
             "predicted": "N02"
@@ -636,7 +652,7 @@
         {
             "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "ביעתותא", 
             "gold_class": 1, 
             "predicted": "N02"
@@ -644,23 +660,23 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "דנהרא", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "a", 
-            "confidence": 1.0, 
+            "confidence": 1.3292287171516732e-08, 
             "word": "איני", 
-            "gold_class": 1, 
-            "predicted": "a"
+            "gold_class": 0, 
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.96902215440192641, 
+            "confidence": 2.4200514255731756e-10, 
             "word": "והאמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -668,23 +684,23 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.9872760965914632, 
-            "word": "ר'", 
+            "confidence": 2.3129037822849579e-07, 
+            "word": "רבי", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.7498062862759477, 
+            "confidence": 0.0017861259154605482, 
             "word": "אבא", 
             "gold_class": 0, 
-            "predicted": "A02"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99883409359475228, 
+            "confidence": 6.43841980674449e-10, 
             "word": "אמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -692,7 +708,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99611078981275003, 
+            "confidence": 0.0, 
             "word": "רב", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -700,15 +716,15 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.81032366246807175, 
+            "confidence": 2.7616846857156573e-07, 
             "word": "הונא", 
             "gold_class": 0, 
-            "predicted": "P"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99968673365356453, 
+            "confidence": 3.7996532473313179e-11, 
             "word": "אמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -716,7 +732,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99473047795583269, 
+            "confidence": 0.0, 
             "word": "רב", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -724,23 +740,23 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.993592820231054, 
+            "confidence": 0.0001512372258391547, 
             "word": "כל", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "PN"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.60120497850262189, 
+            "confidence": 1.0531910474869026e-07, 
             "word": "המניח", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.5709587792077816, 
+            "confidence": 1.117859258130878e-08, 
             "word": "ידיו", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -748,7 +764,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99735574000255234, 
+            "confidence": 2.1547076446208371e-06, 
             "word": "כנגד", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -756,31 +772,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.87372800213829116, 
+            "confidence": 8.7345653681713281e-09, 
             "word": "פניו", 
+            "gold_class": 0, 
+            "predicted": "N02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 4.0647993703310865e-05, 
+            "word": "של", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.46104380624885377, 
-            "word": "של", 
-            "gold_class": 0, 
-            "predicted": "N01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.31523084943442076, 
+            "confidence": 1.105727042444854e-06, 
             "word": "מטה", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.57421212371313679, 
+            "confidence": 2.2590699647663663e-07, 
             "word": "כאילו", 
             "gold_class": 0, 
             "predicted": "c"
@@ -788,47 +804,47 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.33444882416266308, 
+            "confidence": 7.9791798591996951e-08, 
             "word": "כופר", 
             "gold_class": 0, 
             "predicted": "N01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.74978225415880428, 
+            "confidence": 6.2773303429577183e-06, 
             "word": "בבריתו", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99070851124940584, 
+            "confidence": 1.330244739214631e-05, 
             "word": "של", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.94240609586098956, 
+            "confidence": 1.3461677477907153e-06, 
             "word": "אברהם", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "PN"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.84047624208367144, 
+            "confidence": 2.4978281622299723e-05, 
             "word": "אבינו", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "a", 
-            "confidence": 0.99979007348556348, 
+            "confidence": 1.9087228665997973e-08, 
             "word": "לא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -836,7 +852,7 @@
         {
             "lang": 1, 
             "gold_pos": "A01", 
-            "confidence": 0.99995948966835668, 
+            "confidence": 0.0, 
             "word": "קשיא", 
             "gold_class": 1, 
             "predicted": "A01"
@@ -844,7 +860,7 @@
         {
             "lang": 1, 
             "gold_pos": "P", 
-            "confidence": 0.98515603506754812, 
+            "confidence": 0.0, 
             "word": "הא", 
             "gold_class": 1, 
             "predicted": "P"
@@ -852,7 +868,7 @@
         {
             "lang": 0, 
             "gold_pos": "c", 
-            "confidence": 0.95316104159719539, 
+            "confidence": 1.8575159320256299e-08, 
             "word": "כי", 
             "gold_class": 0, 
             "predicted": "c"
@@ -860,7 +876,7 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "נחית", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -868,15 +884,15 @@
         {
             "lang": 1, 
             "gold_pos": "P", 
-            "confidence": 0.92681671244042763, 
+            "confidence": 0.0, 
             "word": "הא", 
             "gold_class": 1, 
-            "predicted": "P"
+            "predicted": "I"
         }, 
         {
             "lang": 0, 
             "gold_pos": "c", 
-            "confidence": 0.96105648102851393, 
+            "confidence": 4.0255195558923404e-08, 
             "word": "כי", 
             "gold_class": 0, 
             "predicted": "c"
@@ -884,7 +900,7 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "סליק", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -892,7 +908,7 @@
         {
             "lang": 0, 
             "gold_pos": "p01", 
-            "confidence": 0.45356433145388586, 
+            "confidence": 1.7285142965758231e-08, 
             "word": "כי", 
             "gold_class": 0, 
             "predicted": "c"
@@ -900,7 +916,7 @@
         {
             "lang": 1, 
             "gold_pos": "P", 
-            "confidence": 0.99546708434732456, 
+            "confidence": 0.0, 
             "word": "הא", 
             "gold_class": 1, 
             "predicted": "P"
@@ -908,7 +924,7 @@
         {
             "lang": 1, 
             "gold_pos": "PN", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "דרבא", 
             "gold_class": 1, 
             "predicted": "PN"
@@ -916,31 +932,31 @@
         {
             "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 0.85908387246337514, 
+            "confidence": 8.126181167388265e-08, 
             "word": "שחי", 
             "gold_class": 0, 
-            "predicted": "A01"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
+            "gold_pos": "N02", 
+            "confidence": 1.3466419137104134e-06, 
+            "word": "רבי", 
+            "gold_class": 0, 
+            "predicted": "N05"
+        }, 
+        {
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.90222591335145819, 
-            "word": "ר'", 
+            "confidence": 9.5930513772911979e-07, 
+            "word": "זירא", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 0.98968250025280058, 
-            "word": "זירא", 
-            "gold_class": 0, 
-            "predicted": "A02"
-        }, 
-        {
-            "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "זקיף", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -948,7 +964,7 @@
         {
             "lang": 1, 
             "gold_pos": "N05", 
-            "confidence": 0.9997739874682473, 
+            "confidence": 0.0, 
             "word": "רבנן", 
             "gold_class": 1, 
             "predicted": "N05"
@@ -956,7 +972,7 @@
         {
             "lang": 1, 
             "gold_pos": "N01", 
-            "confidence": 0.98830084181267874, 
+            "confidence": 0.0, 
             "word": "דבי", 
             "gold_class": 1, 
             "predicted": "N01"
@@ -964,23 +980,23 @@
         {
             "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 0.97276414123051447, 
+            "confidence": 0.0, 
             "word": "רב", 
             "gold_class": 1, 
-            "predicted": "N02"
+            "predicted": "PN"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.71481040804839169, 
+            "confidence": 2.2729086137908694e-07, 
             "word": "אשי", 
             "gold_class": 0, 
-            "predicted": "A01"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "c", 
-            "confidence": 0.99289924350255854, 
+            "confidence": 7.8964544874584192e-09, 
             "word": "כי", 
             "gold_class": 0, 
             "predicted": "c"
@@ -988,7 +1004,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99990751432148361, 
+            "confidence": 0.0, 
             "word": "קא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -996,7 +1012,7 @@
         {
             "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 0.99467071960378106, 
+            "confidence": 1.310273580169229e-09, 
             "word": "נחתי", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1004,15 +1020,15 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 0.70547613482154203, 
+            "confidence": 2.0211796128054957e-06, 
             "word": "זקפי", 
             "gold_class": 1, 
-            "predicted": "V01"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "c", 
-            "confidence": 0.99498297994150298, 
+            "confidence": 1.9384813217401578e-06, 
             "word": "כי", 
             "gold_class": 0, 
             "predicted": "c"
@@ -1020,7 +1036,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99999247214908715, 
+            "confidence": 0.0, 
             "word": "קא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -1028,7 +1044,7 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "סלקי", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -1036,31 +1052,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.67799970454491021, 
+            "confidence": 1.4177508464193747e-07, 
             "word": "שחי", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "A05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.89242571234032475, 
-            "word": "ר'", 
+            "confidence": 9.9238772859123426e-07, 
+            "word": "רבי", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N05"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.51637920511265933, 
+            "confidence": 5.6379131777981444e-06, 
             "word": "זירא", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N05"
         }, 
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 0.99983074892501211, 
+            "confidence": 0.0, 
             "word": "הוה", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -1068,7 +1084,7 @@
         {
             "lang": 1, 
             "gold_pos": "a", 
-            "confidence": 0.99994818319318923, 
+            "confidence": 0.0, 
             "word": "קא", 
             "gold_class": 1, 
             "predicted": "a"
@@ -1076,7 +1092,7 @@
         {
             "lang": 1, 
             "gold_pos": "V04", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "משתמיט", 
             "gold_class": 1, 
             "predicted": "V04"
@@ -1084,7 +1100,7 @@
         {
             "lang": 1, 
             "gold_pos": "PN", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "מדרב", 
             "gold_class": 1, 
             "predicted": "PN"
@@ -1092,7 +1108,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.61048207941359434, 
+            "confidence": 7.9564927013877074e-07, 
             "word": "יהודה", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1100,31 +1116,31 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "דבעי", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 1.1657184483706327e-10, 
             "word": "למיסק", 
-            "gold_class": 1, 
+            "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99992129049603073, 
+            "confidence": 0.0, 
             "word": "לארעא", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "GN"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.98623374080746362, 
+            "confidence": 0.0, 
             "word": "דישראל", 
             "gold_class": 0, 
             "predicted": "PN"
@@ -1132,23 +1148,23 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99894982973651991, 
+            "confidence": 0.0, 
             "word": "דאמר", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 1, 
-            "gold_pos": "N02", 
-            "confidence": 0.99451477081885065, 
+            "gold_pos": "", 
+            "confidence": 0.0, 
             "word": "רב", 
-            "gold_class": 1, 
+            "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.94257932205562134, 
+            "confidence": 5.2357796264548257e-06, 
             "word": "יהודה", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1156,55 +1172,63 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.86441462404012648, 
+            "confidence": 0.00039827691446381243, 
             "word": "כל", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.57085378876207427, 
+            "confidence": 1.2419031386739977e-07, 
             "word": "העולה", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "V02"
+        }, 
+        {
+            "lang": 1, 
+            "gold_pos": "", 
+            "confidence": 1.4599285551207788e-06, 
+            "word": "מבבל", 
+            "gold_class": 0, 
+            "predicted": "a"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "GN", 
+            "confidence": 6.0502617345184466e-06, 
+            "word": "לארץ", 
+            "gold_class": 0, 
+            "predicted": "GN"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "GN", 
+            "confidence": 0.010812820332120178, 
+            "word": "ישראל", 
+            "gold_class": 0, 
+            "predicted": "A02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.90511614806661245, 
-            "word": "מבבל", 
+            "confidence": 2.4788764378242651e-09, 
+            "word": "עובר", 
             "gold_class": 0, 
             "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.4185315556800242, 
-            "word": "לא\"י", 
-            "gold_class": 0, 
-            "predicted": "V01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.954845115043915, 
-            "word": "עובר", 
+            "confidence": 5.2401153445364014e-07, 
+            "word": "בעשה", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.5142176060223953, 
-            "word": "בעשה", 
-            "gold_class": 0, 
-            "predicted": "N01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.97874339697303459, 
+            "confidence": 2.6639723682095174e-09, 
             "word": "שנאמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1212,7 +1236,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.96364923012735926, 
+            "confidence": 1.3604830988945255e-06, 
             "word": "בבלה", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -1220,31 +1244,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.75680256947983793, 
+            "confidence": 1.4533185635071877e-08, 
             "word": "יובאו", 
-            "gold_class": 0, 
-            "predicted": "N05"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.58430200163824897, 
-            "word": "ושמה", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.67403873746435672, 
-            "word": "יהיו", 
+            "confidence": 1.4880867827386136e-05, 
+            "word": "ושמה", 
             "gold_class": 0, 
-            "predicted": "P"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.98426087655102257, 
+            "confidence": 5.6854526692824681e-07, 
+            "word": "יהיו", 
+            "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 6.97644128617784e-09, 
             "word": "אמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1252,23 +1276,23 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "איזיל", 
             "gold_class": 1, 
             "predicted": "V01"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 4.2805197216179727e-08, 
             "word": "ואשמע", 
-            "gold_class": 1, 
-            "predicted": "V01"
+            "gold_class": 0, 
+            "predicted": "V03"
         }, 
         {
             "lang": 1, 
             "gold_pos": "p02", 
-            "confidence": 0.99934537856183914, 
+            "confidence": 0.0, 
             "word": "מיניה", 
             "gold_class": 1, 
             "predicted": "p02"
@@ -1276,7 +1300,7 @@
         {
             "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "מילתא", 
             "gold_class": 1, 
             "predicted": "N02"
@@ -1284,23 +1308,23 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "ואיתי", 
             "gold_class": 0, 
             "predicted": "V03"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 0.80551593703780544, 
+            "confidence": 3.7437463233029327e-06, 
             "word": "ואיסק", 
-            "gold_class": 1, 
-            "predicted": "V01"
+            "gold_class": 0, 
+            "predicted": "PN"
         }, 
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "אזל", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -1308,7 +1332,7 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "אשכחיה", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -1316,7 +1340,7 @@
         {
             "lang": 1, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "דקאי", 
             "gold_class": 1, 
             "predicted": "V01"
@@ -1324,23 +1348,23 @@
         {
             "lang": 0, 
             "gold_pos": "N01", 
-            "confidence": 0.77440873824152678, 
+            "confidence": 0.00062273246903689567, 
             "word": "בי", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "p02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "N01", 
-            "confidence": 0.89477928180711641, 
+            "confidence": 8.029887807244037e-05, 
             "word": "באני", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "N04"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "וקאמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1348,7 +1372,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99737321787083077, 
+            "confidence": 9.2046107477822301e-07, 
             "word": "ליה", 
             "gold_class": 0, 
             "predicted": "p02"
@@ -1356,7 +1380,7 @@
         {
             "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 0.99782096826647138, 
+            "confidence": 0.0, 
             "word": "לשמעיה", 
             "gold_class": 1, 
             "predicted": "N02"
@@ -1364,7 +1388,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.98424264173058484, 
+            "confidence": 1.4684961942272018e-08, 
             "word": "הביאו", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1372,23 +1396,23 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99914368740570858, 
+            "confidence": 0.00021629532473510337, 
             "word": "לי", 
             "gold_class": 0, 
             "predicted": "p02"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.94925939894791489, 
+            "confidence": 3.4072068784764676e-05, 
             "word": "נתר", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "n01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.8914807697044389, 
+            "confidence": 1.0314117132995037e-08, 
             "word": "הביאו", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1396,63 +1420,63 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99895587849108891, 
+            "confidence": 0.00070206244298816486, 
             "word": "לי", 
             "gold_class": 0, 
             "predicted": "p02"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.52039172063176531, 
+            "confidence": 3.2764191507317982e-08, 
             "word": "מסרק", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 3.2517689306827956e-09, 
             "word": "פתחו", 
-            "gold_class": 1, 
+            "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "N05", 
-            "confidence": 1.0, 
+            "confidence": 0.0042259949735956445, 
             "word": "פומייכו", 
-            "gold_class": 1, 
-            "predicted": "N02"
+            "gold_class": 0, 
+            "predicted": "N05"
         }, 
         {
             "lang": 1, 
             "gold_pos": "V03", 
-            "confidence": 0.99993062990404302, 
+            "confidence": 3.383455337586412e-07, 
             "word": "ואפיקו", 
             "gold_class": 1, 
             "predicted": "V03"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 0.94865911979715223, 
+            "confidence": 0.0, 
             "word": "הבלא", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 0.61565616839586312, 
+            "confidence": 5.5019531029810602e-08, 
             "word": "ואשתו", 
             "gold_class": 0, 
-            "predicted": "V03"
+            "predicted": "V01"
         }, 
         {
             "lang": 1, 
             "gold_pos": "N05", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "ממיא", 
             "gold_class": 1, 
             "predicted": "N05"
@@ -1460,15 +1484,15 @@
         {
             "lang": 1, 
             "gold_pos": "N01", 
-            "confidence": 0.89728124467081938, 
+            "confidence": 0.0, 
             "word": "דבי", 
             "gold_class": 1, 
-            "predicted": "N02"
+            "predicted": "GN"
         }, 
         {
             "lang": 0, 
             "gold_pos": "N01", 
-            "confidence": 0.65902935846346977, 
+            "confidence": 6.6664544825616463e-05, 
             "word": "באני", 
             "gold_class": 0, 
             "predicted": "N05"
@@ -1476,7 +1500,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.994019110455717, 
+            "confidence": 1.6400373772689367e-06, 
             "word": "אמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1484,23 +1508,23 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.97365517192807471, 
+            "confidence": 7.1599247758412482e-09, 
             "word": "אילמלא", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.48598081394632398, 
+            "confidence": 7.4108131128831153e-06, 
             "word": "באתי", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99141340004714706, 
+            "confidence": 1.6891515497213707e-07, 
             "word": "אלא", 
             "gold_class": 0, 
             "predicted": "c"
@@ -1508,15 +1532,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.62177076210141546, 
+            "confidence": 4.6032980393544255e-06, 
             "word": "לשמוע", 
             "gold_class": 0, 
-            "predicted": "PN"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.71252662301311842, 
+            "confidence": 1.1018377497337983e-05, 
             "word": "דבר", 
             "gold_class": 0, 
             "predicted": "N01"
@@ -1524,23 +1548,23 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.48492786281352696, 
+            "confidence": 1.5999778312497839e-05, 
             "word": "זה", 
-            "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 0.46348495013679386, 
-            "word": "דיי", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 2.3857627304900861e-09, 
+            "word": "דיי", 
+            "gold_class": 0, 
+            "predicted": "c"
+        }, 
+        {
             "lang": 1, 
             "gold_pos": "a", 
-            "confidence": 0.94155096093339985, 
+            "confidence": 0.0, 
             "word": "בשלמא", 
             "gold_class": 1, 
             "predicted": "a"
@@ -1548,47 +1572,55 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.91202603166492835, 
+            "confidence": 3.4577249611962499e-07, 
             "word": "הביאו", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.70577284759645609, 
+            "confidence": 0.0037220308424399792, 
             "word": "נתר", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "a"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.70898873841760579, 
+            "confidence": 7.9093989840060113e-10, 
             "word": "הביאו", 
-            "gold_class": 0, 
-            "predicted": "N05"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.71433816685754858, 
-            "word": "מסרק", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 0, 
-            "gold_pos": "V03", 
-            "confidence": 0.97634228124905753, 
-            "word": "קמ\"ל", 
+            "lang": 1, 
+            "gold_pos": "", 
+            "confidence": 3.8864552932425218e-08, 
+            "word": "מסרק", 
             "gold_class": 0, 
-            "predicted": "p02"
+            "predicted": "V03"
+        }, 
+        {
+            "lang": 1, 
+            "gold_pos": "V03", 
+            "confidence": 0.0, 
+            "word": "קמשמע", 
+            "gold_class": 1, 
+            "predicted": "V03"
+        }, 
+        {
+            "lang": 1, 
+            "gold_pos": "V03", 
+            "confidence": 0.0, 
+            "word": "לן", 
+            "gold_class": 1, 
+            "predicted": "V03"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.49098319601186619, 
+            "confidence": 3.0166977595252251e-06, 
             "word": "דברים", 
             "gold_class": 0, 
             "predicted": "V02"
@@ -1596,87 +1628,87 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.73117142928291767, 
+            "confidence": 1.9466203666731427e-06, 
             "word": "של", 
             "gold_class": 0, 
-            "predicted": "V02"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.70992674867999039, 
+            "confidence": 4.583815721330685e-05, 
             "word": "חול", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "n01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.94657014633314185, 
+            "confidence": 5.0884091674007247e-07, 
             "word": "מותר", 
+            "gold_class": 0, 
+            "predicted": "V03"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.9986587731439631e-08, 
+            "word": "לאומרם", 
+            "gold_class": 0, 
+            "predicted": "V03"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.2981512304335909e-06, 
+            "word": "בלשון", 
             "gold_class": 0, 
             "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.71522563100094083, 
-            "word": "לאומרם", 
-            "gold_class": 0, 
-            "predicted": "a"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.33069618310608218, 
-            "word": "בלשון", 
-            "gold_class": 0, 
-            "predicted": "N01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.85358432499083159, 
+            "confidence": 1.7568565365973206e-05, 
             "word": "קדש", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "V02"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 1.0, 
+            "confidence": 7.3438058032322682e-09, 
             "word": "פתחו", 
-            "gold_class": 1, 
+            "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "N05", 
-            "confidence": 1.0, 
+            "confidence": 0.00052468459014406695, 
             "word": "פומייכו", 
-            "gold_class": 1, 
-            "predicted": "N02"
+            "gold_class": 0, 
+            "predicted": "N05"
         }, 
         {
             "lang": 1, 
             "gold_pos": "V03", 
-            "confidence": 0.99995067101676793, 
+            "confidence": 2.6855793599179534e-09, 
             "word": "ואפיקו", 
             "gold_class": 1, 
             "predicted": "V03"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 0.97518241890956192, 
+            "confidence": 0.0, 
             "word": "הבלא", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "N02"
         }, 
         {
             "lang": 1, 
             "gold_pos": "a", 
-            "confidence": 0.99992698938645064, 
+            "confidence": 0.0, 
             "word": "נמי", 
             "gold_class": 1, 
             "predicted": "a"
@@ -1684,7 +1716,7 @@
         {
             "lang": 1, 
             "gold_pos": "PN", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "כדשמואל", 
             "gold_class": 1, 
             "predicted": "PN"
@@ -1692,7 +1724,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.98999317881112536, 
+            "confidence": 0.0, 
             "word": "דאמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1700,39 +1732,39 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "שמואל", 
             "gold_class": 0, 
             "predicted": "PN"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 0.91503085340897494, 
+            "confidence": 0.0, 
             "word": "הבלא", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "N02"
         }, 
         {
             "lang": 1, 
             "gold_pos": "V03", 
-            "confidence": 0.99980506236359878, 
+            "confidence": 0.0, 
             "word": "מפיק", 
             "gold_class": 1, 
             "predicted": "V03"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 0.93731343170293757, 
+            "confidence": 0.0, 
             "word": "הבלא", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "c", 
-            "confidence": 0.8542777612222241, 
+            "confidence": 8.2873386772261618e-08, 
             "word": "אלא", 
             "gold_class": 0, 
             "predicted": "c"
@@ -1740,15 +1772,15 @@
         {
             "lang": 0, 
             "gold_pos": "V01", 
-            "confidence": 0.50565293770911968, 
+            "confidence": 4.9221046882780385e-06, 
             "word": "אשתו", 
             "gold_class": 0, 
-            "predicted": "V05"
+            "predicted": "a"
         }, 
         {
             "lang": 1, 
             "gold_pos": "N05", 
-            "confidence": 0.9999398427612366, 
+            "confidence": 0.0, 
             "word": "מיא", 
             "gold_class": 1, 
             "predicted": "N05"
@@ -1756,7 +1788,7 @@
         {
             "lang": 1, 
             "gold_pos": "N01", 
-            "confidence": 0.86095214150993615, 
+            "confidence": 0.0, 
             "word": "דבי", 
             "gold_class": 1, 
             "predicted": "N02"
@@ -1764,7 +1796,7 @@
         {
             "lang": 0, 
             "gold_pos": "N01", 
-            "confidence": 0.87829662522028717, 
+            "confidence": 0.00010824118718967543, 
             "word": "באני", 
             "gold_class": 0, 
             "predicted": "N05"
@@ -1772,7 +1804,7 @@
         {
             "lang": 1, 
             "gold_pos": "P", 
-            "confidence": 0.99955849173377986, 
+            "confidence": 0.0, 
             "word": "מאי", 
             "gold_class": 1, 
             "predicted": "P"
@@ -1780,7 +1812,7 @@
         {
             "lang": 1, 
             "gold_pos": "N02", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "מעליותא", 
             "gold_class": 1, 
             "predicted": "N02"
@@ -1788,7 +1820,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "דתניא", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1796,7 +1828,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99736880899423297, 
+            "confidence": 2.4028929042406827e-09, 
             "word": "אכל", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1804,7 +1836,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99959582079850517, 
+            "confidence": 1.6041132201021332e-06, 
             "word": "ולא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -1812,23 +1844,23 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.88629550519204159, 
+            "confidence": 3.7150366376491576e-08, 
             "word": "שתה", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.52548548149206709, 
+            "confidence": 3.7907533344662358e-06, 
             "word": "אכילתו", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.3834567182816751, 
+            "confidence": 6.6761562988229054e-05, 
             "word": "דם", 
             "gold_class": 0, 
             "predicted": "N01"
@@ -1836,23 +1868,23 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.9220646260466937, 
+            "confidence": 0.0053260738347718963, 
             "word": "וזהו", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "P"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.58602170763944073, 
+            "confidence": 1.7968643179870303e-06, 
             "word": "תחילת", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "n01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.8729160562442807, 
+            "confidence": 6.4845972432965553e-09, 
             "word": "חולי", 
             "gold_class": 0, 
             "predicted": "N05"
@@ -1860,15 +1892,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.674778342428628, 
+            "confidence": 4.3378201827716679e-08, 
             "word": "מעיים", 
             "gold_class": 0, 
-            "predicted": "A05"
+            "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99900671252345108, 
+            "confidence": 2.9882700714808769e-06, 
             "word": "אכל", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1876,7 +1908,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99987319839295363, 
+            "confidence": 1.8234056087525007e-08, 
             "word": "ולא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -1884,63 +1916,63 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.48451137141450212, 
+            "confidence": 1.2077349071449087e-07, 
             "word": "הלך", 
             "gold_class": 0, 
-            "predicted": "p02"
-        }, 
-        {
-            "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 0.45155313467422131, 
-            "word": "ד'", 
-            "gold_class": 0, 
-            "predicted": "P"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.97336799107319394, 
+            "confidence": 1.8291359464332444e-05, 
+            "word": "ארבע", 
+            "gold_class": 0, 
+            "predicted": "n01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 5.9599215809406947e-06, 
             "word": "אמות", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.98133611257045095, 
+            "confidence": 5.053715296579119e-07, 
             "word": "אכילתו", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "a"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.63183487319699594, 
+            "confidence": 5.2005418746680249e-06, 
             "word": "מרקבת", 
             "gold_class": 0, 
-            "predicted": "GN"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.30442250381702229, 
+            "confidence": 0.0082172608563555946, 
             "word": "וזהו", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "a"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.64321076837669067, 
+            "confidence": 1.3640995361150954e-07, 
             "word": "תחילת", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "n01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.87376296869667502, 
+            "confidence": 6.4162527294777764e-06, 
             "word": "ריח", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -1948,31 +1980,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.66198194834305113, 
+            "confidence": 2.536030026351332e-05, 
             "word": "רע", 
-            "gold_class": 0, 
-            "predicted": "V01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.44291400762806865, 
-            "word": "הנצרך", 
             "gold_class": 0, 
             "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.60031004405317367, 
-            "word": "לנקביו", 
+            "confidence": 3.7171004771942404e-07, 
+            "word": "הנצרך", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99961700608355686, 
+            "confidence": 9.0435007245796184e-09, 
+            "word": "לנקביו", 
+            "gold_class": 0, 
+            "predicted": "V02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 2.1906192863670062e-09, 
             "word": "ואכל", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -1980,7 +2012,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.85320725709345113, 
+            "confidence": 0.00179010997849257, 
             "word": "דומה", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -1988,63 +2020,71 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.45984046317219002, 
+            "confidence": 4.0779259594828657e-06, 
             "word": "לתנור", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.60433465815062848, 
+            "confidence": 3.0248480543965632e-07, 
             "word": "שהסיקוהו", 
             "gold_class": 0, 
-            "predicted": "V02"
+            "predicted": "N03"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.75192628111194015, 
-            "word": "ע\"ג", 
+            "confidence": 1.5069010801547956e-05, 
+            "word": "על", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "p02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.45705533733767889, 
+            "confidence": 0.00018601831950730552, 
+            "word": "גבי", 
+            "gold_class": 0, 
+            "predicted": "c"
+        }, 
+        {
+            "lang": 1, 
+            "gold_pos": "", 
+            "confidence": 2.1328888638880377e-07, 
             "word": "אפרו", 
             "gold_class": 0, 
-            "predicted": "a"
+            "predicted": "V03"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.97373895467298111, 
+            "confidence": 0.25259899590396595, 
             "word": "וזהו", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "p01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.86048883739710214, 
+            "confidence": 1.755592134364225e-07, 
             "word": "תחילת", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "n01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.58517141745628365, 
+            "confidence": 2.1077927795171821e-05, 
             "word": "ריח", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "N02"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.88464107175162221, 
+            "confidence": 0.0, 
             "word": "זוהמא", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -2052,7 +2092,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.69079316491838061, 
+            "confidence": 1.6984953585031834e-08, 
             "word": "רחץ", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2060,15 +2100,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.8680993720959731, 
+            "confidence": 3.3267768898985875e-05, 
             "word": "בחמין", 
             "gold_class": 0, 
-            "predicted": "N03"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99997448142464007, 
+            "confidence": 1.8012391373657552e-06, 
             "word": "ולא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2076,7 +2116,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.95837401569041247, 
+            "confidence": 3.1655688040489044e-08, 
             "word": "שתה", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2084,7 +2124,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.89471988110478984, 
+            "confidence": 3.0337182749431384e-09, 
             "word": "מהן", 
             "gold_class": 0, 
             "predicted": "P"
@@ -2092,31 +2132,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.98053541364804297, 
+            "confidence": 8.6051419979202057e-05, 
             "word": "דומה", 
+            "gold_class": 0, 
+            "predicted": "P"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.9458309323021991e-07, 
+            "word": "לתנור", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.78413387926747136, 
-            "word": "לתנור", 
-            "gold_class": 0, 
-            "predicted": "V01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.76874396715730042, 
+            "confidence": 2.6882959934591634e-06, 
             "word": "שהסיקוהו", 
             "gold_class": 0, 
-            "predicted": "V02"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.87367241589525102, 
+            "confidence": 9.5707915285358738e-07, 
             "word": "מבחוץ", 
             "gold_class": 0, 
             "predicted": "V02"
@@ -2124,7 +2164,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99986317596189744, 
+            "confidence": 1.0811926116784426e-07, 
             "word": "ולא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2132,7 +2172,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.80723279111422808, 
+            "confidence": 7.8526675838770396e-07, 
             "word": "הסיקוהו", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2140,15 +2180,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.98575641187883156, 
+            "confidence": 5.8753971031117955e-06, 
             "word": "מבפנים", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.83312332737072747, 
+            "confidence": 7.1671232497232614e-06, 
             "word": "רחץ", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2156,15 +2196,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.90649192030437131, 
+            "confidence": 1.7210371562249714e-05, 
             "word": "בחמין", 
             "gold_class": 0, 
-            "predicted": "N03"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.9999387111966469, 
+            "confidence": 8.247087725537088e-06, 
             "word": "ולא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2172,15 +2212,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.62794799753139996, 
+            "confidence": 7.297708166738758e-07, 
             "word": "נשתטף", 
             "gold_class": 0, 
-            "predicted": "V04"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.97144567452597796, 
+            "confidence": 4.8626283933067853e-08, 
             "word": "בצונן", 
             "gold_class": 0, 
             "predicted": "N05"
@@ -2188,15 +2228,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.53518351019687371, 
+            "confidence": 4.0878003054047985e-06, 
             "word": "דומה", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "P"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.40534765203885148, 
+            "confidence": 0.00020499451170403357, 
             "word": "לברזל", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2204,39 +2244,39 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.72154126601915503, 
+            "confidence": 1.9276982096218425e-07, 
             "word": "שהכניסוהו", 
+            "gold_class": 0, 
+            "predicted": "A01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 9.0611656061045744e-05, 
+            "word": "לאור", 
+            "gold_class": 0, 
+            "predicted": "V03"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 7.5350495109687561e-07, 
+            "word": "ולא", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99826104867104626, 
-            "word": "לאור", 
-            "gold_class": 0, 
-            "predicted": "a"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.99988724366354043, 
-            "word": "ולא", 
-            "gold_class": 0, 
-            "predicted": "a"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.7281379992836009, 
+            "confidence": 2.0590714515066326e-08, 
             "word": "הכניסוהו", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.50017873604808349, 
+            "confidence": 3.1247752909700111e-09, 
             "word": "לצונן", 
             "gold_class": 0, 
             "predicted": "V02"
@@ -2244,7 +2284,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99958838290058682, 
+            "confidence": 5.2871428148657386e-05, 
             "word": "רחץ", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2252,7 +2292,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99994091427490828, 
+            "confidence": 1.3756453139737878e-09, 
             "word": "ולא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2260,15 +2300,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.73630199367031568, 
+            "confidence": 9.566089227622887e-08, 
             "word": "סך", 
             "gold_class": 0, 
-            "predicted": "V02"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.88456198998152957, 
+            "confidence": 0.010404574899638268, 
             "word": "דומה", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -2276,7 +2316,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.98877727086835976, 
+            "confidence": 2.1033303721566641e-10, 
             "word": "למים", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2284,31 +2324,47 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.96700390902343991, 
-            "word": "ע\"ג", 
+            "confidence": 5.9446472537263079e-07, 
+            "word": "על", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.9844193379791335, 
+            "confidence": 0.00012181514029133082, 
+            "word": "גבי", 
+            "gold_class": 0, 
+            "predicted": "p"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 4.4772598688557133e-06, 
             "word": "חבית", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.42155409821440898, 
+            "confidence": 0.0, 
+            "word": "מתני׳", 
+            "gold_class": 0, 
+            "predicted": "N02"
+        }, 
+        {
+            "lang": 1, 
+            "gold_pos": "", 
+            "confidence": 0.00034392754601953097, 
             "word": "מוליאר", 
             "gold_class": 0, 
-            "predicted": "V02"
+            "predicted": "GN"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99890500647677305, 
+            "confidence": 3.8700379928874408e-10, 
             "word": "הגרוף", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2316,79 +2372,103 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.75162980770389298, 
+            "confidence": 8.2957111348282305e-06, 
             "word": "שותין", 
+            "gold_class": 0, 
+            "predicted": "N03"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 3.0081546193595999e-07, 
+            "word": "הימנו", 
+            "gold_class": 0, 
+            "predicted": "P"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 5.8621595370560004e-06, 
+            "word": "בשבת", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.64096562098288146, 
-            "word": "הימנו", 
-            "gold_class": 0, 
-            "predicted": "V01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.99598695843877838, 
-            "word": "בשבת", 
-            "gold_class": 0, 
-            "predicted": "V01"
-        }, 
-        {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.44048161310150874, 
+            "confidence": 5.6734701863254864e-08, 
             "word": "אנטיכי", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "A03"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.95865773186005532, 
-            "word": "אע\"פ", 
+            "confidence": 3.7680539777199288e-05, 
+            "word": "אף", 
             "gold_class": 0, 
             "predicted": "c"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.9604937406200843, 
-            "word": "שגרופה", 
-            "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.99092258749446671, 
-            "word": "אין", 
-            "gold_class": 0, 
-            "predicted": "a"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.22727914667858173, 
-            "word": "שותין", 
+            "confidence": 0.00010361621745796776, 
+            "word": "על", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.81467160395252025, 
+            "confidence": 3.6986232301783575e-10, 
+            "word": "פי", 
+            "gold_class": 0, 
+            "predicted": "N05"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 6.4182063423544081e-06, 
+            "word": "שגרופה", 
+            "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 5.4167213105213441e-07, 
+            "word": "אין", 
+            "gold_class": 0, 
+            "predicted": "P"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 6.2322281138759873e-05, 
+            "word": "שותין", 
+            "gold_class": 0, 
+            "predicted": "N05"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 8.4649338941762934e-06, 
             "word": "הימנה", 
             "gold_class": 0, 
-            "predicted": "V02"
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.1622165847094921e-05, 
+            "word": "גמ׳", 
+            "gold_class": 0, 
+            "predicted": "V01"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99993839264894335, 
+            "confidence": 0.0, 
             "word": "היכי", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2396,23 +2476,23 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99870926416476469, 
+            "confidence": 0.0, 
             "word": "דמי", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.38709828711390548, 
+            "confidence": 5.9269288580573334e-06, 
             "word": "מוליאר", 
             "gold_class": 0, 
-            "predicted": "V02"
+            "predicted": "GN"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99889099017329153, 
+            "confidence": 3.8711942402957911e-09, 
             "word": "הגרוף", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2420,23 +2500,23 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.85022648711601312, 
+            "confidence": 0.0, 
             "word": "תנא", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.47242809254767698, 
+            "confidence": 1.6305992959541847e-08, 
             "word": "מים", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.58391562412642461, 
+            "confidence": 1.1000553239662345e-07, 
             "word": "מבפנים", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -2444,7 +2524,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.8612981236017353, 
+            "confidence": 2.3083062498288412e-08, 
             "word": "וגחלים", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2452,7 +2532,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.83265540479122413, 
+            "confidence": 8.4664885506246252e-08, 
             "word": "מבחוץ", 
             "gold_class": 0, 
             "predicted": "V02"
@@ -2460,63 +2540,63 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.76001894554420446, 
+            "confidence": 1.1920291742239811e-07, 
             "word": "אנטיכי", 
             "gold_class": 0, 
-            "predicted": "N05"
-        }, 
-        {
-            "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 0.59422483214990229, 
-            "word": "רבה", 
-            "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "V04"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.87309718744225251, 
+            "confidence": 0.0018995079862952028, 
+            "word": "רבה", 
+            "gold_class": 0, 
+            "predicted": "PN"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 2.2392364220646602e-09, 
             "word": "אמר", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.66106230751458639, 
+            "gold_pos": "N01", 
+            "confidence": 2.5974080813838257e-06, 
             "word": "בי", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "N01"
         }, 
         {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.72128445708462074, 
+            "lang": 1, 
+            "gold_pos": "N01", 
+            "confidence": 0.0, 
             "word": "כירי", 
-            "gold_class": 0, 
-            "predicted": "N05"
+            "gold_class": 1, 
+            "predicted": "I"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.96549982203773232, 
+            "confidence": 0.0, 
             "word": "רב", 
             "gold_class": 0, 
             "predicted": "N02"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.56056191600985927, 
+            "confidence": 1.4426362686522292e-05, 
             "word": "נחמן", 
             "gold_class": 0, 
-            "predicted": "P"
+            "predicted": "V03"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.98582374015553342, 
+            "confidence": 3.1902280944890563e-09, 
             "word": "בר", 
             "gold_class": 0, 
             "predicted": "N01"
@@ -2524,95 +2604,103 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.93230553770075142, 
+            "confidence": 5.5905466040984877e-05, 
             "word": "יצחק", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.92638502297103731, 
+            "confidence": 4.8577429287962959e-10, 
             "word": "אמר", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.74538401368350193, 
+            "gold_pos": "N01", 
+            "confidence": 8.6933718567007718e-08, 
             "word": "בי", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.53293688286188312, 
+            "gold_pos": "N01", 
+            "confidence": 9.1226320573145215e-05, 
             "word": "דודי", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "N05"
         }, 
         {
             "lang": 1, 
-            "gold_pos": "", 
-            "confidence": 1.0, 
+            "gold_pos": "P", 
+            "confidence": 0.0, 
             "word": "מאן", 
-            "gold_class": 0, 
+            "gold_class": 1, 
             "predicted": "P"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.70035106946915504, 
+            "confidence": 0.0, 
             "word": "דאמר", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
-            "gold_pos": "N01", 
-            "confidence": 0.92964285416081915, 
+            "gold_pos": "", 
+            "confidence": 1.6770758709522232e-07, 
             "word": "בי", 
             "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "N01", 
-            "confidence": 0.35659239394729875, 
-            "word": "דודי", 
-            "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.41541516528375683, 
-            "word": "כ\"ש", 
+            "confidence": 0.0007372931110496625, 
+            "word": "דודי", 
+            "gold_class": 0, 
+            "predicted": "p01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 0.00024250410410674668, 
+            "word": "כל", 
+            "gold_class": 0, 
+            "predicted": "N01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 3.445335276339524e-09, 
+            "word": "שכן", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "N01", 
-            "confidence": 0.91779877482330352, 
+            "confidence": 2.0646792334651539e-06, 
             "word": "בי", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "N01", 
-            "confidence": 0.66457715204591006, 
+            "confidence": 0.0, 
             "word": "כירי", 
-            "gold_class": 0, 
-            "predicted": "N02"
+            "gold_class": 1, 
+            "predicted": "I"
         }, 
         {
             "lang": 1, 
             "gold_pos": "P", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "ומאן", 
             "gold_class": 1, 
             "predicted": "P"
@@ -2620,7 +2708,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.84343581008648127, 
+            "confidence": 0.0, 
             "word": "דאמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2628,55 +2716,55 @@
         {
             "lang": 0, 
             "gold_pos": "N01", 
-            "confidence": 0.64082996317510199, 
+            "confidence": 4.9783018773874822e-06, 
             "word": "בי", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N01"
+        }, 
+        {
+            "lang": 1, 
+            "gold_pos": "N01", 
+            "confidence": 0.0, 
+            "word": "כירי", 
+            "gold_class": 1, 
+            "predicted": "I"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.8254724283555764e-05, 
+            "word": "אבל", 
+            "gold_class": 0, 
+            "predicted": "p01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "N01", 
-            "confidence": 0.66132098307483578, 
-            "word": "כירי", 
+            "confidence": 7.3560783089994048e-08, 
+            "word": "בי", 
             "gold_class": 0, 
             "predicted": "N05"
         }, 
         {
             "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.99423552755545341, 
-            "word": "אבל", 
-            "gold_class": 0, 
-            "predicted": "V01"
-        }, 
-        {
-            "lang": 0, 
             "gold_pos": "N01", 
-            "confidence": 0.89634646006130869, 
-            "word": "בי", 
-            "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "N01", 
-            "confidence": 0.46188156081466081, 
+            "confidence": 6.994480631545232e-05, 
             "word": "דודי", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "a", 
-            "confidence": 0.99997863167461609, 
+            "confidence": 0.00051078909776018763, 
             "word": "לא", 
             "gold_class": 0, 
-            "predicted": "a"
+            "predicted": "N02"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "תניא", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2684,7 +2772,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "כוותיה", 
             "gold_class": 0, 
             "predicted": "p02"
@@ -2692,79 +2780,95 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99995596721703073, 
+            "confidence": 0.0, 
             "word": "דרב", 
             "gold_class": 0, 
             "predicted": "PN"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.18470490391167549, 
+            "confidence": 0.11338066555135841, 
             "word": "נחמן", 
             "gold_class": 0, 
-            "predicted": "p01"
+            "predicted": "N02"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.74748032811312759, 
+            "confidence": 8.5173439606064589e-08, 
             "word": "אנטיכי", 
             "gold_class": 0, 
-            "predicted": "N05"
+            "predicted": "A03"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.96970686829005914, 
-            "word": "אע\"פ", 
+            "confidence": 1.2667998064649321e-05, 
+            "word": "אף", 
             "gold_class": 0, 
             "predicted": "c"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.97319935658542445, 
+            "confidence": 0.00013851455532923893, 
+            "word": "על", 
+            "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.9694407230699287e-09, 
+            "word": "פי", 
+            "gold_class": 0, 
+            "predicted": "N05"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 4.1586616319076618e-06, 
             "word": "שגרופה", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "V01"
         }, 
         {
-            "lang": 1, 
+            "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.5260508551077806, 
+            "confidence": 1.4221120626227306e-06, 
             "word": "וקטומה", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.98377930835072525, 
+            "confidence": 3.7658961427564487e-06, 
             "word": "אין", 
             "gold_class": 0, 
-            "predicted": "a"
+            "predicted": "P"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.34304037404683735, 
+            "confidence": 5.783973576798352e-05, 
             "word": "שותין", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.3338386911505466, 
+            "confidence": 2.7140484209266735e-05, 
             "word": "הימנה", 
             "gold_class": 0, 
-            "predicted": "p02"
+            "predicted": "P"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.61622736833559766, 
+            "confidence": 3.3907420246834259e-05, 
             "word": "מפני", 
             "gold_class": 0, 
             "predicted": "N05"
@@ -2772,23 +2876,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.86120677235503373, 
+            "confidence": 1.8560925618332519e-05, 
             "word": "שנחושתה", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "n03"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.60291182352331785, 
+            "confidence": 5.9649460353263182e-07, 
             "word": "מחממתה", 
             "gold_class": 0, 
-            "predicted": "p02"
+            "predicted": "V03"
+        }, 
+        {
+            "lang": 1, 
+            "gold_pos": "", 
+            "confidence": 0.0, 
+            "word": "מתני׳", 
+            "gold_class": 0, 
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99708385424503632, 
+            "confidence": 2.6091565475410125e-07, 
             "word": "המיחם", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2796,15 +2908,15 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.72616942942738716, 
+            "confidence": 1.3548965368630317e-09, 
             "word": "שפינהו", 
             "gold_class": 0, 
-            "predicted": "N02"
+            "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99987334687857576, 
+            "confidence": 1.3525575729722587e-07, 
             "word": "לא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2812,71 +2924,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.92819110809084782, 
+            "confidence": 2.47747931035882e-07, 
             "word": "יתן", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "a"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.46552783237907513, 
-            "word": "לתוכו", 
-            "gold_class": 0, 
-            "predicted": "p02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.68708677592417455, 
-            "word": "צונן", 
-            "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.47805600313840352, 
-            "word": "בשביל", 
-            "gold_class": 0, 
-            "predicted": "N02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.37868023917102417, 
-            "word": "שיחמו", 
-            "gold_class": 0, 
-            "predicted": "N05"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.99775569651100471, 
-            "word": "אבל", 
-            "gold_class": 0, 
-            "predicted": "V01"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.7044331533200332, 
-            "word": "נותן", 
-            "gold_class": 0, 
-            "predicted": "p02"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.99973850058281644, 
-            "word": "הוא", 
-            "gold_class": 0, 
-            "predicted": "P"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.3747333666130741, 
+            "confidence": 5.3422008504904772e-05, 
             "word": "לתוכו", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2884,7 +2940,63 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99917274802393274, 
+            "confidence": 6.737760854991863e-05, 
+            "word": "צונן", 
+            "gold_class": 0, 
+            "predicted": "N05"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.2040219694486937e-06, 
+            "word": "בשביל", 
+            "gold_class": 0, 
+            "predicted": "V02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 4.3837547892697229e-06, 
+            "word": "שיחמו", 
+            "gold_class": 0, 
+            "predicted": "N02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 9.1674436631851641e-07, 
+            "word": "אבל", 
+            "gold_class": 0, 
+            "predicted": "a"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 3.5202681257037707e-05, 
+            "word": "נותן", 
+            "gold_class": 0, 
+            "predicted": "p02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 3.0572088803640256e-08, 
+            "word": "הוא", 
+            "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 6.8599338253888239e-08, 
+            "word": "לתוכו", 
+            "gold_class": 0, 
+            "predicted": "V02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 1.2551541585970334e-07, 
             "word": "או", 
             "gold_class": 0, 
             "predicted": "c"
@@ -2892,15 +3004,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.49853754157265329, 
+            "confidence": 3.0575312762424842e-07, 
             "word": "לתוך", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "a"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.97445473006084782, 
+            "confidence": 6.7414434038875701e-10, 
             "word": "הכוס", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2908,23 +3020,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.42084956333422596, 
+            "confidence": 6.1764143594866791e-08, 
             "word": "כדי", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.27495137069689596, 
+            "confidence": 1.3352491084265497e-07, 
             "word": "להפשירן", 
             "gold_class": 0, 
-            "predicted": "GN"
+            "predicted": "N02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 3.860156545818992e-08, 
+            "word": "גמ׳", 
+            "gold_class": 0, 
+            "predicted": "a"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99993943813356068, 
+            "confidence": 0.0, 
             "word": "מאי", 
             "gold_class": 0, 
             "predicted": "P"
@@ -2932,7 +3052,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "קאמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2940,7 +3060,7 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.99811405271583598, 
+            "confidence": 6.1004832739010895e-11, 
             "word": "אמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2948,7 +3068,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99866322463810708, 
+            "confidence": 0.0, 
             "word": "רב", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -2956,15 +3076,15 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.59703883105927746, 
+            "confidence": 8.4392159749593234e-06, 
             "word": "אדא", 
             "gold_class": 0, 
-            "predicted": "N01"
+            "predicted": "P"
         }, 
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.9702527631941984, 
+            "confidence": 4.5113144133651494e-07, 
             "word": "בר", 
             "gold_class": 0, 
             "predicted": "N01"
@@ -2972,7 +3092,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "מתנא", 
             "gold_class": 0, 
             "predicted": "N02"
@@ -2980,7 +3100,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.99979953826293055, 
+            "confidence": 0.0, 
             "word": "הכי", 
             "gold_class": 0, 
             "predicted": "a"
@@ -2988,7 +3108,7 @@
         {
             "lang": 1, 
             "gold_pos": "", 
-            "confidence": 1.0, 
+            "confidence": 0.0, 
             "word": "קאמר", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -2996,15 +3116,15 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.9980746411855449, 
+            "confidence": 1.8100717784134554e-08, 
             "word": "המיחם", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
-            "lang": 0, 
+            "lang": 1, 
             "gold_pos": "", 
-            "confidence": 0.92428125520539162, 
+            "confidence": 3.2120071003490804e-09, 
             "word": "שפינה", 
             "gold_class": 0, 
             "predicted": "V01"
@@ -3012,31 +3132,31 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.44481892482606067, 
+            "confidence": 2.7104522786992537e-07, 
             "word": "ממנו", 
             "gold_class": 0, 
-            "predicted": "V03"
+            "predicted": "P"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.88652634524422713, 
+            "confidence": 7.6767591767129713e-11, 
             "word": "מים", 
+            "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 4.2406866294842578e-07, 
+            "word": "חמין", 
             "gold_class": 0, 
             "predicted": "N05"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.92430171105715608, 
-            "word": "חמין", 
-            "gold_class": 0, 
-            "predicted": "n03"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.99999053134203342, 
+            "confidence": 1.4155607082198491e-08, 
             "word": "לא", 
             "gold_class": 0, 
             "predicted": "a"
@@ -3044,95 +3164,95 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.49772478348581806, 
+            "confidence": 5.684058343068076e-08, 
             "word": "יתן", 
             "gold_class": 0, 
-            "predicted": "V01"
+            "predicted": "a"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.3497917968150378, 
+            "confidence": 0.00029601479279538814, 
             "word": "לתוכן", 
             "gold_class": 0, 
-            "predicted": "V03"
+            "predicted": "N02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.78658549621555329, 
+            "confidence": 1.8588763592538374e-08, 
             "word": "מים", 
-            "gold_class": 0, 
-            "predicted": "N05"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.33003043214373945, 
-            "word": "מועטים", 
-            "gold_class": 0, 
-            "predicted": "n03"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.33393400846245191, 
-            "word": "כדי", 
-            "gold_class": 0, 
-            "predicted": "c"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.63099678320107822, 
-            "word": "שיחמו", 
-            "gold_class": 0, 
-            "predicted": "A03"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.96808102972891386, 
-            "word": "אבל", 
             "gold_class": 0, 
             "predicted": "V01"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.82078283605777702, 
-            "word": "נותן", 
-            "gold_class": 0, 
-            "predicted": "V03"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.97111794376897131, 
-            "word": "לתוכו", 
-            "gold_class": 0, 
-            "predicted": "V03"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.61432011273814235, 
-            "word": "מים", 
-            "gold_class": 0, 
-            "predicted": "N05"
-        }, 
-        {
-            "lang": 0, 
-            "gold_pos": "", 
-            "confidence": 0.83604294571860216, 
-            "word": "מרובים", 
+            "confidence": 1.9744875967442522e-09, 
+            "word": "מועטים", 
             "gold_class": 0, 
             "predicted": "V02"
         }, 
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.40225747409509405, 
+            "confidence": 1.92989133271407e-07, 
+            "word": "כדי", 
+            "gold_class": 0, 
+            "predicted": "N02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 2.5337660171981131e-07, 
+            "word": "שיחמו", 
+            "gold_class": 0, 
+            "predicted": "N02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 0.00030957878274440003, 
+            "word": "אבל", 
+            "gold_class": 0, 
+            "predicted": "a"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 0.00030168379323225659, 
+            "word": "נותן", 
+            "gold_class": 0, 
+            "predicted": "p02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 4.7318403447235949e-07, 
+            "word": "לתוכו", 
+            "gold_class": 0, 
+            "predicted": "a"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 3.8744239194565831e-07, 
+            "word": "מים", 
+            "gold_class": 0, 
+            "predicted": "V01"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 7.6892920436172831e-06, 
+            "word": "מרובים", 
+            "gold_class": 0, 
+            "predicted": "N02"
+        }, 
+        {
+            "lang": 0, 
+            "gold_pos": "", 
+            "confidence": 5.492122909187141e-09, 
             "word": "כדי", 
             "gold_class": 0, 
             "predicted": "N05"
@@ -3140,10 +3260,10 @@
         {
             "lang": 0, 
             "gold_pos": "", 
-            "confidence": 0.30826145173575625, 
+            "confidence": 2.7961274131407401e-06, 
             "word": "להפשירן", 
             "gold_class": 0, 
-            "predicted": "A03"
+            "predicted": "N02"
         }
     ]
 }

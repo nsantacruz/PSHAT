@@ -16,7 +16,10 @@ model_root = 'data/3_lang_tagged/model'
 #filename_to_load = '' #'epoch_9-11-3/langtagger_model_embdim20_hiddim40_lyr2_e9_trainloss0.179809275561_trainprec95.34_valprec95.8651582151.model'
 #filename_to_load = 'epoch_10-11-4-with-Tanakh/langtagger_model_embdim20_hiddim40_lyr2_e10_trainloss0.206057158064_trainprec94.26_valprec93.2793903924.model'
 #filename_to_load = 'epoch_9-11-4-with-better-ambiguous/langtagger_model_embdim20_hiddim40_lyr2_e9_trainloss0.23960972284_trainprec93.48_valprec93.1008844017.model'
-filename_to_load = '{}/epoch_9-12-22-bigger-dataset/langtagger_model_embdim20_hiddim40_lyr2_e9_trainloss0.201322334121_trainprec95.12_valprec94.1795254687.model'.format(model_root)
+#filename_to_load = '{}/epoch_9-12-22-bigger-dataset/langtagger_model_embdim20_hiddim40_lyr2_e9_trainloss0.201322334121_trainprec95.12_valprec94.1795254687.model'.format(model_root)
+#filename_to_load = '{}/epoch_15-1-22-koren/postagger_model_embdim20_hiddim40_lyr2_e15_trainloss0.26523680206_trainprec.model'.format(model_root)
+#filename_to_load = '{}/epoch_13-purim-final/postagger_model_embdim20_hiddim40_lyr2_e13_trainloss0.250547084775_trainprec.model'.format(model_root)
+filename_to_load  = ''
 START_EPOCH = 0
 
 # argument parse
@@ -252,7 +255,15 @@ def CalculateLossForWord(word_obj, fValidation=False, fRunning=False):
 
     mlp_input = bilistm_output
     mlp_out = lang_mlp(mlp_input)
-    predicted_lang = lang_tags[np.argmax(mlp_out.npvalue())]
+    try:
+        temp_lang_array = mlp_out.npvalue()
+        possible_lang_array = np.zeros(temp_lang_array.shape)
+        possible_lang_indices = list(lang_hashtable[word_obj['word']])
+        possible_lang_array[possible_lang_indices] = temp_lang_array[possible_lang_indices]
+    except KeyError:
+        possible_lang_array = mlp_out.npvalue()
+
+    predicted_lang = lang_tags[np.argmax(possible_lang_array)]
     confidence = (mlp_out.npvalue()[:2] / np.sum(mlp_out.npvalue()[:2])).tolist() #skip ambiguous
     # if we aren't doing validation, calculate the loss
     if not fValidation and not fRunning:
@@ -321,6 +332,14 @@ def print_tagged_corpus_to_html_table(lang_out):
         str += u"</body></html>"
     return str
 
+def make_word_hashtable(data):
+    yo = {}
+    for w in data:
+        if not w['word'] in yo:
+            yo[w['word']] = set()
+        yo[w['word']].add(w['tag'])
+    return yo
+
 # read in all the data
 all_data = list(read_data())
 
@@ -331,6 +350,8 @@ percent_training = 0.2
 split_index = int(round(len(all_data) * percent_training))
 train_data = all_data[split_index:]
 val_data = all_data[:split_index]
+
+lang_hashtable = {}  # make_word_hashtable(train_data)
 
 # create the vocabulary
 let_vocab = Vocabulary()
@@ -379,7 +400,7 @@ trainer = dy.AdamTrainer(model)
 if filename_to_load:
     model.load(filename_to_load)
 
-train_test = False
+train_test = True
 if train_test:
     run_network_on_validation(START_EPOCH - 1)
     lang_conf_matrix.clear()
@@ -425,7 +446,7 @@ if train_test:
         val_lang_prec = run_network_on_validation(epoch)
 
         util.make_folder_if_need_be('{}/epoch_{}'.format(model_root, epoch))
-        filename_to_save = '{}/epoch_{}/postagger_model_embdim{}_hiddim{}_lyr{}_e{}_trainloss{}_trainprec{}_valprec.model'.format(model_root,epoch,EMBED_DIM,HIDDEN_DIM,sLAYERS,epoch,last_loss,last_pos_prec,val_pos_prec)
+        filename_to_save = '{}/epoch_{}/postagger_model_embdim{}_hiddim{}_lyr{}_e{}_trainloss{}_trainprec.model'.format(model_root,epoch,EMBED_DIM,HIDDEN_DIM,sLAYERS,epoch,last_loss)
         model.save(filename_to_save)
 
         f = open("{}/epoch_{}/conf_matrix_e{}.html".format(model_root,epoch, epoch), 'w')

@@ -16,10 +16,10 @@ from research.talmud_pos_research.language_classifier import cal_tools
 
 # set the seed
 random.seed(2823274491)
-train_test = False
+train_test = True
 model_root = 'data/5_pos_tagged/model'
-filename_to_load = '{}/epoch_8-12-22-dict/postagger_model_embdim50_hiddim100_lyr2_e8_trainloss0.0291745622821_trainprec96.6592804887_valprec100.0.model'.format(model_root)
-#filename_to_load = ''
+#filename_to_load = '{}/epoch_8-12-22-dict/postagger_model_embdim50_hiddim100_lyr2_e8_trainloss0.0291745622821_trainprec96.6592804887_valprec100.0.model'.format(model_root)
+filename_to_load = ''
 START_EPOCH = 0
 
 # argument parse

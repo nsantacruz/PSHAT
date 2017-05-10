@@ -13,6 +13,14 @@
             "word": "מדר"
         }, 
         {
+            "index": 23, 
+            "word": "לא"
+        }, 
+        {
+            "index": 24, 
+            "word": "מיבעיא"
+        }, 
+        {
             "index": 25, 
             "word": "דעלויי"
         }, 
@@ -39,14 +47,6 @@
         {
             "index": 32, 
             "word": "דר"
-        }, 
-        {
-            "index": 35, 
-            "word": "דגרועי"
-        }, 
-        {
-            "index": 36, 
-            "word": "גרעה"
         }, 
         {
             "index": 48, 
@@ -794,7 +794,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "קמ\"ל", 
+            "word": "קא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "משמע", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "לן", 
             "class": "unknown"
         }, 
         {
@@ -918,7 +926,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "קמ\"ל", 
+            "word": "קא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "משמע", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "לן", 
             "class": "unknown"
         }, 
         {
@@ -926,7 +942,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כר'", 
+            "word": "כרבי", 
             "class": "unknown"
         }, 
         {
@@ -962,7 +978,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ור'", 
+            "word": "ורבי", 
             "class": "unknown"
         }, 
         {
@@ -1099,34 +1115,12 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "אלא", 
-            "word_num": 0, 
-            "daf": "36a", 
             "word": "אלא", 
-            "line_num": 33, 
-            "cal_word": "אלא", 
-            "POS": "c", 
-            "class": "talmud", 
-            "pg_num": 36, 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71021, 
-            "side": 1
+            "class": "unknown"
         }, 
         {
-            "head_word": "אפלו", 
-            "word_num": 1, 
-            "daf": "36a", 
             "word": "אפילו", 
-            "line_num": 33, 
-            "cal_word": "אפלו", 
-            "POS": "c", 
-            "class": "talmud", 
-            "pg_num": 36, 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71021, 
-            "side": 1
+            "class": "unknown"
         }, 
         {
             "word": "שומר", 
@@ -1149,12 +1143,43 @@
             "class": "unknown"
         }, 
         {
+            "head_word": "גרע", 
+            "word_num": 3, 
+            "daf": "36a", 
             "word": "דגרועי", 
-            "class": "unknown"
+            "line_num": 32, 
+            "cal_word": "דגרועי", 
+            "POS": "V02", 
+            "prefix_homograph": [
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ד_"
+            ], 
+            "pg_num": 36, 
+            "prefix_POS": [
+                "c"
+            ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 1
         }, 
         {
+            "head_word": "גרע", 
+            "word_num": 4, 
+            "daf": "36a", 
             "word": "גרעה", 
-            "class": "unknown"
+            "line_num": 32, 
+            "cal_word": "גרעה", 
+            "POS": "V02", 
+            "class": "talmud", 
+            "pg_num": 36, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 1
         }, 
         {
             "word": "לשמירתו", 
@@ -1193,7 +1218,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "דר'", 
+            "word": "דרבי", 
             "class": "unknown"
         }, 
         {
@@ -1241,15 +1266,41 @@
             "class": "unknown"
         }, 
         {
+            "head_word": "אלא", 
+            "word_num": 0, 
+            "daf": "36a", 
             "word": "אלא", 
+            "line_num": 33, 
+            "cal_word": "אלא", 
+            "POS": "c", 
+            "class": "talmud", 
+            "pg_num": 36, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 1
+        }, 
+        {
+            "head_word": "אפלו", 
+            "word_num": 1, 
+            "daf": "36a", 
+            "word": "אפילו", 
+            "line_num": 33, 
+            "cal_word": "אפלו", 
+            "POS": "c", 
+            "class": "talmud", 
+            "pg_num": 36, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 1
+        }, 
+        {
+            "word": "שומר", 
             "class": "unknown"
         }, 
         {
-            "word": "אפי'", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "ש\"ח", 
+            "word": "חנם", 
             "class": "unknown"
         }, 
         {
@@ -1312,7 +1363,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "דא\"ל", 
+            "word": "דאמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ליה", 
             "class": "unknown"
         }, 
         {
@@ -2221,7 +2276,7 @@
             "side": 1
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -2291,7 +2346,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -2307,7 +2362,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "לר'", 
+            "word": "לרבי", 
             "class": "unknown"
         }, 
         {
@@ -2464,7 +2519,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ליה", 
             "class": "unknown"
         }, 
         {
@@ -2485,6 +2544,14 @@
         }, 
         {
             "word": "לו", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רשות", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "הבעלים", 
             "class": "unknown"
         }, 
         {

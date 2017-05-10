@@ -49,36 +49,48 @@
             "word": "הנך"
         }, 
         {
-            "index": 59, 
+            "index": 44, 
+            "word": "דאמ"
+        }, 
+        {
+            "index": 61, 
             "word": "דקא"
         }, 
         {
-            "index": 60, 
+            "index": 62, 
             "word": "תני"
         }, 
         {
-            "index": 66, 
+            "index": 68, 
             "word": "האי"
         }, 
         {
-            "index": 68, 
+            "index": 70, 
             "word": "והאי"
         }, 
         {
-            "index": 81, 
+            "index": 83, 
             "word": "ואימא"
         }, 
         {
-            "index": 82, 
+            "index": 84, 
             "word": "דאי"
         }, 
         {
-            "index": 83, 
+            "index": 85, 
             "word": "אמ"
         }, 
         {
-            "index": 91, 
+            "index": 93, 
             "word": "דאמ"
+        }, 
+        {
+            "index": 99, 
+            "word": "דאמ"
+        }, 
+        {
+            "index": 106, 
+            "word": "דאע\"ג"
         }
     ], 
     "words": [
@@ -858,12 +870,12 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "מאי טעמא", 
+            "head_word": "מאי", 
             "word_num": 0, 
             "daf": "45b", 
-            "word": "מ\"ט", 
+            "word": "מאי", 
             "line_num": 14, 
-            "cal_word": "מאי טע", 
+            "cal_word": "מאי", 
             "POS": "P", 
             "class": "talmud", 
             "pg_num": 45, 
@@ -873,12 +885,27 @@
             "side": 2
         }, 
         {
-            "head_word": "מאנ אמר", 
+            "head_word": "טעמא", 
+            "word_num": 1, 
+            "daf": "45b", 
+            "word": "טעמא", 
+            "line_num": 14, 
+            "cal_word": "טע", 
+            "POS": "N02", 
+            "class": "talmud", 
+            "pg_num": 45, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 2
+        }, 
+        {
+            "head_word": "מאנ", 
             "word_num": 2, 
             "daf": "45b", 
-            "word": "דמ\"ד", 
+            "word": "דמאן", 
             "line_num": 14, 
-            "cal_word": "דמאן דאמ", 
+            "cal_word": "דמאן", 
             "POS": "P", 
             "prefix_homograph": [
                 ""
@@ -895,6 +922,10 @@
             "homograph": "", 
             "book_num": 71021, 
             "side": 2
+        }, 
+        {
+            "word": "דאמר", 
+            "class": "unknown"
         }, 
         {
             "word": "אין", 
@@ -1075,7 +1106,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "וש\"מ", 
+            "word": "ושמע", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "מינה", 
             "class": "unknown"
         }, 
         {
@@ -1583,7 +1618,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "אע\"פ", 
+            "word": "אף", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "על", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "פי", 
             "class": "unknown"
         }, 
         {
@@ -2124,7 +2167,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "אע\"ג", 
+            "word": "אף", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "על", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "גב", 
             "class": "unknown"
         }, 
         {
@@ -2136,7 +2187,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "מ\"ט", 
+            "word": "מאי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "טעמא", 
             "class": "unknown"
         }, 
         {
@@ -2213,12 +2268,12 @@
             "side": 2
         }, 
         {
-            "head_word": "מאנ אמר", 
+            "head_word": "מאנ", 
             "word_num": 0, 
             "daf": "45b", 
-            "word": "למ\"ד", 
+            "word": "למאן", 
             "line_num": 40, 
-            "cal_word": "למאן דאמ", 
+            "cal_word": "למאן", 
             "POS": "P", 
             "prefix_homograph": [
                 ""
@@ -2235,6 +2290,10 @@
             "homograph": "", 
             "book_num": 71021, 
             "side": 2
+        }, 
+        {
+            "word": "דאמר", 
+            "class": "unknown"
         }, 
         {
             "word": "אין", 
@@ -2405,28 +2464,16 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "אפ על גב", 
-            "word_num": 7, 
-            "daf": "45b", 
-            "word": "אע\"ג", 
-            "line_num": 41, 
-            "cal_word": "דאע\"ג", 
-            "POS": "c", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "ד_"
-            ], 
-            "pg_num": 45, 
-            "prefix_POS": [
-                "c"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71021, 
-            "side": 2
+            "word": "אף", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "על", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "גב", 
+            "class": "unknown"
         }, 
         {
             "head_word": "אינהו", 
@@ -2565,7 +2612,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "אומר", 
+            "word": "אמר", 
             "class": "unknown"
         }, 
         {

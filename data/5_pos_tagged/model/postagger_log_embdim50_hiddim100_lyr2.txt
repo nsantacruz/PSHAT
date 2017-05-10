@@ -3,140 +3,33 @@ EMBED_DIM: 50
 HIDDEN_DIM: 100
 BILSTM_LAYERS: 2
 MLP Layers: 2
-EMBED_DIM: 50
-HIDDEN_DIM: 100
-BILSTM_LAYERS: 2
-MLP Layers: 2
 Loading path: data/2_matched_sefaria/json/
-EMBED_DIM: 50
-HIDDEN_DIM: 100
-BILSTM_LAYERS: 2
-MLP Layers: 2
-Loading path: data/2_matched_sefaria/json/
-Total words: 582940
+Total words: 599437
 Total daf: 1705
 pos: 40
 let: 33
-Validation: pos_prec: 61.9321668798, class_prec: 1.94321899201, rough pos prec: 68.1258556786
-Paras processed: 50, loss: 0.436322127519, pos_prec: 72.8570123152, class_prec: 98.1904761905, rough pos prec: 78.766742003
+Validation: pos_prec: 63.359257356, class_prec: 99.7861722935, rough pos prec: 70.0247408354
+Paras processed: 50, loss: 0.467532044701, pos_prec: 72.1764999883, class_prec: 100.0, rough pos prec: 77.6956260247
+Paras processed: 100, loss: 0.387166024916, pos_prec: 72.881866431, class_prec: 100.0, rough pos prec: 77.4247362858
 EMBED_DIM: 50
 HIDDEN_DIM: 100
 BILSTM_LAYERS: 2
 MLP Layers: 2
 Loading path: data/2_matched_sefaria/json/
-Total words: 582940
+Total words: 599437
 Total daf: 1705
 pos: 40
 let: 33
-Validation: pos_prec: 57.2884343296, class_prec: 100.0, rough pos prec: 67.2415897783
-Paras processed: 50, loss: 0.43491715616, pos_prec: 71.8405138931, class_prec: 100.0, rough pos prec: 78.00503686
-Paras processed: 100, loss: 0.36836718361, pos_prec: 73.7360992819, class_prec: 100.0, rough pos prec: 78.1311817727
-Paras processed: 150, loss: 0.293745162535, pos_prec: 81.163119017, class_prec: 100.0, rough pos prec: 85.7536367264
-Paras processed: 200, loss: 0.243005474407, pos_prec: 83.5085869193, class_prec: 100.0, rough pos prec: 88.1393808862
-Paras processed: 250, loss: 0.222425710475, pos_prec: 85.6860744635, class_prec: 100.0, rough pos prec: 90.1879861229
-Paras processed: 300, loss: 0.202434969785, pos_prec: 84.6646523816, class_prec: 100.0, rough pos prec: 88.8128124143
-Paras processed: 350, loss: 0.226582783507, pos_prec: 87.3642658975, class_prec: 100.0, rough pos prec: 91.6416505711
-Paras processed: 400, loss: 0.202240968338, pos_prec: 88.5695730288, class_prec: 100.0, rough pos prec: 93.0130440924
-Paras processed: 450, loss: 0.179749668183, pos_prec: 87.0443871969, class_prec: 100.0, rough pos prec: 90.171509359
-Paras processed: 500, loss: 0.157470351583, pos_prec: 89.0875434695, class_prec: 100.0, rough pos prec: 92.1357243948
-Paras processed: 550, loss: 0.166544096201, pos_prec: 91.62211507, class_prec: 100.0, rough pos prec: 93.8721008296
-Paras processed: 600, loss: 0.18305063457, pos_prec: 90.7172890745, class_prec: 100.0, rough pos prec: 93.5401394374
-Paras processed: 650, loss: 0.150255382123, pos_prec: 92.5584554285, class_prec: 100.0, rough pos prec: 94.512574331
-Paras processed: 700, loss: 0.175019102229, pos_prec: 92.0126353376, class_prec: 100.0, rough pos prec: 94.0651138627
-Paras processed: 750, loss: 0.134322564308, pos_prec: 92.7386411493, class_prec: 100.0, rough pos prec: 94.9912300577
-Paras processed: 800, loss: 0.144228420688, pos_prec: 93.3872531417, class_prec: 100.0, rough pos prec: 94.86774742
-Paras processed: 850, loss: 0.125742782038, pos_prec: 91.7743401163, class_prec: 100.0, rough pos prec: 94.0928228902
-Paras processed: 900, loss: 0.122235798457, pos_prec: 93.0391415896, class_prec: 100.0, rough pos prec: 95.085675846
-Paras processed: 950, loss: 0.124681578672, pos_prec: 92.1893762327, class_prec: 100.0, rough pos prec: 94.6236356502
-Paras processed: 1000, loss: 0.109267092282, pos_prec: 93.3149590813, class_prec: 100.0, rough pos prec: 95.3915069908
-Paras processed: 1050, loss: 0.113765693468, pos_prec: 94.5986940417, class_prec: 100.0, rough pos prec: 96.0105779424
-Paras processed: 1100, loss: 0.103259021768, pos_prec: 94.4839368108, class_prec: 100.0, rough pos prec: 95.8673107274
-Paras processed: 1150, loss: 0.112481630213, pos_prec: 92.6409692365, class_prec: 100.0, rough pos prec: 95.2710109004
-Paras processed: 1200, loss: 0.0737351365413, pos_prec: 92.9984251871, class_prec: 100.0, rough pos prec: 94.6441766301
-Paras processed: 1250, loss: 0.104225235227, pos_prec: 94.4933184616, class_prec: 100.0, rough pos prec: 95.9427484361
-Paras processed: 1300, loss: 0.104764930323, pos_prec: 94.3279141757, class_prec: 100.0, rough pos prec: 95.9579615734
-Paras processed: 1350, loss: 0.0913317891035, pos_prec: 93.3886660939, class_prec: 100.0, rough pos prec: 95.3423926612
-Finished epoch 0
-Validation: pos_prec: 88.8447404748, class_prec: 100.0, rough pos prec: 92.592521744
-Paras processed: 50, loss: 0.100024253575, pos_prec: 94.2644671482, class_prec: 100.0, rough pos prec: 96.3724386771
-Paras processed: 100, loss: 0.0729557681813, pos_prec: 93.6899651102, class_prec: 100.0, rough pos prec: 95.898559768
-Paras processed: 150, loss: 0.0935493837805, pos_prec: 94.4451133211, class_prec: 100.0, rough pos prec: 96.2810291339
-Paras processed: 200, loss: 0.0911995492436, pos_prec: 94.4319393106, class_prec: 100.0, rough pos prec: 96.0989094922
-Paras processed: 250, loss: 0.110636362812, pos_prec: 92.8570064696, class_prec: 100.0, rough pos prec: 95.4935057038
-Paras processed: 300, loss: 0.107173150765, pos_prec: 93.7026570862, class_prec: 100.0, rough pos prec: 95.6900826126
-Paras processed: 350, loss: 0.0695094929117, pos_prec: 94.3799180093, class_prec: 100.0, rough pos prec: 96.2944297781
-Paras processed: 400, loss: 0.0822242822449, pos_prec: 95.0170694335, class_prec: 100.0, rough pos prec: 96.8703803722
-Paras processed: 450, loss: 0.0781187666539, pos_prec: 94.381714926, class_prec: 100.0, rough pos prec: 96.0288594005
-Paras processed: 500, loss: 0.0848460294693, pos_prec: 92.8980910135, class_prec: 100.0, rough pos prec: 95.4573487422
-Paras processed: 550, loss: 0.0700060247855, pos_prec: 95.1963259233, class_prec: 100.0, rough pos prec: 97.0819833827
-Paras processed: 600, loss: 0.0737742801509, pos_prec: 95.0798623518, class_prec: 100.0, rough pos prec: 96.7892085775
-Paras processed: 650, loss: 0.0761443194349, pos_prec: 93.2996874259, class_prec: 100.0, rough pos prec: 95.1284897192
-Paras processed: 700, loss: 0.0661248012195, pos_prec: 94.3847352263, class_prec: 100.0, rough pos prec: 96.7631505006
-Paras processed: 750, loss: 0.074729839896, pos_prec: 93.0319918912, class_prec: 100.0, rough pos prec: 95.8404279465
-Paras processed: 800, loss: 0.0798319722849, pos_prec: 94.7572617737, class_prec: 100.0, rough pos prec: 96.8051336649
-Paras processed: 850, loss: 0.0601706057405, pos_prec: 95.6206547078, class_prec: 100.0, rough pos prec: 96.7981436547
-Paras processed: 900, loss: 0.0865168878744, pos_prec: 94.2075982304, class_prec: 100.0, rough pos prec: 96.053847749
-Paras processed: 950, loss: 0.069729524907, pos_prec: 95.4652475092, class_prec: 100.0, rough pos prec: 97.1543717226
-Paras processed: 1000, loss: 0.0678319616123, pos_prec: 95.2603393968, class_prec: 100.0, rough pos prec: 97.0944257203
-Paras processed: 1050, loss: 0.0698127076608, pos_prec: 94.6290944404, class_prec: 100.0, rough pos prec: 96.523426185
-Paras processed: 1100, loss: 0.0800172070684, pos_prec: 95.0671657918, class_prec: 100.0, rough pos prec: 96.7844200107
-Paras processed: 1150, loss: 0.0713559668852, pos_prec: 95.0603899509, class_prec: 100.0, rough pos prec: 96.5112574211
-Paras processed: 1200, loss: 0.0962612915028, pos_prec: 94.1899110067, class_prec: 100.0, rough pos prec: 96.2934911708
-Paras processed: 1250, loss: 0.0683752639742, pos_prec: 95.3412496219, class_prec: 100.0, rough pos prec: 96.9297761316
-Paras processed: 1300, loss: 0.0820058287795, pos_prec: 93.0834723576, class_prec: 100.0, rough pos prec: 94.7659448231
-Paras processed: 1350, loss: 0.0703928510897, pos_prec: 94.1347786705, class_prec: 100.0, rough pos prec: 96.3580713158
-Finished epoch 1
-Validation: pos_prec: 90.6261981495, class_prec: 100.0, rough pos prec: 94.0656490249
-Paras processed: 50, loss: 0.0551479714068, pos_prec: 94.7913697458, class_prec: 100.0, rough pos prec: 96.2863561336
-Paras processed: 100, loss: 0.0582998010247, pos_prec: 95.4641948459, class_prec: 100.0, rough pos prec: 96.8041333364
-Paras processed: 150, loss: 0.0667155389083, pos_prec: 94.1351920256, class_prec: 100.0, rough pos prec: 96.4071233234
-Paras processed: 200, loss: 0.0559681389717, pos_prec: 96.1863891174, class_prec: 100.0, rough pos prec: 97.5943018342
-Paras processed: 250, loss: 0.0593136871878, pos_prec: 94.7808157091, class_prec: 100.0, rough pos prec: 96.5334352575
-Paras processed: 300, loss: 0.0592043853255, pos_prec: 94.5731870087, class_prec: 100.0, rough pos prec: 97.1033240382
-Paras processed: 350, loss: 0.0572325555982, pos_prec: 94.3675267664, class_prec: 100.0, rough pos prec: 96.1240211546
-Paras processed: 400, loss: 0.0719171065463, pos_prec: 94.0742321697, class_prec: 100.0, rough pos prec: 96.7415875042
-Paras processed: 450, loss: 0.0588205279672, pos_prec: 95.2099108798, class_prec: 100.0, rough pos prec: 96.9111273091
-Paras processed: 500, loss: 0.0659477891704, pos_prec: 95.5071741733, class_prec: 100.0, rough pos prec: 97.3597689052
+Validation: pos_prec: 56.1001232144, class_prec: 100.0, rough pos prec: 67.5962231374
+Paras processed: 50, loss: 0.444351233481, pos_prec: 70.2558194902, class_prec: 100.0, rough pos prec: 76.586994957
 EMBED_DIM: 50
 HIDDEN_DIM: 100
 BILSTM_LAYERS: 2
 MLP Layers: 2
-Loading model: data/5_pos_tagged/model/epoch_8-12-22-dict/postagger_model_embdim50_hiddim100_lyr2_e8_trainloss0.0291745622821_trainprec96.6592804887_valprec100.0.model
-Starting epoch: 0
 Loading path: data/2_matched_sefaria/json/
-Total words: 582940
+Total words: 599437
 Total daf: 1705
 pos: 40
 let: 33
-EMBED_DIM: 50
-HIDDEN_DIM: 100
-BILSTM_LAYERS: 2
-MLP Layers: 2
-Loading model: data/5_pos_tagged/model/epoch_8-12-22-dict/postagger_model_embdim50_hiddim100_lyr2_e8_trainloss0.0291745622821_trainprec96.6592804887_valprec100.0.model
-Starting epoch: 0
-Loading path: data/2_matched_sefaria/json/
-Total words: 582940
-Total daf: 1705
-pos: 40
-let: 33
-Loading path: data/2_matched_sefaria/json/
-Total words: 68681
-Total daf: 125
-Loading path: data/2_matched_sefaria/json/
-Total words: 111923
-Total daf: 312
-Loading path: data/2_matched_sefaria/json/
-Total words: 66904
-Total daf: 207
-Loading path: data/2_matched_sefaria/json/
-Total words: 80772
-Total daf: 240
-Loading path: data/2_matched_sefaria/json/
-Total words: 83340
-Total daf: 236
-Loading path: data/2_matched_sefaria/json/
-Total words: 83556
-Total daf: 235
-Loading path: data/2_matched_sefaria/json/
-Total words: 87764
-Total daf: 350
+Validation: pos_prec: 59.9425511947, class_prec: 0.0, rough pos prec: 71.4646451153
+Paras processed: 50, loss: 0.444491964234, pos_prec: 70.3917837629, class_prec: 98.0, rough pos prec: 76.2729507568

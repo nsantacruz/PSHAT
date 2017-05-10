@@ -93,14 +93,6 @@
             "word": "קרא"
         }, 
         {
-            "index": 73, 
-            "word": "שמע"
-        }, 
-        {
-            "index": 74, 
-            "word": "מיניה"
-        }, 
-        {
             "index": 75, 
             "word": "תרתי"
         }, 
@@ -115,10 +107,6 @@
         {
             "index": 78, 
             "word": "תשקול"
-        }, 
-        {
-            "index": 79, 
-            "word": "מניה"
         }, 
         {
             "index": 80, 
@@ -168,6 +156,10 @@
     "words": [
         {
             "word": "מתני׳", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "החובל", 
             "class": "unknown"
         }, 
         {
@@ -587,6 +579,10 @@
             "class": "unknown"
         }, 
         {
+            "word": "גמ׳", 
+            "class": "unknown"
+        }, 
+        {
             "word": "אמאי", 
             "class": "unknown"
         }, 
@@ -726,7 +722,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ל", 
+            "word": "תלמוד", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "לומר", 
             "class": "unknown"
         }, 
         {
@@ -810,7 +810,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כופר", 
+            "word": "כפר", 
             "class": "unknown"
         }, 
         {
@@ -818,7 +818,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "רוצח", 
+            "word": "רצח", 
             "class": "unknown"
         }, 
         {
@@ -1772,7 +1772,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כופר", 
+            "word": "כפר", 
             "class": "unknown"
         }, 
         {
@@ -1780,7 +1780,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "רוצח", 
+            "word": "רצח", 
             "class": "unknown"
         }, 
         {
@@ -1900,7 +1900,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כופר", 
+            "word": "כפר", 
             "class": "unknown"
         }, 
         {
@@ -1908,7 +1908,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "רוצח", 
+            "word": "רצח", 
             "class": "unknown"
         }, 
         {
@@ -2312,7 +2312,11 @@
             "side": 2
         }, 
         {
-            "word": "א\"כ", 
+            "word": "אם", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "כן", 
             "class": "unknown"
         }, 
         {
@@ -2367,7 +2371,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "רוצח", 
+            "word": "רצח", 
             "class": "unknown"
         }, 
         {
@@ -2401,8 +2405,34 @@
             "side": 2
         }, 
         {
-            "word": "ש\"מ", 
-            "class": "unknown"
+            "head_word": "שמע", 
+            "word_num": 6, 
+            "daf": "83b", 
+            "word": "שמע", 
+            "line_num": 48, 
+            "cal_word": "שמע", 
+            "POS": "V01", 
+            "class": "talmud", 
+            "pg_num": 83, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
+        }, 
+        {
+            "head_word": "מנ", 
+            "word_num": 2, 
+            "daf": "83b", 
+            "word": "מינה", 
+            "line_num": 49, 
+            "cal_word": "מניה", 
+            "POS": "p02", 
+            "class": "talmud", 
+            "pg_num": 83, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
         }, 
         {
             "word": "לנפש", 
@@ -2512,7 +2542,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כופר", 
+            "word": "כפר", 
             "class": "unknown"
         }, 
         {
@@ -2743,7 +2773,37 @@
             "head_word": "שמע", 
             "word_num": 23, 
             "daf": "83b", 
-            "word": "קמ\"ל", 
+            "word": "קא", 
+            "line_num": 50, 
+            "cal_word": "קמ\"ל", 
+            "POS": "V03", 
+            "class": "talmud", 
+            "pg_num": 83, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
+        }, 
+        {
+            "head_word": "שמע", 
+            "word_num": 23, 
+            "daf": "83b", 
+            "word": "משמע", 
+            "line_num": 50, 
+            "cal_word": "קמ\"ל", 
+            "POS": "V03", 
+            "class": "talmud", 
+            "pg_num": 83, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
+        }, 
+        {
+            "head_word": "שמע", 
+            "word_num": 23, 
+            "daf": "83b", 
+            "word": "לן", 
             "line_num": 50, 
             "cal_word": "קמ\"ל", 
             "POS": "V03", 
@@ -2795,7 +2855,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {

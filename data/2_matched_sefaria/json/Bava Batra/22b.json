@@ -9,6 +9,10 @@
             "word": "מתני"
         }, 
         {
+            "index": 27, 
+            "word": "כר"
+        }, 
+        {
             "index": 30, 
             "word": "האמ"
         }, 
@@ -21,28 +25,12 @@
             "word": "מודה"
         }, 
         {
-            "index": 40, 
-            "word": "והכא"
-        }, 
-        {
-            "index": 41, 
-            "word": "נמי"
-        }, 
-        {
             "index": 46, 
             "word": "קפצא"
         }, 
         {
             "index": 50, 
             "word": "אמ"
-        }, 
-        {
-            "index": 52, 
-            "word": "בר"
-        }, 
-        {
-            "index": 53, 
-            "word": "גרמא"
         }
     ], 
     "words": [
@@ -235,7 +223,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ד'", 
+            "word": "ארבע", 
             "class": "unknown"
         }, 
         {
@@ -783,7 +771,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ר", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רב", 
             "class": "unknown"
         }, 
         {
@@ -879,7 +871,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ד'", 
+            "word": "ארבע", 
             "class": "unknown"
         }, 
         {
@@ -1108,6 +1100,10 @@
             "side": 2
         }, 
         {
+            "word": "מתני׳", 
+            "class": "unknown"
+        }, 
+        {
             "word": "מרחיקין", 
             "class": "unknown"
         }, 
@@ -1168,7 +1164,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ד'", 
+            "word": "ארבע", 
             "class": "unknown"
         }, 
         {
@@ -1193,6 +1189,10 @@
         }, 
         {
             "word": "הסולם", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "גמ׳", 
             "class": "unknown"
         }, 
         {
@@ -1239,28 +1239,8 @@
             "side": 2
         }, 
         {
-            "head_word": "ר'", 
-            "word_num": 3, 
-            "daf": "22b", 
-            "word": "כר'", 
-            "line_num": 30, 
-            "cal_word": "כר", 
-            "POS": "PN", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "כ_"
-            ], 
-            "pg_num": 22, 
-            "prefix_POS": [
-                "p"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71022, 
-            "side": 2
+            "word": "כרבי", 
+            "class": "unknown"
         }, 
         {
             "word": "יוסי", 
@@ -1271,7 +1251,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר\"י", 
+            "word": "רבי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "יוסי", 
             "class": "unknown"
         }, 
         {
@@ -1345,7 +1329,7 @@
             "side": 2
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1503,8 +1487,43 @@
             "class": "unknown"
         }, 
         {
-            "word": "ה\"נ", 
-            "class": "unknown"
+            "head_word": "הכא", 
+            "word_num": 4, 
+            "daf": "22b", 
+            "word": "הכא", 
+            "line_num": 34, 
+            "cal_word": "והכא", 
+            "POS": "a", 
+            "prefix_homograph": [
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ו_"
+            ], 
+            "pg_num": 22, 
+            "prefix_POS": [
+                "c"
+            ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71022, 
+            "side": 2
+        }, 
+        {
+            "head_word": "נמי", 
+            "word_num": 5, 
+            "daf": "22b", 
+            "word": "נמי", 
+            "line_num": 34, 
+            "cal_word": "נמי", 
+            "POS": "a", 
+            "class": "talmud", 
+            "pg_num": 22, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71022, 
+            "side": 2
         }, 
         {
             "head_word": "זימנא", 
@@ -1651,16 +1670,42 @@
             "side": 2
         }, 
         {
-            "word": "א\"ר", 
+            "word": "אמר", 
             "class": "unknown"
+        }, 
+        {
+            "head_word": "רב", 
+            "word_num": 1, 
+            "daf": "22b", 
+            "word": "רב", 
+            "line_num": 36, 
+            "cal_word": "רב", 
+            "POS": "N02", 
+            "class": "talmud", 
+            "pg_num": 22, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71022, 
+            "side": 2
         }, 
         {
             "word": "טובי", 
             "class": "unknown"
         }, 
         {
+            "head_word": "ברא", 
+            "word_num": 3, 
+            "daf": "22b", 
             "word": "בר", 
-            "class": "unknown"
+            "line_num": 36, 
+            "cal_word": "בר", 
+            "POS": "N01", 
+            "class": "talmud", 
+            "pg_num": 22, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71022, 
+            "side": 2
         }, 
         {
             "word": "מתנה", 
@@ -1675,8 +1720,19 @@
             "class": "unknown"
         }, 
         {
+            "head_word": "גרמא", 
+            "word_num": 7, 
+            "daf": "22b", 
             "word": "גרמא", 
-            "class": "unknown"
+            "line_num": 36, 
+            "cal_word": "גרמא", 
+            "POS": "N02", 
+            "class": "talmud", 
+            "pg_num": 22, 
+            "ms": "01", 
+            "homograph": "#2", 
+            "book_num": 71022, 
+            "side": 2
         }, 
         {
             "word": "בניזקין", 

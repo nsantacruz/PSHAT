@@ -1,0 +1,515 @@
+
+EMBED_DIM: 70
+HIDDEN_DIM: 100
+BILSTM_LAYERS: 2
+MLP Layers: 3
+Loading path: data/2_matched_sefaria/json/
+Total words: 582940
+Total daf: 1705
+Total segments: 22061
+pos: 39
+let: 33
+Validation: pos_prec: 62.1462599971, class_prec: 0.0, rough pos prec: 67.1254913321
+Segments processed: 300, loss: 7.42423857276, pos_prec: 69.5515873016, class_prec: 88.373015873, rough pos prec: 74.183531746
+Segments processed: 600, loss: 6.68731595875, pos_prec: 68.5499338624, class_prec: 100.0, rough pos prec: 71.0439814815
+Segments processed: 900, loss: 5.56705234323, pos_prec: 75.1252578839, class_prec: 100.0, rough pos prec: 80.4573754789
+Segments processed: 1200, loss: 6.73559662438, pos_prec: 79.1455017178, class_prec: 100.0, rough pos prec: 82.7247366905
+Segments processed: 1500, loss: 5.64043165653, pos_prec: 75.5245838173, class_prec: 100.0, rough pos prec: 79.7725512969
+Segments processed: 1800, loss: 5.85159570935, pos_prec: 79.4191534939, class_prec: 100.0, rough pos prec: 85.0993754351
+Segments processed: 2100, loss: 5.05501338426, pos_prec: 79.9393650794, class_prec: 100.0, rough pos prec: 84.0980952381
+Segments processed: 2400, loss: 4.29014974851, pos_prec: 77.4017857143, class_prec: 100.0, rough pos prec: 81.6326058201
+Segments processed: 2700, loss: 4.86743770628, pos_prec: 87.2947002492, class_prec: 100.0, rough pos prec: 90.9884559885
+Segments processed: 3000, loss: 4.44465695651, pos_prec: 85.8085185887, class_prec: 100.0, rough pos prec: 87.3054555598
+Segments processed: 3300, loss: 4.07518738104, pos_prec: 83.5852628513, class_prec: 100.0, rough pos prec: 86.8596184651
+Segments processed: 3600, loss: 3.85751173842, pos_prec: 88.3461007591, class_prec: 100.0, rough pos prec: 90.4765355418
+Segments processed: 3900, loss: 4.47294138541, pos_prec: 85.4844720497, class_prec: 100.0, rough pos prec: 87.3105590062
+Segments processed: 4200, loss: 4.45644111679, pos_prec: 88.3974264906, class_prec: 100.0, rough pos prec: 91.2891863316
+Segments processed: 4500, loss: 4.01946813166, pos_prec: 90.3971861472, class_prec: 100.0, rough pos prec: 91.3841991342
+Segments processed: 4800, loss: 4.36507937101, pos_prec: 86.9540644541, class_prec: 100.0, rough pos prec: 90.0824572253
+Segments processed: 5100, loss: 5.15478051558, pos_prec: 84.9968671679, class_prec: 100.0, rough pos prec: 88.5139933166
+Segments processed: 5400, loss: 3.39478541425, pos_prec: 90.3003320076, class_prec: 100.0, rough pos prec: 91.6979316979
+Segments processed: 5700, loss: 4.91636932867, pos_prec: 90.1557539683, class_prec: 100.0, rough pos prec: 91.8025793651
+Segments processed: 6000, loss: 4.18434762486, pos_prec: 90.3126519498, class_prec: 100.0, rough pos prec: 93.5082174463
+Segments processed: 6300, loss: 4.08999681903, pos_prec: 90.2369929453, class_prec: 100.0, rough pos prec: 92.3985890653
+Segments processed: 6600, loss: 3.1492791484, pos_prec: 91.067251462, class_prec: 100.0, rough pos prec: 93.3918128655
+Segments processed: 6900, loss: 3.76624418797, pos_prec: 90.1960180624, class_prec: 100.0, rough pos prec: 91.7918719212
+Segments processed: 7200, loss: 3.45997434011, pos_prec: 90.7748015873, class_prec: 100.0, rough pos prec: 92.1150793651
+Segments processed: 7500, loss: 3.40851527099, pos_prec: 94.4493729102, class_prec: 100.0, rough pos prec: 97.6577941832
+Segments processed: 7800, loss: 4.25264662567, pos_prec: 89.0785354247, class_prec: 100.0, rough pos prec: 92.7951274746
+Segments processed: 8100, loss: 2.95010745074, pos_prec: 91.2455528188, class_prec: 100.0, rough pos prec: 94.2277298851
+Segments processed: 8400, loss: 3.41646413031, pos_prec: 92.3567708333, class_prec: 100.0, rough pos prec: 94.2885044643
+Segments processed: 8700, loss: 3.53416173086, pos_prec: 93.0392901446, class_prec: 100.0, rough pos prec: 94.8288334473
+Segments processed: 9000, loss: 3.40328214929, pos_prec: 90.8827457265, class_prec: 100.0, rough pos prec: 93.59375
+Segments processed: 9300, loss: 3.96404532537, pos_prec: 92.7079790249, class_prec: 100.0, rough pos prec: 94.2811082766
+Segments processed: 9600, loss: 3.36950813994, pos_prec: 92.1738279935, class_prec: 100.0, rough pos prec: 93.3428365805
+Segments processed: 9900, loss: 2.74138726461, pos_prec: 94.5760891156, class_prec: 100.0, rough pos prec: 96.7676037413
+Segments processed: 10200, loss: 3.73853256844, pos_prec: 92.3812163446, class_prec: 100.0, rough pos prec: 94.4747122796
+Segments processed: 10500, loss: 3.7873537034, pos_prec: 92.3843732895, class_prec: 100.0, rough pos prec: 93.866652983
+Segments processed: 10800, loss: 3.43150634868, pos_prec: 93.2651187197, class_prec: 100.0, rough pos prec: 95.1383969566
+Segments processed: 11100, loss: 2.24403500329, pos_prec: 93.5546064018, class_prec: 100.0, rough pos prec: 95.5148837788
+Segments processed: 11400, loss: 3.15331192431, pos_prec: 91.8131868132, class_prec: 100.0, rough pos prec: 95.0952380952
+Segments processed: 11700, loss: 3.47180246485, pos_prec: 92.619047619, class_prec: 100.0, rough pos prec: 92.9761904762
+Segments processed: 12000, loss: 3.46612198001, pos_prec: 93.3013811585, class_prec: 100.0, rough pos prec: 94.7384559885
+Segments processed: 12300, loss: 3.69828086534, pos_prec: 93.0379861868, class_prec: 100.0, rough pos prec: 95.8696837514
+Segments processed: 12600, loss: 3.03496859083, pos_prec: 93.1332589901, class_prec: 100.0, rough pos prec: 94.1899173855
+Segments processed: 12900, loss: 3.21720977937, pos_prec: 93.9813664596, class_prec: 100.0, rough pos prec: 96.1863354037
+Segments processed: 13200, loss: 3.01564324754, pos_prec: 93.8366750209, class_prec: 100.0, rough pos prec: 95.6105541632
+Segments processed: 13500, loss: 3.16525769218, pos_prec: 92.2505197505, class_prec: 100.0, rough pos prec: 93.2458007458
+Segments processed: 13800, loss: 2.40656720915, pos_prec: 93.0073696145, class_prec: 100.0, rough pos prec: 95.4213907785
+Segments processed: 14100, loss: 2.8582210808, pos_prec: 92.4023613977, class_prec: 100.0, rough pos prec: 93.6815080039
+Segments processed: 14400, loss: 3.09898241414, pos_prec: 91.793088917, class_prec: 100.0, rough pos prec: 95.2243994943
+Segments processed: 14700, loss: 3.73922288889, pos_prec: 90.7142857143, class_prec: 100.0, rough pos prec: 94.2857142857
+Segments processed: 15000, loss: 2.55147774695, pos_prec: 92.4686379928, class_prec: 100.0, rough pos prec: 95.162250384
+Segments processed: 15300, loss: 3.5506941307, pos_prec: 92.8954318628, class_prec: 100.0, rough pos prec: 94.7104324822
+Segments processed: 15600, loss: 2.36971872481, pos_prec: 92.0367965368, class_prec: 100.0, rough pos prec: 94.6883116883
+Segments processed: 15900, loss: 3.65663895656, pos_prec: 93.6615236615, class_prec: 100.0, rough pos prec: 96.7411098806
+Segments processed: 16200, loss: 2.18791901604, pos_prec: 95.5575396825, class_prec: 100.0, rough pos prec: 96.9464285714
+Segments processed: 16500, loss: 2.82713387753, pos_prec: 91.1062271062, class_prec: 100.0, rough pos prec: 93.1336996337
+Segments processed: 16800, loss: 3.08981751573, pos_prec: 93.0424603175, class_prec: 100.0, rough pos prec: 93.9424603175
+Segments processed: 17100, loss: 2.31863252489, pos_prec: 94.7301429413, class_prec: 100.0, rough pos prec: 95.8460433245
+Finished epoch 0
+Validation: pos_prec: 87.233060253, class_prec: 100.0, rough pos prec: 90.6786289463
+Segments processed: 300, loss: 3.38752286188, pos_prec: 96.1238219246, class_prec: 100.0, rough pos prec: 97.3341393849
+Segments processed: 600, loss: 2.38906971565, pos_prec: 96.5304719435, class_prec: 100.0, rough pos prec: 97.3807134894
+Segments processed: 900, loss: 1.94419805033, pos_prec: 94.7326064382, class_prec: 100.0, rough pos prec: 97.6713395639
+Segments processed: 1200, loss: 3.15439721257, pos_prec: 94.6788073038, class_prec: 100.0, rough pos prec: 96.023989899
+Segments processed: 1500, loss: 1.75050775129, pos_prec: 93.982353853, class_prec: 100.0, rough pos prec: 94.925476822
+Segments processed: 1800, loss: 2.25016446276, pos_prec: 96.1877076412, class_prec: 100.0, rough pos prec: 97.0598006645
+Segments processed: 2100, loss: 2.44911137265, pos_prec: 93.1274353666, class_prec: 100.0, rough pos prec: 93.8858894728
+Segments processed: 2400, loss: 2.2394552226, pos_prec: 93.3043217287, class_prec: 100.0, rough pos prec: 97.0228091236
+Segments processed: 2700, loss: 2.78384704011, pos_prec: 91.7044992045, class_prec: 100.0, rough pos prec: 92.902533974
+Segments processed: 3000, loss: 2.33197669382, pos_prec: 95.624028749, class_prec: 100.0, rough pos prec: 96.4573620824
+Segments processed: 3300, loss: 1.48809785351, pos_prec: 93.3594374974, class_prec: 100.0, rough pos prec: 94.2194012884
+Segments processed: 3600, loss: 3.06250138102, pos_prec: 91.6813335716, class_prec: 100.0, rough pos prec: 94.3915343915
+Segments processed: 3900, loss: 2.17801050984, pos_prec: 94.2828065134, class_prec: 100.0, rough pos prec: 96.4738984674
+Segments processed: 4200, loss: 3.02176773774, pos_prec: 92.0175751744, class_prec: 100.0, rough pos prec: 93.8872591627
+Segments processed: 4500, loss: 3.07030455351, pos_prec: 96.0633727175, class_prec: 100.0, rough pos prec: 97.4543501611
+Segments processed: 4800, loss: 2.05529973126, pos_prec: 96.1678926313, class_prec: 100.0, rough pos prec: 96.5743966963
+Segments processed: 5100, loss: 2.30447163398, pos_prec: 93.953470277, class_prec: 100.0, rough pos prec: 96.0325241208
+Segments processed: 5400, loss: 2.11645037298, pos_prec: 94.0988893262, class_prec: 100.0, rough pos prec: 95.7154882155
+Segments processed: 5700, loss: 1.64656001042, pos_prec: 95.9760117558, class_prec: 100.0, rough pos prec: 96.7256443862
+Segments processed: 6000, loss: 2.79150768447, pos_prec: 93.6293436293, class_prec: 100.0, rough pos prec: 95.1930501931
+Segments processed: 6300, loss: 2.05292334922, pos_prec: 93.5095210657, class_prec: 100.0, rough pos prec: 93.6967869833
+Segments processed: 6600, loss: 2.68102397904, pos_prec: 92.0138082333, class_prec: 100.0, rough pos prec: 95.2284165699
+Segments processed: 6900, loss: 3.60587529487, pos_prec: 94.5273894892, class_prec: 100.0, rough pos prec: 95.4688653162
+Segments processed: 7200, loss: 3.59759150075, pos_prec: 95.0254101959, class_prec: 100.0, rough pos prec: 96.7532656737
+Segments processed: 7500, loss: 1.98682340683, pos_prec: 94.1402116402, class_prec: 100.0, rough pos prec: 96.2484737485
+Segments processed: 7800, loss: 1.70594920436, pos_prec: 94.612305099, class_prec: 100.0, rough pos prec: 96.7825537295
+Segments processed: 8100, loss: 3.11019938279, pos_prec: 91.5181205225, class_prec: 100.0, rough pos prec: 93.7083860093
+Segments processed: 8400, loss: 1.94628722738, pos_prec: 96.8863636364, class_prec: 100.0, rough pos prec: 97.5909090909
+Segments processed: 8700, loss: 2.35233546886, pos_prec: 95.4411764706, class_prec: 100.0, rough pos prec: 96.8137254902
+Segments processed: 9000, loss: 2.88386451284, pos_prec: 95.6063289328, class_prec: 100.0, rough pos prec: 96.7847304211
+Segments processed: 9300, loss: 3.47314542236, pos_prec: 93.3624551971, class_prec: 100.0, rough pos prec: 94.4041218638
+Segments processed: 9600, loss: 2.10079716606, pos_prec: 95.4323809524, class_prec: 100.0, rough pos prec: 97.8
+Segments processed: 9900, loss: 2.28990627303, pos_prec: 95.9708193042, class_prec: 100.0, rough pos prec: 97.9917695473
+Segments processed: 10200, loss: 2.49270906133, pos_prec: 93.3029496224, class_prec: 100.0, rough pos prec: 94.0877255461
+Segments processed: 10500, loss: 2.63641499683, pos_prec: 93.110860874, class_prec: 100.0, rough pos prec: 94.8572723573
+Segments processed: 10800, loss: 2.44642233741, pos_prec: 94.6586599241, class_prec: 100.0, rough pos prec: 95.7314931872
+Segments processed: 11100, loss: 1.66724968997, pos_prec: 96.0745038756, class_prec: 100.0, rough pos prec: 97.4665421724
+Segments processed: 11400, loss: 1.73290940639, pos_prec: 96.4050428431, class_prec: 100.0, rough pos prec: 97.7040314651
+Segments processed: 11700, loss: 3.25925472932, pos_prec: 94.2745017745, class_prec: 100.0, rough pos prec: 97.5313950314
+Segments processed: 12000, loss: 3.26010267851, pos_prec: 93.6806375443, class_prec: 100.0, rough pos prec: 96.0428964974
+Segments processed: 12300, loss: 2.5778026628, pos_prec: 94.0981533757, class_prec: 100.0, rough pos prec: 95.2258292167
+Segments processed: 12600, loss: 2.48510450191, pos_prec: 90.7365067239, class_prec: 100.0, rough pos prec: 93.8468114519
+Segments processed: 12900, loss: 2.25419207147, pos_prec: 94.8122915336, class_prec: 100.0, rough pos prec: 95.6475764672
+Segments processed: 13200, loss: 2.08605245561, pos_prec: 95.6305488297, class_prec: 100.0, rough pos prec: 96.2560532688
+Segments processed: 13500, loss: 2.60715247793, pos_prec: 93.8346590176, class_prec: 100.0, rough pos prec: 96.6640563592
+Segments processed: 13800, loss: 1.82821587967, pos_prec: 94.013024013, class_prec: 100.0, rough pos prec: 96.1090761091
+Segments processed: 14100, loss: 1.98156236195, pos_prec: 91.5795586527, class_prec: 100.0, rough pos prec: 93.031358885
+Segments processed: 14400, loss: 3.13606715869, pos_prec: 91.9019717262, class_prec: 100.0, rough pos prec: 95.0158110119
+Segments processed: 14700, loss: 2.37046356081, pos_prec: 93.8877672281, class_prec: 100.0, rough pos prec: 96.7919389978
+Segments processed: 15000, loss: 2.84319491055, pos_prec: 96.0397295013, class_prec: 100.0, rough pos prec: 97.1047478163
+Segments processed: 15300, loss: 1.5953966053, pos_prec: 96.3135113135, class_prec: 100.0, rough pos prec: 97.2011297011
+Segments processed: 15600, loss: 2.25568203229, pos_prec: 93.9341419055, class_prec: 100.0, rough pos prec: 95.4277166367
+Segments processed: 15900, loss: 1.94337834595, pos_prec: 93.3211233211, class_prec: 100.0, rough pos prec: 95.3724053724
+Segments processed: 16200, loss: 2.27470935836, pos_prec: 94.1291887125, class_prec: 100.0, rough pos prec: 96.7283950617
+Segments processed: 16500, loss: 1.45255104085, pos_prec: 94.4219219219, class_prec: 100.0, rough pos prec: 94.9474474474
+Segments processed: 16800, loss: 2.84214951712, pos_prec: 93.2335378117, class_prec: 100.0, rough pos prec: 94.5967335642
+Segments processed: 17100, loss: 2.14013161737, pos_prec: 93.2584154351, class_prec: 100.0, rough pos prec: 95.1262315271
+Finished epoch 1
+Validation: pos_prec: 88.1612892511, class_prec: 100.0, rough pos prec: 92.1713480223
+Segments processed: 300, loss: 2.54350002068, pos_prec: 90.6095293595, class_prec: 100.0, rough pos prec: 93.0625208125
+Segments processed: 600, loss: 1.5080540754, pos_prec: 96.292562724, class_prec: 100.0, rough pos prec: 97.166218638
+Segments processed: 900, loss: 1.31974403011, pos_prec: 96.387587822, class_prec: 100.0, rough pos prec: 97.9293520687
+Segments processed: 1200, loss: 2.32245729384, pos_prec: 94.9347158218, class_prec: 100.0, rough pos prec: 95.925499232
+Segments processed: 1500, loss: 1.82601872232, pos_prec: 93.5928785929, class_prec: 100.0, rough pos prec: 95.6821106821
+EMBED_DIM: 70
+HIDDEN_DIM: 100
+BILSTM_LAYERS: 2
+MLP Layers: 3
+EMBED_DIM: 70
+HIDDEN_DIM: 100
+BILSTM_LAYERS: 2
+MLP Layers: 3
+Loading path: data/2_matched_sefaria/json/
+Total words: 599437
+Total daf: 1705
+EMBED_DIM: 70
+HIDDEN_DIM: 100
+BILSTM_LAYERS: 2
+MLP Layers: 3
+Loading path: data/2_matched_sefaria/json/
+Total words: 599437
+Total daf: 1705
+pos: 40
+let: 33
+Validation: pos_prec: 4.33336956887, class_prec: 100.0, rough pos prec: 5.42741005441
+Segments processed: 300, loss: 0.792684470991, pos_prec: 60.7191673575, class_prec: 100.0, rough pos prec: 65.9179331307
+Segments processed: 600, loss: 0.620951550026, pos_prec: 56.1541446208, class_prec: 100.0, rough pos prec: 61.5171075838
+Segments processed: 900, loss: 0.709102976023, pos_prec: 61.9567597154, class_prec: 100.0, rough pos prec: 67.0973590586
+Segments processed: 1200, loss: 0.646655353088, pos_prec: 67.4368473487, class_prec: 100.0, rough pos prec: 74.93682148
+Finished epoch 0
+Validation: pos_prec: 17.2099117811, class_prec: 100.0, rough pos prec: 20.686415568
+Segments processed: 300, loss: 0.73991082136, pos_prec: 72.7556022409, class_prec: 100.0, rough pos prec: 78.9495798319
+Segments processed: 600, loss: 0.699197890863, pos_prec: 71.1191821361, class_prec: 100.0, rough pos prec: 77.9886333064
+Segments processed: 900, loss: 0.534413035152, pos_prec: 73.7986644624, class_prec: 100.0, rough pos prec: 80.3752282624
+Segments processed: 1200, loss: 0.602945879153, pos_prec: 78.2168241053, class_prec: 100.0, rough pos prec: 80.3619203883
+Finished epoch 1
+Validation: pos_prec: 26.1758926625, class_prec: 100.0, rough pos prec: 29.6598031874
+Segments processed: 300, loss: 0.640408740921, pos_prec: 83.1636057491, class_prec: 100.0, rough pos prec: 88.642452797
+Segments processed: 600, loss: 0.518049028228, pos_prec: 78.8040027605, class_prec: 100.0, rough pos prec: 85.4144237405
+Segments processed: 900, loss: 0.586239399742, pos_prec: 85.0510726141, class_prec: 100.0, rough pos prec: 88.961590434
+Segments processed: 1200, loss: 0.591513603514, pos_prec: 84.4980925131, class_prec: 100.0, rough pos prec: 89.5348797602
+Finished epoch 2
+Validation: pos_prec: 34.7841399665, class_prec: 100.0, rough pos prec: 37.7579935028
+Segments processed: 300, loss: 0.542278359926, pos_prec: 83.7153337153, class_prec: 100.0, rough pos prec: 87.5884925885
+Segments processed: 600, loss: 0.511885471545, pos_prec: 84.184075131, class_prec: 100.0, rough pos prec: 87.7289005033
+Segments processed: 900, loss: 0.506356868528, pos_prec: 81.8703839756, class_prec: 100.0, rough pos prec: 86.3974110027
+Segments processed: 1200, loss: 0.564331882295, pos_prec: 88.1721310799, class_prec: 100.0, rough pos prec: 91.5593395636
+Finished epoch 3
+Validation: pos_prec: 41.639383093, class_prec: 100.0, rough pos prec: 44.7829911894
+Segments processed: 300, loss: 0.432672436875, pos_prec: 90.3454462204, class_prec: 100.0, rough pos prec: 92.7512903763
+Segments processed: 600, loss: 0.407196006362, pos_prec: 88.4811598477, class_prec: 100.0, rough pos prec: 91.8309456551
+Segments processed: 900, loss: 0.545239618106, pos_prec: 89.5030876111, class_prec: 100.0, rough pos prec: 93.8998798008
+Segments processed: 1200, loss: 0.481870430022, pos_prec: 89.6122672864, class_prec: 100.0, rough pos prec: 92.0060824876
+Finished epoch 4
+Validation: pos_prec: 42.9254679905, class_prec: 100.0, rough pos prec: 46.4289370772
+Segments processed: 300, loss: 0.39543810001, pos_prec: 90.4910086397, class_prec: 100.0, rough pos prec: 92.1101232335
+Segments processed: 600, loss: 0.435869684684, pos_prec: 90.8796622269, class_prec: 100.0, rough pos prec: 93.1791791351
+Segments processed: 900, loss: 0.388589891257, pos_prec: 87.5562654849, class_prec: 100.0, rough pos prec: 92.6879161423
+Segments processed: 1200, loss: 0.489214312388, pos_prec: 90.9168664738, class_prec: 100.0, rough pos prec: 94.33967062
+Finished epoch 5
+Validation: pos_prec: 43.0493366031, class_prec: 100.0, rough pos prec: 46.369976635
+Segments processed: 300, loss: 0.33279236356, pos_prec: 89.4169693711, class_prec: 100.0, rough pos prec: 92.6887765649
+Segments processed: 600, loss: 0.344060315026, pos_prec: 90.9866445611, class_prec: 100.0, rough pos prec: 94.1639495257
+Segments processed: 900, loss: 0.373398522066, pos_prec: 91.2075320513, class_prec: 100.0, rough pos prec: 93.3969907407
+Segments processed: 1200, loss: 0.466607003449, pos_prec: 91.5255047766, class_prec: 100.0, rough pos prec: 93.9955299827
+Finished epoch 6
+Validation: pos_prec: 46.6590669326, class_prec: 100.0, rough pos prec: 49.8051307517
+Segments processed: 300, loss: 0.214743257336, pos_prec: 94.7480427374, class_prec: 100.0, rough pos prec: 96.959288938
+Segments processed: 600, loss: 0.317338881562, pos_prec: 92.1775282798, class_prec: 100.0, rough pos prec: 94.8044846568
+Segments processed: 900, loss: 0.400504760807, pos_prec: 91.67216747, class_prec: 100.0, rough pos prec: 93.7534463173
+Segments processed: 1200, loss: 0.264829287022, pos_prec: 91.7187022992, class_prec: 100.0, rough pos prec: 94.1955662011
+Finished epoch 7
+Validation: pos_prec: 52.7878898227, class_prec: 100.0, rough pos prec: 55.8281210595
+Segments processed: 300, loss: 0.223650443987, pos_prec: 92.9677044709, class_prec: 100.0, rough pos prec: 95.949420364
+Segments processed: 600, loss: 0.375495415268, pos_prec: 94.7322154291, class_prec: 100.0, rough pos prec: 96.1776476792
+Segments processed: 900, loss: 0.289633875527, pos_prec: 94.2557555567, class_prec: 100.0, rough pos prec: 95.61322162
+Segments processed: 1200, loss: 0.234837170394, pos_prec: 91.7671071618, class_prec: 100.0, rough pos prec: 94.896029896
+Finished epoch 8
+Validation: pos_prec: 52.2914231701, class_prec: 100.0, rough pos prec: 55.5608195722
+Segments processed: 300, loss: 0.20297419021, pos_prec: 95.9559488848, class_prec: 100.0, rough pos prec: 97.494986631
+Segments processed: 600, loss: 0.235859827088, pos_prec: 94.0596097706, class_prec: 100.0, rough pos prec: 95.0499404006
+Segments processed: 900, loss: 0.188063916047, pos_prec: 93.3457599905, class_prec: 100.0, rough pos prec: 95.9209925877
+Segments processed: 1200, loss: 0.278730792947, pos_prec: 93.7636582848, class_prec: 100.0, rough pos prec: 95.1703249515
+Finished epoch 9
+Validation: pos_prec: 51.0279437581, class_prec: 100.0, rough pos prec: 53.8009934451
+Segments processed: 300, loss: 0.169641797642, pos_prec: 95.6772850687, class_prec: 100.0, rough pos prec: 97.7543527379
+Segments processed: 600, loss: 0.195211305756, pos_prec: 94.3285132742, class_prec: 100.0, rough pos prec: 96.2979749719
+Segments processed: 900, loss: 0.224958285031, pos_prec: 95.8152001063, class_prec: 100.0, rough pos prec: 96.6694837284
+Segments processed: 1200, loss: 0.253100714456, pos_prec: 94.9737591003, class_prec: 100.0, rough pos prec: 95.663927409
+Finished epoch 10
+Validation: pos_prec: 51.4010706119, class_prec: 100.0, rough pos prec: 54.3319250097
+Segments processed: 300, loss: 0.170239502314, pos_prec: 94.5511263964, class_prec: 100.0, rough pos prec: 95.8494513944
+Segments processed: 600, loss: 0.116938595067, pos_prec: 97.1667097148, class_prec: 100.0, rough pos prec: 98.1353706834
+Segments processed: 900, loss: 0.167923048861, pos_prec: 95.6300429894, class_prec: 100.0, rough pos prec: 96.9653604497
+Segments processed: 1200, loss: 0.165371674839, pos_prec: 95.5314226004, class_prec: 100.0, rough pos prec: 96.9399817137
+Finished epoch 11
+Validation: pos_prec: 53.9247552611, class_prec: 100.0, rough pos prec: 56.8448054868
+Segments processed: 300, loss: 0.125200699984, pos_prec: 97.9134982439, class_prec: 100.0, rough pos prec: 98.4444095331
+Segments processed: 600, loss: 0.147443769243, pos_prec: 98.2025073918, class_prec: 100.0, rough pos prec: 99.063618503
+Segments processed: 900, loss: 0.1505281029, pos_prec: 95.5960830331, class_prec: 100.0, rough pos prec: 97.3493297863
+Segments processed: 1200, loss: 0.185967011857, pos_prec: 94.0952062643, class_prec: 100.0, rough pos prec: 95.9299401579
+Finished epoch 12
+Validation: pos_prec: 52.0411595729, class_prec: 100.0, rough pos prec: 55.0756247885
+Segments processed: 300, loss: 0.0886917788222, pos_prec: 97.3949625566, class_prec: 100.0, rough pos prec: 98.7491292233
+Segments processed: 600, loss: 0.108201977053, pos_prec: 96.6142350557, class_prec: 100.0, rough pos prec: 97.5917764269
+Segments processed: 900, loss: 0.134820864037, pos_prec: 97.3795587007, class_prec: 100.0, rough pos prec: 98.803697479
+Segments processed: 1200, loss: 0.103155348108, pos_prec: 97.7137135296, class_prec: 100.0, rough pos prec: 97.8183160401
+Finished epoch 13
+Validation: pos_prec: 54.2310368349, class_prec: 100.0, rough pos prec: 57.1677630318
+Segments processed: 300, loss: 0.0563287427133, pos_prec: 97.9726046447, class_prec: 100.0, rough pos prec: 98.6392713114
+Segments processed: 600, loss: 0.0892703154285, pos_prec: 97.0056497175, class_prec: 100.0, rough pos prec: 98.1179378531
+Segments processed: 900, loss: 0.0699881342087, pos_prec: 97.8722810623, class_prec: 100.0, rough pos prec: 98.4755993127
+Segments processed: 1200, loss: 0.1251568633, pos_prec: 98.0478744363, class_prec: 100.0, rough pos prec: 98.8848467798
+Finished epoch 14
+Validation: pos_prec: 53.5688125169, class_prec: 100.0, rough pos prec: 56.4788791056
+Segments processed: 300, loss: 0.0985696179063, pos_prec: 96.3592393285, class_prec: 100.0, rough pos prec: 96.8564382081
+Segments processed: 600, loss: 0.0767538916128, pos_prec: 97.0596220945, class_prec: 100.0, rough pos prec: 98.3510860485
+Segments processed: 900, loss: 0.0626622395975, pos_prec: 98.181022409, class_prec: 100.0, rough pos prec: 98.4961484594
+Segments processed: 1200, loss: 0.0825550495961, pos_prec: 97.7858395193, class_prec: 100.0, rough pos prec: 98.2156071202
+Finished epoch 15
+Validation: pos_prec: 52.7224978022, class_prec: 100.0, rough pos prec: 55.7829487319
+Segments processed: 300, loss: 0.0432499972556, pos_prec: 99.0003590389, class_prec: 100.0, rough pos prec: 99.7183158251
+Segments processed: 600, loss: 0.0842752605052, pos_prec: 98.3571124141, class_prec: 100.0, rough pos prec: 98.5650690144
+Segments processed: 900, loss: 0.0536158777468, pos_prec: 98.477312166, class_prec: 100.0, rough pos prec: 98.7917289487
+Segments processed: 1200, loss: 0.074071393227, pos_prec: 97.4405602637, class_prec: 100.0, rough pos prec: 98.6058145009
+Finished epoch 16
+Validation: pos_prec: 52.926687699, class_prec: 100.0, rough pos prec: 56.0104331005
+Segments processed: 300, loss: 0.0619930784149, pos_prec: 99.5863613007, class_prec: 100.0, rough pos prec: 99.6083828819
+Segments processed: 600, loss: 0.035281196989, pos_prec: 97.9751369574, class_prec: 100.0, rough pos prec: 98.5282343026
+Segments processed: 900, loss: 0.0539380553389, pos_prec: 98.7408700634, class_prec: 100.0, rough pos prec: 99.0638514299
+Segments processed: 1200, loss: 0.0462625397376, pos_prec: 99.3816425121, class_prec: 100.0, rough pos prec: 99.5555555556
+Finished epoch 17
+Validation: pos_prec: 54.3298561124, class_prec: 100.0, rough pos prec: 57.4141142959
+Segments processed: 300, loss: 0.0480576302734, pos_prec: 99.4294756269, class_prec: 100.0, rough pos prec: 99.4907877054
+Segments processed: 600, loss: 0.0326500052805, pos_prec: 97.662675949, class_prec: 100.0, rough pos prec: 98.3849313784
+Segments processed: 900, loss: 0.0533738201166, pos_prec: 99.0283869396, class_prec: 100.0, rough pos prec: 99.4669834308
+Segments processed: 1200, loss: 0.029743296017, pos_prec: 98.6666853262, class_prec: 100.0, rough pos prec: 99.2342140618
+Finished epoch 18
+Validation: pos_prec: 52.235373307, class_prec: 100.0, rough pos prec: 55.3420368089
+Segments processed: 300, loss: 0.0262509654206, pos_prec: 99.684287812, class_prec: 100.0, rough pos prec: 99.7283406755
+Segments processed: 600, loss: 0.0373885654184, pos_prec: 99.3522408964, class_prec: 100.0, rough pos prec: 99.4222689076
+Segments processed: 900, loss: 0.0234935092576, pos_prec: 98.8945578231, class_prec: 100.0, rough pos prec: 99.3303571429
+Segments processed: 1200, loss: 0.0190747168452, pos_prec: 99.1028152638, class_prec: 100.0, rough pos prec: 99.1633479515
+Finished epoch 19
+Validation: pos_prec: 52.8334524948, class_prec: 100.0, rough pos prec: 56.0536367865
+Segments processed: 300, loss: 0.0437527580032, pos_prec: 99.8152173913, class_prec: 100.0, rough pos prec: 99.8442028986
+Segments processed: 600, loss: 0.0196217536493, pos_prec: 98.6664784491, class_prec: 100.0, rough pos prec: 99.163372859
+Segments processed: 900, loss: 0.0238032726433, pos_prec: 99.8470111449, class_prec: 100.0, rough pos prec: 99.8470111449
+Segments processed: 1200, loss: 0.00923390326013, pos_prec: 99.5197210197, class_prec: 100.0, rough pos prec: 99.537037037
+Finished epoch 20
+Validation: pos_prec: 52.0957846356, class_prec: 100.0, rough pos prec: 55.317910626
+Segments processed: 300, loss: 0.0103951599732, pos_prec: 99.8418418418, class_prec: 100.0, rough pos prec: 99.8418418418
+Segments processed: 600, loss: 0.020144170796, pos_prec: 99.1127391127, class_prec: 100.0, rough pos prec: 99.4831094831
+Segments processed: 900, loss: 0.0146232773164, pos_prec: 99.7202303346, class_prec: 100.0, rough pos prec: 99.7202303346
+Segments processed: 1200, loss: 0.0155994842602, pos_prec: 99.5794163995, class_prec: 100.0, rough pos prec: 99.5993406872
+Finished epoch 21
+Validation: pos_prec: 52.0741199298, class_prec: 100.0, rough pos prec: 55.1400298187
+Segments processed: 300, loss: 0.0103884690666, pos_prec: 99.7253218884, class_prec: 100.0, rough pos prec: 99.7424892704
+Segments processed: 600, loss: 0.0214490756191, pos_prec: 99.4180440771, class_prec: 100.0, rough pos prec: 99.4180440771
+Segments processed: 900, loss: 0.00543698094928, pos_prec: 99.3436578171, class_prec: 100.0, rough pos prec: 99.3436578171
+Segments processed: 1200, loss: 0.00274425333904, pos_prec: 99.9370673379, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 22
+Validation: pos_prec: 51.6077634594, class_prec: 100.0, rough pos prec: 54.7735287387
+Segments processed: 300, loss: 0.00224026229546, pos_prec: 99.8913043478, class_prec: 100.0, rough pos prec: 99.8913043478
+Segments processed: 600, loss: 0.0109551840532, pos_prec: 99.4281045752, class_prec: 100.0, rough pos prec: 99.4806255836
+Segments processed: 900, loss: 0.00361808363772, pos_prec: 99.9826086957, class_prec: 100.0, rough pos prec: 99.9826086957
+Segments processed: 1200, loss: 0.00553536461396, pos_prec: 99.5670995671, class_prec: 100.0, rough pos prec: 99.5670995671
+Finished epoch 23
+Validation: pos_prec: 52.1057275002, class_prec: 100.0, rough pos prec: 55.2953893438
+Segments processed: 300, loss: 0.000144973160918, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 0.00651483117369, pos_prec: 99.9159356725, class_prec: 100.0, rough pos prec: 99.9159356725
+Segments processed: 900, loss: 0.0376991411465, pos_prec: 99.7123893805, class_prec: 100.0, rough pos prec: 99.9889380531
+Segments processed: 1200, loss: 0.0125986021028, pos_prec: 99.9131412222, class_prec: 100.0, rough pos prec: 99.9131412222
+Finished epoch 24
+Validation: pos_prec: 51.1798443197, class_prec: 100.0, rough pos prec: 54.406172437
+Segments processed: 300, loss: 0.0113107490055, pos_prec: 99.9788135593, class_prec: 100.0, rough pos prec: 99.9788135593
+Segments processed: 600, loss: 0.00341888403757, pos_prec: 99.9279308136, class_prec: 100.0, rough pos prec: 99.9279308136
+Segments processed: 900, loss: 0.00380317945729, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 0.0153165136236, pos_prec: 99.8024425287, class_prec: 100.0, rough pos prec: 99.8563218391
+Finished epoch 25
+Validation: pos_prec: 50.8147946449, class_prec: 100.0, rough pos prec: 53.991939665
+Segments processed: 300, loss: 0.00514873485726, pos_prec: 99.9795918367, class_prec: 100.0, rough pos prec: 99.9795918367
+Segments processed: 600, loss: 0.0316458759911, pos_prec: 99.930356874, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 5.03641415129e-05, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 0.0231211414946, pos_prec: 99.9550525539, class_prec: 100.0, rough pos prec: 99.9804075235
+Finished epoch 26
+Validation: pos_prec: 51.9194813544, class_prec: 100.0, rough pos prec: 55.127735015
+Segments processed: 300, loss: 0.0154407718471, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 0.00243646001496, pos_prec: 99.9461206897, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 0.010392273502, pos_prec: 99.8757717211, class_prec: 100.0, rough pos prec: 99.8908296943
+Segments processed: 1200, loss: 0.00540552691633, pos_prec: 99.9715099715, class_prec: 100.0, rough pos prec: 99.9715099715
+Finished epoch 27
+Validation: pos_prec: 52.4030833617, class_prec: 100.0, rough pos prec: 55.4918011411
+Segments processed: 300, loss: 0.00839510315675, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 0.00449987317913, pos_prec: 99.9625888515, class_prec: 100.0, rough pos prec: 99.9625888515
+Segments processed: 900, loss: 0.00266535375184, pos_prec: 99.7016385424, class_prec: 100.0, rough pos prec: 99.7872340426
+Segments processed: 1200, loss: 0.00609065766675, pos_prec: 99.9707602339, class_prec: 100.0, rough pos prec: 99.9707602339
+Finished epoch 28
+Validation: pos_prec: 51.6966047938, class_prec: 100.0, rough pos prec: 54.7114633779
+Segments processed: 300, loss: 0.00301823321914, pos_prec: 99.7559274756, class_prec: 100.0, rough pos prec: 99.7559274756
+Segments processed: 600, loss: 0.000116696744485, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 0.000125282105142, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 0.00335352994526, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 29
+Validation: pos_prec: 51.832016356, class_prec: 100.0, rough pos prec: 54.8718223669
+Segments processed: 300, loss: 0.00886407097564, pos_prec: 99.9086099086, class_prec: 100.0, rough pos prec: 99.9086099086
+Segments processed: 600, loss: 8.08553886981e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 1.91210283457e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 1.29444539968e-05, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 30
+Validation: pos_prec: 51.7354356215, class_prec: 100.0, rough pos prec: 54.7269275367
+Segments processed: 300, loss: 0.000100714792448, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 0.00145279813211, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 9.30355364819e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 1.51344824377e-05, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 31
+Validation: pos_prec: 52.4964928614, class_prec: 100.0, rough pos prec: 55.5626612225
+Segments processed: 300, loss: 1.53439129372e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 8.05060490109e-05, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 8.82900142847e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 0.000190894368553, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 32
+Validation: pos_prec: 51.6419204812, class_prec: 100.0, rough pos prec: 54.6748035318
+Segments processed: 300, loss: 1.1013382185e-05, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 1.49867929333e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 0.000800175000246, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 1.27861657689e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 33
+Validation: pos_prec: 52.1550112537, class_prec: 100.0, rough pos prec: 55.2926850486
+Segments processed: 300, loss: 7.47492417333e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 8.68123946546e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 0.000140184856822, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.06279685107e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 34
+Validation: pos_prec: 51.6446379562, class_prec: 100.0, rough pos prec: 54.7770271911
+Segments processed: 300, loss: 9.27697566573e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 1.06793125282e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 8.38487938053e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 3.88714679658e-05, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 35
+Validation: pos_prec: 51.6430248179, class_prec: 100.0, rough pos prec: 54.8019553966
+Segments processed: 300, loss: 0.000613538034536, pos_prec: 99.9269005848, class_prec: 100.0, rough pos prec: 99.9269005848
+Segments processed: 600, loss: 7.64487543973e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 1.3838379272e-06, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 9.25206273485e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 36
+Validation: pos_prec: 52.1209180198, class_prec: 100.0, rough pos prec: 55.2475066572
+Segments processed: 300, loss: 8.04567711148e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 9.43776346991e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 3.95943453338e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 5.22398205025e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 37
+Validation: pos_prec: 52.0969891046, class_prec: 100.0, rough pos prec: 55.2199846915
+Segments processed: 300, loss: 7.98315593851e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 2.4766651203e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 9.06922215657e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 3.90159443908e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 38
+Validation: pos_prec: 52.1904255929, class_prec: 100.0, rough pos prec: 55.2980710463
+Segments processed: 300, loss: 5.1636601282e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 4.93467749036e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 7.03898164206e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 4.03764048614e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 39
+Validation: pos_prec: 52.3698328138, class_prec: 100.0, rough pos prec: 55.4783696091
+Segments processed: 300, loss: 6.01686386797e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 4.64044772148e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 5.03985221374e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 4.98376399604e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 40
+Validation: pos_prec: 52.3636802707, class_prec: 100.0, rough pos prec: 55.4797226643
+Segments processed: 300, loss: 5.58885155456e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 4.79546294049e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 4.10061494739e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 3.69285693842e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 41
+Validation: pos_prec: 52.4174609762, class_prec: 100.0, rough pos prec: 55.5265658629
+Segments processed: 300, loss: 3.19834964465e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 2.79917496323e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 3.36879032133e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 5.73300291337e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 42
+Validation: pos_prec: 52.3938004976, class_prec: 100.0, rough pos prec: 55.49956135
+Segments processed: 300, loss: 3.81806820933e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 2.85631419062e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 5.54265815793e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 3.82906130438e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 43
+Validation: pos_prec: 52.3636556544, class_prec: 100.0, rough pos prec: 55.472027853
+Segments processed: 300, loss: 4.21925528947e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 2.07151188932e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 5.05750741483e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 4.45534058916e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 44
+Validation: pos_prec: 52.4090639314, class_prec: 100.0, rough pos prec: 55.473419997
+Segments processed: 300, loss: 3.8055023048e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 5.78348812983e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 2.69286051801e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.24141400984e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 45
+Validation: pos_prec: 52.3960585423, class_prec: 100.0, rough pos prec: 55.4798070395
+Segments processed: 300, loss: 2.9147741396e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 5.17225332389e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 2.93992536794e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.96634114603e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 46
+Validation: pos_prec: 52.4368884165, class_prec: 100.0, rough pos prec: 55.510007662
+Segments processed: 300, loss: 2.33101091491e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 5.66518392607e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 3.25926456466e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.42585370216e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 47
+Validation: pos_prec: 52.4675041779, class_prec: 100.0, rough pos prec: 55.54408411
+Segments processed: 300, loss: 3.57789066619e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 3.78276473722e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 2.86381112452e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.80071515233e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 48
+Validation: pos_prec: 52.4689090609, class_prec: 100.0, rough pos prec: 55.5454889929
+Segments processed: 300, loss: 3.11034377586e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 3.07876013818e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 3.90727759672e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 3.35676800996e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 49
+Validation: pos_prec: 52.4618228931, class_prec: 100.0, rough pos prec: 55.5384028251
+Segments processed: 300, loss: 2.26184427464e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 3.35602534364e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 3.17503592373e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.02569048393e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 50
+Validation: pos_prec: 52.4547426254, class_prec: 100.0, rough pos prec: 55.5279016489
+Segments processed: 300, loss: 2.4365499321e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 3.45717369704e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 3.13505748927e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.57719032362e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 51
+Validation: pos_prec: 52.4544703992, class_prec: 100.0, rough pos prec: 55.5324297299
+Segments processed: 300, loss: 2.60630693337e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 3.14493701598e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 1.85801766414e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 4.03526556381e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 52
+Validation: pos_prec: 52.4401406749, class_prec: 100.0, rough pos prec: 55.5181000056
+Segments processed: 300, loss: 2.52991934893e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 3.30069378267e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 2.93566213534e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.55423788353e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 53
+Validation: pos_prec: 52.4390325188, class_prec: 100.0, rough pos prec: 55.5169918496
+Segments processed: 300, loss: 3.88552970595e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 1.5864046631e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 2.43484427517e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.43818264003e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 54
+Validation: pos_prec: 52.4459623247, class_prec: 100.0, rough pos prec: 55.5239216555
+Segments processed: 300, loss: 2.21021917999e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 2.67180144211e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 4.37991365439e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 1.41104004507e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 55
+Validation: pos_prec: 52.4426917858, class_prec: 100.0, rough pos prec: 55.5239216555
+Segments processed: 300, loss: 2.30920498557e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 2.49268543472e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 1.89611370257e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 3.13723733976e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 56
+Validation: pos_prec: 52.426653426, class_prec: 100.0, rough pos prec: 55.5078832957
+Segments processed: 300, loss: 1.57844697117e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 600, loss: 2.49717007197e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 900, loss: 2.8126863879e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Segments processed: 1200, loss: 2.78243903879e-07, pos_prec: 100.0, class_prec: 100.0, rough pos prec: 100.0
+Finished epoch 57
+Validation: pos_prec: 52.4382857197, class_prec: 100.0, rough pos prec: 55.5195155894
+EMBED_DIM: 70
+HIDDEN_DIM: 100
+BILSTM_LAYERS: 2
+MLP Layers: 3
+Loading path: data/2_matched_sefaria/json/
+Total words: 599437
+Total daf: 1705
+pos: 40
+let: 33
+Validation: pos_prec: 4.87195374181, class_prec: 100.0, rough pos prec: 5.45540255168
+Segments processed: 300, loss: 0.725415294632, pos_prec: 59.5267654519, class_prec: 100.0, rough pos prec: 63.8879989321

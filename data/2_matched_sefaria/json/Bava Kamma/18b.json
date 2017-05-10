@@ -57,6 +57,10 @@
             "word": "קא"
         }, 
         {
+            "index": 52, 
+            "word": "לר"
+        }, 
+        {
             "index": 58, 
             "word": "מייתית"
         }, 
@@ -69,44 +73,56 @@
             "word": "דילמ"
         }, 
         {
-            "index": 87, 
-            "word": "קא"
-        }, 
-        {
             "index": 88, 
-            "word": "מפלגי"
+            "word": "קא"
         }, 
         {
-            "index": 99, 
-            "word": "קא"
+            "index": 89, 
+            "word": "מפלגי"
         }, 
         {
             "index": 100, 
-            "word": "מפלגי"
+            "word": "קא"
         }, 
         {
-            "index": 108, 
-            "word": "קא"
+            "index": 101, 
+            "word": "מפלגי"
         }, 
         {
             "index": 109, 
-            "word": "מפלגי"
-        }, 
-        {
-            "index": 120, 
             "word": "קא"
         }, 
         {
+            "index": 110, 
+            "word": "מפלגי"
+        }, 
+        {
             "index": 121, 
+            "word": "קא"
+        }, 
+        {
+            "index": 122, 
             "word": "מפלגי"
         }, 
         {
             "index": 130, 
+            "word": "סל"
+        }, 
+        {
+            "index": 131, 
+            "word": "דע"
+        }, 
+        {
+            "index": 132, 
             "word": "אמי"
         }, 
         {
-            "index": 135, 
+            "index": 137, 
             "word": "דמיין"
+        }, 
+        {
+            "index": 139, 
+            "word": "מש"
         }
     ], 
     "words": [
@@ -1016,28 +1032,8 @@
             "side": 2
         }, 
         {
-            "head_word": "ר'", 
-            "word_num": 5, 
-            "daf": "18b", 
-            "word": "לר'", 
-            "line_num": 13, 
-            "cal_word": "לר", 
-            "POS": "PN", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "ל_"
-            ], 
-            "pg_num": 18, 
-            "prefix_POS": [
-                "p03"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71020, 
-            "side": 2
+            "word": "לרבי", 
+            "class": "unknown"
         }, 
         {
             "word": "טרפון", 
@@ -1380,7 +1376,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ק\"ו", 
+            "word": "קל", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "וחומר", 
             "class": "unknown"
         }, 
         {
@@ -1556,12 +1556,27 @@
             "side": 2
         }, 
         {
-            "head_word": "אתי שמע", 
+            "head_word": "אתי", 
             "word_num": 1, 
             "daf": "18b", 
-            "word": "ת\"ש", 
+            "word": "תא", 
             "line_num": 21, 
-            "cal_word": "תא שמע", 
+            "cal_word": "תא", 
+            "POS": "V01", 
+            "class": "talmud", 
+            "pg_num": 18, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
+        }, 
+        {
+            "head_word": "שמע", 
+            "word_num": 2, 
+            "daf": "18b", 
+            "word": "שמע", 
+            "line_num": 21, 
+            "cal_word": "שמע", 
             "POS": "V01", 
             "class": "talmud", 
             "pg_num": 18, 
@@ -1607,7 +1622,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ס\"ד", 
+            "word": "סלקא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "דעתך", 
             "class": "unknown"
         }, 
         {
@@ -1971,7 +1990,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ש", 
+            "word": "תא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -2551,19 +2574,12 @@
             "side": 2
         }, 
         {
-            "head_word": "סלק דעתא", 
-            "word_num": 1, 
-            "daf": "18b", 
-            "word": "ס\"ד", 
-            "line_num": 30, 
-            "cal_word": "סל דע", 
-            "POS": "V01", 
-            "class": "talmud", 
-            "pg_num": 18, 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71020, 
-            "side": 2
+            "word": "סלקא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "דעתך", 
+            "class": "unknown"
         }, 
         {
             "word": "אמינא", 
@@ -2656,13 +2672,32 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "קא שמע ל_", 
+            "head_word": "קא", 
             "word_num": 10, 
             "daf": "18b", 
-            "word": "קמ\"ל", 
+            "word": "קא", 
             "line_num": 30, 
-            "cal_word": "קא מש לן", 
+            "cal_word": "קא", 
             "POS": "a", 
+            "class": "talmud", 
+            "pg_num": 18, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
+        }, 
+        {
+            "word": "משמע", 
+            "class": "unknown"
+        }, 
+        {
+            "head_word": "ל_", 
+            "word_num": 12, 
+            "daf": "18b", 
+            "word": "לן", 
+            "line_num": 30, 
+            "cal_word": "לן", 
+            "POS": "p02", 
             "class": "talmud", 
             "pg_num": 18, 
             "ms": "01", 

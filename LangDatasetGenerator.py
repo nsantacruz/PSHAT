@@ -13,22 +13,37 @@ from sefaria.utils import hebrew
 
 random.seed(2823274491)
 
-def tokenize_words(str,strip_html=True):
-    str = str.replace(u"־"," ")
-    if strip_html:
-       str = re.sub(r"</?[a-z]+>","",str) #get rid of html tags
-    str = re.sub(r"\([^\(\)]+\)","",str) #get rid of refs
-    str = str.replace('"',"'")
-    word_list = filter(bool,re.split(r"[\s\:\-\,\.\;\(\)\[\]\{\}]",str))
-    return word_list
-
 def make_aramaic_training():
+    abbrev_dict = json.load(codecs.open('data/1_cal_input/abbreviations.json',encoding='utf8'))
+    for abbrev, defs in abbrev_dict.items():
+        sorted_defs = sorted(defs.items(),key=lambda x: x[1])
+        abbrev_dict[abbrev] = sorted_defs[0][0]
+
+
     training = []
+    num_found = 0
+    num_missed = 0
     with open('data/1_cal_input/caldbfull.txt','rb') as cal:
         for line in cal:
             line_obj = cal_tools.parseCalLine(line,True,withshinsin=False)
-            training.append({'word':line_obj['word'],'tag':'aramaic'})
+            temp_word = line_obj['word']
 
+            words = []
+            if u"'" in temp_word:
+                temp_word = temp_word.replace(u"'",u'')
+                if temp_word in abbrev_dict:
+                    words = re.split(ur'\s+',abbrev_dict[temp_word])
+                    num_found += 1
+                else:
+                    num_missed += 1
+                    #print u'missed {}'.format(temp_word)
+            else:
+                words = [temp_word]
+
+            for w in words:
+                training.append({'word':w,'tag':'aramaic'})
+
+    print u'Num abbrevs replaced {}. Num Missed {}'.format(num_found,num_missed)
     return training
 
 def make_mishnaic_training():
@@ -46,9 +61,9 @@ def make_mishnaic_training():
             mishna_segs = mishna_segs[:num_mishnah_per_mesechta]
         for seg in mishna_segs:
             first_sec_str = hebrew.strip_cantillation(seg.text('he').as_string(), strip_vowels=True)
-            word_list = tokenize_words(first_sec_str)
+            word_list = util.tokenize_words(first_sec_str)
             for word in word_list:
-                if random.random() > 0.5 and word in mish_set:
+                if random.random() > 0.45 and word in mish_set:
                     num_removed += 1
                     continue
                 training.append({'word':word,'tag':'mishnaic'})
@@ -246,7 +261,7 @@ def make_mishnaic_training_context():
         mishna_segs = ind.all_section_refs()
         for seg in mishna_segs:
             first_sec_str = hebrew.strip_cantillation(seg.text('he').as_string(), strip_vowels=True)
-            training += [{'language':'mishnaic', 'phrase':tokenize_words(p)} for p in first_sec_str.split(u'. ')]
+            training += [{'language':'mishnaic', 'phrase': util.tokenize_words(p)} for p in first_sec_str.split(u'. ')]
 
     total_words = 0
     total_phrases = len(training)
@@ -269,7 +284,7 @@ def merge_sets_context(a,m):
         i += num_phrases_per_section
     return full
 
-"""
+'''
 a = make_aramaic_training()
 m = make_mishnaic_training()
 
@@ -280,6 +295,6 @@ print 'Full Length: {}'.format(len(full))
 
 fp = codecs.open("data/3_lang_tagged/model/lstm_training.json", "wb", encoding='utf-8')
 json.dump(full, fp, indent=4, encoding='utf-8', ensure_ascii=False)
-"""
+'''
 
 dilate_lang()

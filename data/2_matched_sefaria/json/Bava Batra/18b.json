@@ -29,12 +29,8 @@
             "word": "קאמ"
         }, 
         {
-            "index": 47, 
+            "index": 48, 
             "word": "קאמ"
-        }, 
-        {
-            "index": 49, 
-            "word": "ואפלו"
         }
     ], 
     "words": [
@@ -265,7 +261,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "דר'", 
+            "word": "דרבי", 
             "class": "unknown"
         }, 
         {
@@ -309,11 +305,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "אפי'", 
+            "word": "אפילו", 
             "class": "unknown"
         }, 
         {
-            "word": "משדה", 
+            "word": "משרה", 
             "class": "unknown"
         }, 
         {
@@ -344,7 +340,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -924,7 +920,7 @@
             "side": 2
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -968,7 +964,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "אע\"פ", 
+            "word": "אף", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "על", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "פי", 
             "class": "unknown"
         }, 
         {
@@ -1043,7 +1047,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1059,12 +1063,27 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "סבר ל_", 
+            "head_word": "סבר", 
             "word_num": 7, 
             "daf": "18b", 
-            "word": "ס\"ל", 
+            "word": "סבירא", 
             "line_num": 13, 
-            "cal_word": "סבירא ליה", 
+            "cal_word": "סבירא", 
+            "POS": "V01", 
+            "class": "talmud", 
+            "pg_num": 18, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71022, 
+            "side": 2
+        }, 
+        {
+            "head_word": "ל_", 
+            "word_num": 8, 
+            "daf": "18b", 
+            "word": "ליה", 
+            "line_num": 13, 
+            "cal_word": "ליה", 
             "POS": "p02", 
             "class": "talmud", 
             "pg_num": 18, 
@@ -1145,8 +1164,28 @@
             "class": "unknown"
         }, 
         {
-            "word": "ואפי'", 
-            "class": "unknown"
+            "head_word": "אפלו", 
+            "word_num": 0, 
+            "daf": "18b", 
+            "word": "ואפילו", 
+            "line_num": 14, 
+            "cal_word": "ואפלו", 
+            "POS": "c", 
+            "prefix_homograph": [
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ו_"
+            ], 
+            "pg_num": 18, 
+            "prefix_POS": [
+                "c"
+            ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71022, 
+            "side": 2
         }, 
         {
             "word": "משרה", 

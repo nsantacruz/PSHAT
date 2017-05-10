@@ -65,10 +65,6 @@
             "word": "כותלי"
         }, 
         {
-            "index": 41, 
-            "word": "ומתניתין"
-        }, 
-        {
             "index": 42, 
             "word": "דקא"
         }, 
@@ -105,10 +101,6 @@
             "word": "קתני"
         }, 
         {
-            "index": 68, 
-            "word": "ומתניתין"
-        }, 
-        {
             "index": 69, 
             "word": "דקא"
         }, 
@@ -140,6 +132,10 @@
     "words": [
         {
             "word": "מתני׳", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "תמיד", 
             "class": "unknown"
         }, 
         {
@@ -271,6 +267,10 @@
             "class": "unknown"
         }, 
         {
+            "word": "גמ׳", 
+            "class": "unknown"
+        }, 
+        {
             "head_word": "מנא", 
             "word_num": 0, 
             "daf": "58a", 
@@ -320,7 +320,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -404,7 +404,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ב'", 
+            "word": "שתי", 
             "class": "unknown"
         }, 
         {
@@ -678,7 +678,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "הערבי'", 
+            "word": "הערבים", 
             "class": "unknown"
         }, 
         {
@@ -862,7 +862,7 @@
             "side": 1
         }, 
         {
-            "word": "בשמנה", 
+            "word": "בשמונה", 
             "class": "unknown"
         }, 
         {
@@ -1127,7 +1127,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ר", 
+            "word": "תנו", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבנן", 
             "class": "unknown"
         }, 
         {
@@ -1155,7 +1159,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1311,8 +1315,28 @@
             "class": "unknown"
         }, 
         {
-            "word": "ומתני'", 
-            "class": "unknown"
+            "head_word": "מתניתא", 
+            "word_num": 0, 
+            "daf": "58a", 
+            "word": "ומתניתין", 
+            "line_num": 33, 
+            "cal_word": "ומתניתין", 
+            "POS": "N02", 
+            "prefix_homograph": [
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ו_"
+            ], 
+            "pg_num": 58, 
+            "prefix_POS": [
+                "c"
+            ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71004, 
+            "side": 1
         }, 
         {
             "word": "דקתני", 
@@ -1859,8 +1883,28 @@
             "class": "unknown"
         }, 
         {
-            "word": "ומתני'", 
-            "class": "unknown"
+            "head_word": "מתניתא", 
+            "word_num": 0, 
+            "daf": "58a", 
+            "word": "ומתניתין", 
+            "line_num": 42, 
+            "cal_word": "ומתניתין", 
+            "POS": "N02", 
+            "prefix_homograph": [
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ו_"
+            ], 
+            "pg_num": 58, 
+            "prefix_POS": [
+                "c"
+            ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71004, 
+            "side": 1
         }, 
         {
             "word": "דקתני", 

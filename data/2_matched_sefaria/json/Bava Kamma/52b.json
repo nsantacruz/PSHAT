@@ -65,28 +65,24 @@
             "word": "מיזל"
         }, 
         {
-            "index": 144, 
+            "index": 142, 
+            "word": "מש"
+        }, 
+        {
+            "index": 146, 
             "word": "פשיט"
         }, 
         {
-            "index": 147, 
+            "index": 149, 
             "word": "לא"
         }, 
         {
-            "index": 149, 
+            "index": 151, 
             "word": "אמאי"
         }, 
         {
-            "index": 161, 
-            "word": "ושכיחי"
-        }, 
-        {
-            "index": 162, 
-            "word": "ואתו"
-        }, 
-        {
             "index": 163, 
-            "word": "ארעוה"
+            "word": "ושכיחי"
         }, 
         {
             "index": 164, 
@@ -94,66 +90,74 @@
         }, 
         {
             "index": 165, 
-            "word": "נפלו"
+            "word": "ארעוה"
         }, 
         {
             "index": 166, 
-            "word": "ביה"
+            "word": "ואתו"
         }, 
         {
             "index": 167, 
-            "word": "ודקא"
+            "word": "נפלו"
         }, 
         {
             "index": 168, 
-            "word": "קשיא"
+            "word": "ביה"
         }, 
         {
             "index": 169, 
-            "word": "לך"
+            "word": "ודקא"
         }, 
         {
             "index": 170, 
-            "word": "פשיט"
+            "word": "קשיא"
         }, 
         {
             "index": 171, 
-            "word": "צריכא"
+            "word": "לך"
         }, 
         {
             "index": 172, 
-            "word": "למימר"
+            "word": "פשיט"
         }, 
         {
             "index": 173, 
-            "word": "אידי"
+            "word": "צריכא"
         }, 
         {
             "index": 174, 
-            "word": "דנסיב"
+            "word": "למימר"
         }, 
         {
             "index": 175, 
-            "word": "רישא"
+            "word": "אידי"
         }, 
         {
             "index": 176, 
-            "word": "נסיב"
+            "word": "דנסיב"
         }, 
         {
             "index": 177, 
-            "word": "סופא"
+            "word": "רישא"
+        }, 
+        {
+            "index": 178, 
+            "word": "נסיב"
         }, 
         {
             "index": 179, 
-            "word": "אמאי"
-        }, 
-        {
-            "index": 180, 
-            "word": "ונימא"
+            "word": "סופא"
         }, 
         {
             "index": 181, 
+            "word": "אמאי"
+        }, 
+        {
+            "index": 182, 
+            "word": "ונימא"
+        }, 
+        {
+            "index": 183, 
             "word": "מדהוי"
         }
     ], 
@@ -714,7 +718,11 @@
             "side": 2
         }, 
         {
-            "word": "א\"ר", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -742,7 +750,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ש", 
+            "word": "תא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -2236,7 +2248,11 @@
             "side": 2
         }, 
         {
-            "word": "ת\"ש", 
+            "word": "תא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -2380,7 +2396,7 @@
             "head_word": "אמר", 
             "word_num": 4, 
             "daf": "52b", 
-            "word": "אלימא", 
+            "word": "אילימא", 
             "line_num": 22, 
             "cal_word": "אילימא", 
             "POS": "V01", 
@@ -2968,12 +2984,12 @@
             "side": 2
         }, 
         {
-            "head_word": "קא שמע ל_", 
+            "head_word": "קא", 
             "word_num": 2, 
             "daf": "52b", 
-            "word": "קמ\"ל", 
+            "word": "קא", 
             "line_num": 28, 
-            "cal_word": "קא מש לן", 
+            "cal_word": "קא", 
             "POS": "a", 
             "class": "talmud", 
             "pg_num": 52, 
@@ -2983,7 +2999,30 @@
             "side": 2
         }, 
         {
-            "word": "ת\"ש", 
+            "word": "משמע", 
+            "class": "unknown"
+        }, 
+        {
+            "head_word": "ל_", 
+            "word_num": 4, 
+            "daf": "52b", 
+            "word": "לן", 
+            "line_num": 28, 
+            "cal_word": "לן", 
+            "POS": "p02", 
+            "class": "talmud", 
+            "pg_num": 52, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 2
+        }, 
+        {
+            "word": "תא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -3563,7 +3602,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ש", 
+            "word": "תא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -3832,7 +3875,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כו'", 
+            "word": "כו׳", 
             "class": "unknown"
         }, 
         {

@@ -57,12 +57,8 @@
             "word": "דקא"
         }, 
         {
-            "index": 91, 
-            "word": "סבר"
-        }, 
-        {
-            "index": 94, 
-            "word": "ותפיסנא"
+            "index": 90, 
+            "word": "ליה"
         }, 
         {
             "index": 96, 
@@ -89,23 +85,23 @@
             "word": "ביה"
         }, 
         {
-            "index": 131, 
+            "index": 132, 
             "word": "לימא"
         }, 
         {
-            "index": 136, 
+            "index": 137, 
             "word": "נמי"
         }, 
         {
-            "index": 140, 
+            "index": 141, 
             "word": "ואמ"
         }, 
         {
-            "index": 147, 
+            "index": 148, 
             "word": "אמ"
         }, 
         {
-            "index": 148, 
+            "index": 149, 
             "word": "ליה"
         }
     ], 
@@ -518,7 +514,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "מכשול", 
+            "word": "מכשל", 
             "class": "unknown"
         }, 
         {
@@ -578,7 +574,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "וכו'", 
+            "word": "וכו׳", 
             "class": "unknown"
         }, 
         {
@@ -1106,7 +1102,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1748,7 +1744,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "בפקדון", 
+            "word": "בפיקדון", 
             "class": "unknown"
         }, 
         {
@@ -1988,29 +1984,13 @@
             "side": 2
         }, 
         {
-            "word": "סבר", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "משכחנא", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "לגנב", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "ותפיסנא", 
-            "class": "unknown"
-        }, 
-        {
-            "head_word": "ל_", 
-            "word_num": 1, 
+            "head_word": "סבר", 
+            "word_num": 5, 
             "daf": "5b", 
-            "word": "ליה", 
-            "line_num": 33, 
-            "cal_word": "ליה", 
-            "POS": "p02", 
+            "word": "סבר", 
+            "line_num": 32, 
+            "cal_word": "סבר", 
+            "POS": "V01", 
             "class": "talmud", 
             "pg_num": 5, 
             "ms": "01", 
@@ -2019,19 +1999,43 @@
             "side": 2
         }, 
         {
-            "word": "א\"נ", 
-            "class": "unknown"
-        }, 
-        {
             "head_word": "שכח", 
-            "word_num": 3, 
+            "word_num": 6, 
             "daf": "5b", 
             "word": "משכחנא", 
-            "line_num": 33, 
+            "line_num": 32, 
             "cal_word": "משכחנא", 
             "POS": "V01", 
             "class": "talmud", 
             "pg_num": 5, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 2
+        }, 
+        {
+            "word": "לגנב", 
+            "class": "unknown"
+        }, 
+        {
+            "head_word": "תפס", 
+            "word_num": 0, 
+            "daf": "5b", 
+            "word": "ותפיסנא", 
+            "line_num": 33, 
+            "cal_word": "ותפיסנא", 
+            "POS": "V01", 
+            "prefix_homograph": [
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ו_"
+            ], 
+            "pg_num": 5, 
+            "prefix_POS": [
+                "c"
+            ], 
             "ms": "01", 
             "homograph": "", 
             "book_num": 71021, 
@@ -2051,6 +2055,33 @@
             "homograph": "", 
             "book_num": 71021, 
             "side": 2
+        }, 
+        {
+            "word": "אי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "נמי", 
+            "class": "unknown"
+        }, 
+        {
+            "head_word": "שכח", 
+            "word_num": 3, 
+            "daf": "5b", 
+            "word": "משכחנא", 
+            "line_num": 33, 
+            "cal_word": "משכחנא", 
+            "POS": "V01", 
+            "class": "talmud", 
+            "pg_num": 5, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 2
+        }, 
+        {
+            "word": "ליה", 
+            "class": "unknown"
         }, 
         {
             "word": "באגם", 
@@ -2506,12 +2537,27 @@
             "side": 2
         }, 
         {
-            "head_word": "אי נמי", 
+            "head_word": "אי", 
             "word_num": 4, 
             "daf": "5b", 
-            "word": "א\"נ", 
+            "word": "אי", 
             "line_num": 39, 
-            "cal_word": "אי נמי", 
+            "cal_word": "אי", 
+            "POS": "c", 
+            "class": "talmud", 
+            "pg_num": 5, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 2
+        }, 
+        {
+            "head_word": "נמי", 
+            "word_num": 5, 
+            "daf": "5b", 
+            "word": "נמי", 
+            "line_num": 39, 
+            "cal_word": "נמי", 
             "POS": "a", 
             "class": "talmud", 
             "pg_num": 5, 
@@ -2904,7 +2950,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "תחמוד", 
+            "word": "תחמד", 
             "class": "unknown"
         }, 
         {
@@ -2912,7 +2958,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "תחמוד", 
+            "word": "תחמד", 
             "class": "unknown"
         }, 
         {

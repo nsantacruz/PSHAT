@@ -57,10 +57,6 @@
             "word": "ליקוץ"
         }, 
         {
-            "index": 72, 
-            "word": "דכולי עלמא"
-        }, 
-        {
             "index": 73, 
             "word": "ומצי"
         }, 
@@ -83,6 +79,10 @@
         {
             "index": 90, 
             "word": "רחמ"
+        }, 
+        {
+            "index": 93, 
+            "word": "למתני"
         }
     ], 
     "words": [
@@ -942,7 +942,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כר'", 
+            "word": "כרבי", 
             "class": "unknown"
         }, 
         {
@@ -1207,7 +1207,7 @@
             "side": 2
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1231,7 +1231,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ור'", 
+            "word": "ורבי", 
             "class": "unknown"
         }, 
         {
@@ -1251,7 +1251,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "אפי'", 
+            "word": "אפילו", 
             "class": "unknown"
         }, 
         {
@@ -1872,7 +1872,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1960,7 +1960,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ע\"י", 
+            "word": "על", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ידי", 
             "class": "unknown"
         }, 
         {
@@ -1980,7 +1984,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ע\"י", 
+            "word": "על", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ידי", 
             "class": "unknown"
         }, 
         {
@@ -2271,8 +2279,58 @@
             "side": 2
         }, 
         {
-            "word": "דכ\"ע", 
-            "class": "unknown"
+            "head_word": "עלמ", 
+            "word_num": 10, 
+            "daf": "92b", 
+            "word": "דכולי", 
+            "line_num": 45, 
+            "cal_word": "דכולי עלמא", 
+            "POS": "N02", 
+            "prefix_homograph": [
+                "", 
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ד_", 
+                "כל"
+            ], 
+            "pg_num": 92, 
+            "prefix_POS": [
+                "c", 
+                "N04"
+            ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 2
+        }, 
+        {
+            "head_word": "עלמ", 
+            "word_num": 10, 
+            "daf": "92b", 
+            "word": "עלמא", 
+            "line_num": 45, 
+            "cal_word": "דכולי עלמא", 
+            "POS": "N02", 
+            "prefix_homograph": [
+                "", 
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ד_", 
+                "כל"
+            ], 
+            "pg_num": 92, 
+            "prefix_POS": [
+                "c", 
+                "N04"
+            ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71021, 
+            "side": 2
         }, 
         {
             "word": "משלו", 
@@ -2596,28 +2654,8 @@
             "side": 2
         }, 
         {
-            "head_word": "מתניתא", 
-            "word_num": 6, 
-            "daf": "92b", 
-            "word": "למתני'", 
-            "line_num": 48, 
-            "cal_word": "למתני", 
-            "POS": "N02", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "ל_"
-            ], 
-            "pg_num": 92, 
-            "prefix_POS": [
-                "p03"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71021, 
-            "side": 2
+            "word": "למתניתין", 
+            "class": "unknown"
         }, 
         {
             "word": "בשאין", 

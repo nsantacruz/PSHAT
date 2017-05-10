@@ -53,6 +53,10 @@
             "word": "דר"
         }, 
         {
+            "index": 21, 
+            "word": "ור"
+        }, 
+        {
             "index": 25, 
             "word": "דר"
         }, 
@@ -101,14 +105,6 @@
             "word": "אלא"
         }, 
         {
-            "index": 47, 
-            "word": "שמע"
-        }, 
-        {
-            "index": 48, 
-            "word": "מינה"
-        }, 
-        {
             "index": 49, 
             "word": "משום"
         }
@@ -131,7 +127,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כהונתכם", 
+            "word": "כהנתכם", 
             "class": "unknown"
         }, 
         {
@@ -167,7 +163,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ביהמ\"ק", 
+            "word": "בית", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "המקדש", 
             "class": "unknown"
         }, 
         {
@@ -436,7 +436,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -444,35 +444,19 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "ר'", 
-            "word_num": 4, 
-            "daf": "73a", 
-            "word": "ור'", 
-            "line_num": 9, 
-            "cal_word": "ור", 
-            "POS": "PN", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "ו_"
-            ], 
-            "pg_num": 73, 
-            "prefix_POS": [
-                "c"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71004, 
-            "side": 1
+            "word": "ורבי", 
+            "class": "unknown"
         }, 
         {
             "word": "יהושע", 
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ליה", 
             "class": "unknown"
         }, 
         {
@@ -709,7 +693,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "דר\"ע", 
+            "word": "דרבי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "עקיבא", 
             "class": "unknown"
         }, 
         {
@@ -836,7 +824,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "לע\"ז", 
+            "word": "לעבודה", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "זרה", 
             "class": "unknown"
         }, 
         {
@@ -848,7 +840,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ג'", 
+            "word": "שלש", 
             "class": "unknown"
         }, 
         {
@@ -904,11 +896,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "וכו'", 
+            "word": "וכו׳", 
             "class": "unknown"
         }, 
         {
-            "word": "א\"ר", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רב", 
             "class": "unknown"
         }, 
         {
@@ -1016,7 +1012,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ה", 
+            "word": "אי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "הכי", 
             "class": "unknown"
         }, 
         {
@@ -1124,7 +1124,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1140,7 +1140,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1212,12 +1212,27 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "שמע מנ", 
+            "head_word": "שמע", 
             "word_num": 3, 
             "daf": "73a", 
-            "word": "ש\"מ", 
+            "word": "שמע", 
             "line_num": 30, 
-            "cal_word": "שמע מינה", 
+            "cal_word": "שמע", 
+            "POS": "V01", 
+            "class": "talmud", 
+            "pg_num": 73, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71004, 
+            "side": 1
+        }, 
+        {
+            "head_word": "מנ", 
+            "word_num": 4, 
+            "daf": "73a", 
+            "word": "מינה", 
+            "line_num": 30, 
+            "cal_word": "מינה", 
             "POS": "p02", 
             "class": "talmud", 
             "pg_num": 73, 
@@ -1271,7 +1286,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "וכו'", 
+            "word": "וכו׳", 
             "class": "unknown"
         }
     ]

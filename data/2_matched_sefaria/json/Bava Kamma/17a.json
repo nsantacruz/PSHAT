@@ -17,6 +17,10 @@
             "word": "בתריה"
         }, 
         {
+            "index": 16, 
+            "word": "דר"
+        }, 
+        {
             "index": 22, 
             "word": "ונפיק"
         }, 
@@ -27,10 +31,6 @@
         {
             "index": 29, 
             "word": "אמ"
-        }, 
-        {
-            "index": 35, 
-            "word": "קשיא"
         }
     ], 
     "words": [
@@ -59,7 +59,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ר", 
+            "word": "תנו", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבנן", 
             "class": "unknown"
         }, 
         {
@@ -127,7 +131,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -135,11 +139,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
+            "word": "אמר", 
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "לו", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -175,7 +183,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ס\"ת", 
+            "word": "ספר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "תורה", 
             "class": "unknown"
         }, 
         {
@@ -452,28 +464,8 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "ר'", 
-            "word_num": 2, 
-            "daf": "17a", 
-            "word": "דר'", 
-            "line_num": 10, 
-            "cal_word": "דר", 
-            "POS": "PN", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "ד_"
-            ], 
-            "pg_num": 17, 
-            "prefix_POS": [
-                "p"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71020, 
-            "side": 1
+            "word": "דרבי", 
+            "class": "unknown"
         }, 
         {
             "word": "יוחנן", 
@@ -737,10 +729,10 @@
         }, 
         {
             "head_word": "לא", 
-            "word_num": 0, 
+            "word_num": 2, 
             "daf": "17a", 
             "word": "לא", 
-            "line_num": 16, 
+            "line_num": 14, 
             "cal_word": "לא", 
             "POS": "a", 
             "class": "talmud", 
@@ -778,7 +770,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "למוד", 
+            "word": "תלמוד", 
             "class": "unknown"
         }, 
         {
@@ -786,7 +778,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "שהלמוד", 
+            "word": "שהתלמוד", 
             "class": "unknown"
         }, 
         {
@@ -802,8 +794,34 @@
             "class": "unknown"
         }, 
         {
-            "word": "ל\"ק", 
-            "class": "unknown"
+            "head_word": "לא", 
+            "word_num": 0, 
+            "daf": "17a", 
+            "word": "לא", 
+            "line_num": 16, 
+            "cal_word": "לא", 
+            "POS": "a", 
+            "class": "talmud", 
+            "pg_num": 17, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 1
+        }, 
+        {
+            "head_word": "קשי", 
+            "word_num": 1, 
+            "daf": "17a", 
+            "word": "קשיא", 
+            "line_num": 16, 
+            "cal_word": "קשיא", 
+            "POS": "A01", 
+            "class": "talmud", 
+            "pg_num": 17, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71020, 
+            "side": 1
         }, 
         {
             "word": "הא", 
@@ -862,7 +880,11 @@
             "side": 1
         }, 
         {
-            "word": "א\"ר", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -874,7 +896,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר\"ש", 
+            "word": "רבי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמעון", 
             "class": "unknown"
         }, 
         {
@@ -898,7 +924,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "זורעי", 
+            "word": "זרעי", 
             "class": "unknown"
         }, 
         {
@@ -974,7 +1000,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "זורעי", 
+            "word": "זרעי", 
             "class": "unknown"
         }, 
         {
@@ -1098,7 +1124,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "פורת", 
+            "word": "פרת", 
             "class": "unknown"
         }, 
         {
@@ -1142,7 +1168,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "חמור", 
+            "word": "חמר", 
             "class": "unknown"
         }, 
         {
@@ -1162,7 +1188,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "נופלין", 
+            "word": "נופלים", 
             "class": "unknown"
         }, 
         {
@@ -1254,7 +1280,27 @@
             "class": "unknown"
         }, 
         {
+            "word": "הדרן", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "עליך", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ארבעה", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "אבות", 
+            "class": "unknown"
+        }, 
+        {
             "word": "מתני׳", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "כיצד", 
             "class": "unknown"
         }, 
         {

@@ -29,6 +29,10 @@
             "word": "דאמ"
         }, 
         {
+            "index": 40, 
+            "word": "כר"
+        }, 
+        {
             "index": 42, 
             "word": "דאמ"
         }, 
@@ -47,6 +51,10 @@
         {
             "index": 66, 
             "word": "אמ"
+        }, 
+        {
+            "index": 70, 
+            "word": "לר"
         }, 
         {
             "index": 83, 
@@ -229,7 +237,11 @@
             "side": 1
         }, 
         {
-            "word": "ת\"ש", 
+            "word": "תא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -802,7 +814,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "אע\"פ", 
+            "word": "אף", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "על", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "פי", 
             "class": "unknown"
         }, 
         {
@@ -1019,28 +1039,8 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "ר'", 
-            "word_num": 3, 
-            "daf": "93a", 
-            "word": "כר'", 
-            "line_num": 19, 
-            "cal_word": "כר", 
-            "POS": "PN", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "כ_"
-            ], 
-            "pg_num": 93, 
-            "prefix_POS": [
-                "p"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71022, 
-            "side": 1
+            "word": "כרבי", 
+            "class": "unknown"
         }, 
         {
             "word": "אחא", 
@@ -1481,28 +1481,8 @@
             "side": 1
         }, 
         {
-            "head_word": "ר'", 
-            "word_num": 2, 
-            "daf": "93a", 
-            "word": "לר'", 
-            "line_num": 24, 
-            "cal_word": "לר", 
-            "POS": "PN", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "ל_"
-            ], 
-            "pg_num": 93, 
-            "prefix_POS": [
-                "p03"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71022, 
-            "side": 1
+            "word": "לרבי", 
+            "class": "unknown"
         }, 
         {
             "word": "אחא", 
@@ -1558,7 +1538,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -1735,7 +1715,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ש", 
+            "word": "תא", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -1763,7 +1747,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ואפי'", 
+            "word": "ואפילו", 
             "class": "unknown"
         }, 
         {
@@ -1802,8 +1786,19 @@
             "side": 1
         }, 
         {
-            "word": "אפי'", 
-            "class": "unknown"
+            "head_word": "אפלו", 
+            "word_num": 1, 
+            "daf": "93a", 
+            "word": "אפילו", 
+            "line_num": 27, 
+            "cal_word": "אפלו", 
+            "POS": "c", 
+            "class": "talmud", 
+            "pg_num": 93, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71022, 
+            "side": 1
         }, 
         {
             "head_word": "לאו", 
@@ -1821,19 +1816,8 @@
             "side": 1
         }, 
         {
-            "head_word": "אפלו", 
-            "word_num": 1, 
-            "daf": "93a", 
             "word": "אפילו", 
-            "line_num": 27, 
-            "cal_word": "אפלו", 
-            "POS": "c", 
-            "class": "talmud", 
-            "pg_num": 93, 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71022, 
-            "side": 1
+            "class": "unknown"
         }, 
         {
             "word": "זרע", 
@@ -1887,13 +1871,13 @@
             "side": 1
         }, 
         {
-            "head_word": "אפלו הכי", 
+            "head_word": "אפלו", 
             "word_num": 9, 
             "daf": "93a", 
-            "word": "ואפ\"ה", 
+            "word": "ואפילו", 
             "line_num": 27, 
-            "cal_word": "ואפלו הכי", 
-            "POS": "a", 
+            "cal_word": "ואפלו", 
+            "POS": "c", 
             "prefix_homograph": [
                 ""
             ], 
@@ -1905,6 +1889,21 @@
             "prefix_POS": [
                 "c"
             ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71022, 
+            "side": 1
+        }, 
+        {
+            "head_word": "הכי", 
+            "word_num": 10, 
+            "daf": "93a", 
+            "word": "הכי", 
+            "line_num": 27, 
+            "cal_word": "הכי", 
+            "POS": "a", 
+            "class": "talmud", 
+            "pg_num": 93, 
             "ms": "01", 
             "homograph": "", 
             "book_num": 71022, 

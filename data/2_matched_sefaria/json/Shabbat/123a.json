@@ -1,75 +1,79 @@
 {
     "missed_words": [
         {
-            "index": 16, 
-            "word": "קפיד"
+            "index": 3, 
+            "word": "כר"
         }, 
         {
             "index": 17, 
+            "word": "קפיד"
+        }, 
+        {
+            "index": 18, 
             "word": "עליהו"
         }, 
         {
-            "index": 19, 
+            "index": 20, 
             "word": "ליה"
         }, 
         {
-            "index": 21, 
+            "index": 22, 
             "word": "דאמ"
         }, 
         {
-            "index": 23, 
+            "index": 24, 
             "word": "דאמ"
         }, 
         {
-            "index": 31, 
+            "index": 32, 
             "word": "והאמ"
         }, 
         {
-            "index": 46, 
+            "index": 47, 
             "word": "אמ"
         }, 
         {
-            "index": 47, 
+            "index": 48, 
             "word": "קא"
         }, 
         {
-            "index": 48, 
+            "index": 49, 
             "word": "רמית"
         }, 
         {
-            "index": 56, 
+            "index": 57, 
             "word": "למיסקל"
         }, 
         {
-            "index": 59, 
+            "index": 60, 
             "word": "דקא"
         }, 
         {
-            "index": 60, 
+            "index": 61, 
             "word": "מותיב"
-        }, 
-        {
-            "index": 62, 
-            "word": "קא"
         }, 
         {
             "index": 63, 
+            "word": "קא"
+        }, 
+        {
+            "index": 64, 
             "word": "מותיב"
         }, 
         {
-            "index": 75, 
+            "index": 76, 
             "word": "עסיקי"
         }, 
         {
-            "index": 78, 
+            "index": 79, 
             "word": "בהו"
         }, 
         {
-            "index": 83, 
+            "index": 84, 
             "word": "אסוכי"
         }, 
         {
-            "index": 85, 
+            "index": 86, 
             "word": "בשבתא"
         }
     ], 
@@ -159,7 +163,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ליה", 
             "class": "unknown"
         }, 
         {
@@ -171,7 +179,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -215,47 +223,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "ב\"ש", 
+            "word": "ושוין", 
             "class": "unknown"
         }, 
         {
-            "word": "אומרים", 
+            "word": "שאם", 
             "class": "unknown"
         }, 
         {
-            "word": "אין", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "נוטלין", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "את", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "העלי", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "לקצב", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "עליו", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "בשר", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "וב\"ה", 
-            "class": "unknown"
-        }, 
-        {
-            "word": "מתירין", 
+            "word": "קצב", 
             "class": "unknown"
         }, 
         {
@@ -329,28 +305,8 @@
             "side": 1
         }, 
         {
-            "head_word": "ר'", 
-            "word_num": 0, 
-            "daf": "123a", 
-            "word": "כר'", 
-            "line_num": 9, 
-            "cal_word": "כר", 
-            "POS": "PN", 
-            "prefix_homograph": [
-                ""
-            ], 
-            "class": "talmud", 
-            "prefix": [
-                "כ_"
-            ], 
-            "pg_num": 123, 
-            "prefix_POS": [
-                "p02"
-            ], 
-            "ms": "01", 
-            "homograph": "", 
-            "book_num": 71002, 
-            "side": 1
+            "word": "כרבי", 
+            "class": "unknown"
         }, 
         {
             "word": "נחמיה", 
@@ -636,12 +592,27 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "האי נמי", 
+            "head_word": "האי", 
             "word_num": 1, 
             "daf": "123a", 
-            "word": "ה\"נ", 
+            "word": "הא", 
             "line_num": 12, 
-            "cal_word": "האי נמי", 
+            "cal_word": "האי", 
+            "POS": "P", 
+            "class": "talmud", 
+            "pg_num": 123, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71002, 
+            "side": 1
+        }, 
+        {
+            "head_word": "נמי", 
+            "word_num": 2, 
+            "daf": "123a", 
+            "word": "נמי", 
+            "line_num": 12, 
+            "cal_word": "נמי", 
             "POS": "a", 
             "class": "talmud", 
             "pg_num": 123, 
@@ -687,7 +658,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -707,7 +678,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -799,7 +770,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "כ\"ש", 
+            "word": "כל", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שכן", 
             "class": "unknown"
         }, 
         {
@@ -877,11 +852,15 @@
             "class": "unknown"
         }, 
         {
-            "word": "כו'", 
+            "word": "כו׳", 
             "class": "unknown"
         }, 
         {
-            "word": "ת\"ר", 
+            "word": "תנו", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "רבנן", 
             "class": "unknown"
         }, 
         {
@@ -945,7 +924,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר\"א", 
+            "word": "רבי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "אלעזר", 
             "class": "unknown"
         }, 
         {
@@ -1005,7 +988,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "כר\"א", 
+            "word": "כרבי", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "אלעזר", 
             "class": "unknown"
         }, 
         {
@@ -1183,7 +1170,7 @@
             "side": 1
         }, 
         {
-            "word": "מלמעל'", 
+            "word": "מלמעלה", 
             "class": "unknown"
         }, 
         {
@@ -1322,7 +1309,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "כו'", 
+            "word": "כו׳", 
             "class": "unknown"
         }, 
         {
@@ -1459,7 +1446,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "א\"ל", 
+            "word": "אמר", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "ליה", 
             "class": "unknown"
         }, 
         {

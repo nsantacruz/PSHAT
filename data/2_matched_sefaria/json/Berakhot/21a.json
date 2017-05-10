@@ -13,43 +13,43 @@
             "word": "סבר"
         }, 
         {
-            "index": 17, 
+            "index": 18, 
             "word": "מידי"
         }, 
         {
-            "index": 18, 
+            "index": 19, 
             "word": "הוא"
         }, 
         {
-            "index": 20, 
+            "index": 21, 
             "word": "אלא"
         }, 
         {
-            "index": 25, 
+            "index": 26, 
             "word": "ולימ"
         }, 
         {
-            "index": 35, 
+            "index": 36, 
             "word": "והאמ"
         }, 
         {
-            "index": 38, 
+            "index": 39, 
             "word": "הוינא"
         }, 
         {
-            "index": 48, 
+            "index": 49, 
             "word": "דניגמרו"
         }, 
         {
-            "index": 49, 
+            "index": 50, 
             "word": "אמ"
         }, 
         {
-            "index": 50, 
+            "index": 51, 
             "word": "להו"
         }, 
         {
-            "index": 68, 
+            "index": 69, 
             "word": "קמית"
         }
     ], 
@@ -364,7 +364,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ק\"ש", 
+            "word": "קריאת", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -496,7 +500,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ה'", 
+            "word": "ה׳", 
             "class": "unknown"
         }, 
         {
@@ -520,7 +524,7 @@
             "class": "unknown"
         }, 
         {
-            "word": "ר'", 
+            "word": "רבי", 
             "class": "unknown"
         }, 
         {
@@ -708,7 +712,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "מק\"ו", 
+            "word": "מקל", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "וחומר", 
             "class": "unknown"
         }, 
         {
@@ -1152,12 +1160,27 @@
             "side": 1
         }, 
         {
-            "head_word": "סלק אורייתא", 
+            "head_word": "סלק", 
             "word_num": 2, 
             "daf": "21a", 
-            "word": "ס\"ד", 
+            "word": "סלקא", 
             "line_num": 33, 
-            "cal_word": "ס\"ד דאורית", 
+            "cal_word": "ס\"ד", 
+            "POS": "V01", 
+            "class": "talmud", 
+            "pg_num": 21, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71001, 
+            "side": 1
+        }, 
+        {
+            "head_word": "סלק", 
+            "word_num": 2, 
+            "daf": "21a", 
+            "word": "דעתך", 
+            "line_num": 33, 
+            "cal_word": "ס\"ד", 
             "POS": "V01", 
             "class": "talmud", 
             "pg_num": 21, 
@@ -1175,8 +1198,28 @@
             "class": "unknown"
         }, 
         {
+            "head_word": "אורייתא", 
+            "word_num": 5, 
+            "daf": "21a", 
             "word": "דאורייתא", 
-            "class": "unknown"
+            "line_num": 33, 
+            "cal_word": "דאורית", 
+            "POS": "N02", 
+            "prefix_homograph": [
+                ""
+            ], 
+            "class": "talmud", 
+            "prefix": [
+                "ד_"
+            ], 
+            "pg_num": 21, 
+            "prefix_POS": [
+                "p"
+            ], 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71001, 
+            "side": 1
         }, 
         {
             "head_word": "ברכ", 
@@ -1451,7 +1494,7 @@
             "side": 1
         }, 
         {
-            "word": "ור'", 
+            "word": "ורבי", 
             "class": "unknown"
         }, 
         {
@@ -1499,7 +1542,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "ק\"ש", 
+            "word": "קריאת", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "שמע", 
             "class": "unknown"
         }, 
         {
@@ -2227,7 +2274,11 @@
             "class": "unknown"
         }, 
         {
-            "word": "לביהכ\"נ", 
+            "word": "לבית", 
+            "class": "unknown"
+        }, 
+        {
+            "word": "הכנסת", 
             "class": "unknown"
         }, 
         {
@@ -2358,12 +2409,27 @@
             "class": "unknown"
         }, 
         {
-            "head_word": "הני מילתא", 
+            "head_word": "הני", 
             "word_num": 4, 
             "daf": "21a", 
-            "word": "ה\"מ", 
+            "word": "הני", 
             "line_num": 47, 
-            "cal_word": "הני מילי", 
+            "cal_word": "הני", 
+            "POS": "P", 
+            "class": "talmud", 
+            "pg_num": 21, 
+            "ms": "01", 
+            "homograph": "", 
+            "book_num": 71001, 
+            "side": 1
+        }, 
+        {
+            "head_word": "מילתא", 
+            "word_num": 5, 
+            "daf": "21a", 
+            "word": "מילי", 
+            "line_num": 47, 
+            "cal_word": "מילי", 
             "POS": "N05", 
             "class": "talmud", 
             "pg_num": 21, 
