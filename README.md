@@ -11,7 +11,7 @@ This project aims to fill the gaping whole in ancient Aramaic POS tagging. Aston
 
 Despite these issues, LSTMs were able to achieve above 90% POS tagging on a validation set.  
 
-I gratefully thank [CAL] (http://cal1.cn.huc.edu/) and especially Steve Kaufman for working with me on this project. The use of his dataset was crucial and his help working with the dataset was just as important. 
+I gratefully thank [CAL](http://cal1.cn.huc.edu/) and especially Steve Kaufman for working with me on this project. The use of his dataset was crucial and his help working with the dataset was just as important. 
 
 ## Pipeline
 
