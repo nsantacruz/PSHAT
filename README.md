@@ -15,7 +15,7 @@ I gratefully thank [CAL](http://cal1.cn.huc.edu/) and especially Steve Kaufman f
 
 ## Requirements
 
-1. This project uses the [Sefaria](https://sefaria.org) library. Certain scripts require you to have Sefaria set up on your computer. Follow the instructions on their [repo](github.com/Sefaria/Sefaria-Project) to set it up.
+1. This project uses the [Sefaria](https://sefaria.org) library. Certain scripts require you to have Sefaria set up on your computer. Follow the instructions on their [repo](https://github.com/Sefaria/Sefaria-Project) to set it up.
 
 2. You need to install [dynet](https://github.com/clab/dynet) to run the LSTMs.
 
