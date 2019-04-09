@@ -3,7 +3,7 @@
 
 This is the official repo for Noah's Master's thesis.
 
-This project aims to fill the gaping whole in ancient Aramaic POS tagging. Astonishingly, this field of research is scant. My work begins to show that modern machine learning techniques can learn patterns syntactic patterns in Talmud, despite two major issues
+This project aims to fill the gaping hole in ancient Aramaic POS tagging. Astonishingly, this field of research is scant. My work begins to show that modern machine learning techniques can learn patterns syntactic patterns in Talmud, despite two major issues
 
 1. Talmud has no punctuation. Because of this, it can be very difficult to break up sentences and ideas, even if one is familiar with the Aramaic and the structure of the text
 
