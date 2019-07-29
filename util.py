@@ -3,6 +3,8 @@
 import json, re, math, os, heapq, codecs, decimal
 from pprint import pprint
 import local_settings
+import django
+django.setup()
 from sefaria.model import *
 
 
