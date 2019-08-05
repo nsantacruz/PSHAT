@@ -284,18 +284,5 @@ def merge_sets_context(a,m):
         i += num_phrases_per_section
     return full
 
-make_training = True:
 
-if make_training:
-    a = make_aramaic_training()
-    m = make_mishnaic_training()
-
-    full,lena,lenm,lenambig = merge_sets(a,m)
-
-    print 'A {} M {} Ambig {}'.format(lena,lenm,lenambig)
-    print 'Full Length: {}'.format(len(full))
-
-    fp = codecs.open("data/3_lang_tagged/model/lstm_training.json", "wb", encoding='utf-8')
-    json.dump(full, fp, indent=4, encoding='utf-8', ensure_ascii=False)
-else:
-    dilate_lang()
+dilate_lang()
