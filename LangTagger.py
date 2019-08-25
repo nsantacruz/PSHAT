@@ -22,6 +22,10 @@ model_root = 'data/3_lang_tagged/model'
 filename_to_load  = ''
 START_EPOCH = 0
 
+# How many epochs should we wait if the validation error doesn't decrease
+EARLY_STOP_PATIENCE_N_EPOCHS = 2
+
+
 # argument parse
 parser = argparse.ArgumentParser()
 parser.add_argument('-hiddim', '-hiddendim', help='Size of the RNN hidden layer, default 100', default=40,
@@ -404,6 +408,11 @@ train_test = True
 if train_test:
     run_network_on_validation(START_EPOCH - 1)
     lang_conf_matrix.clear()
+    current_epoch_validation_accuracy = 0.0
+    prev_epoch_validation_accuracy = 0.0
+    best_validation_accuracy = 0.0
+    best_validation_accuracy_epoch_ind = -1
+
     # train!
     for epoch in range(START_EPOCH, 100):
         last_loss, last_lang_prec = 0.0, 0.0
@@ -443,7 +452,15 @@ if train_test:
                 total_lang_items = 0
 
         log_message('Finished epoch ' + str(epoch))
-        val_lang_prec = run_network_on_validation(epoch)
+        prev_epoch_validation_accuracy = current_epoch_validation_accuracy
+        current_epoch_validation_accuracy = run_network_on_validation(epoch)
+        if current_epoch_validation_accuracy > best_validation_accuracy:
+            best_validation_accuracy = current_epoch_validation_accuracy
+            best_validation_accuracy_epoch_ind = epoch
+            early_stop_counter = 0
+            log_message("Best validation loss so far!");
+        if current_epoch_validation_accuracy < prev_epoch_validation_accuracy:
+            early_stop_counter += 1
 
         util.make_folder_if_need_be('{}/epoch_{}'.format(model_root, epoch))
         filename_to_save = '{}/epoch_{}/postagger_model_embdim{}_hiddim{}_lyr{}_e{}_trainloss{}_trainprec.model'.format(model_root,epoch,EMBED_DIM,HIDDEN_DIM,sLAYERS,epoch,last_loss)
@@ -453,6 +470,9 @@ if train_test:
         f.write(lang_conf_matrix.to_html())
         f.close()
         lang_conf_matrix.clear()
+        if early_stop_counter >= EARLY_STOP_PATIENCE_N_EPOCHS:
+            break
+    log_message('Epoch with lowest validation errror: {}'.format(best_validation_accuracy_epoch_ind))
 else:
     #tag all of shas!
     lang_tagged_path = 'data/3_lang_tagged'
