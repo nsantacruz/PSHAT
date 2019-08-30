@@ -509,6 +509,12 @@ if train_test:
     test_acc = run_network_on_test()
     log_message('This model achieves test accuracy: {}'.format(test_acc))
 
+    # Symlink to the best model
+    import subprocess
+    cmd = 'ln -s {} {}/best_val_{:.2f}'.format(best_validation_filename, model_root, test_acc)
+    symlink_out = subprocess.check_output(cmd.split())
+    log_message(symlink_out)
+
 else:
     #tag all of shas!
     lang_tagged_path = 'data/3_lang_tagged'
