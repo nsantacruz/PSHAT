@@ -428,12 +428,13 @@ if filename_to_load:
 
 train_test = True
 if train_test:
-    run_network_on_validation(START_EPOCH - 1)
     lang_conf_matrix.clear()
     current_epoch_validation_accuracy = 0.0
-    prev_epoch_validation_accuracy = 0.0
     best_validation_accuracy = 0.0
     best_validation_accuracy_epoch_ind = -1
+    best_validation_filename = None
+    early_stop_counter = 0
+    prev_epoch_validation_accuracy = run_network_on_validation(START_EPOCH - 1)
 
     # train!
     for epoch in range(START_EPOCH, 100):
@@ -476,17 +477,25 @@ if train_test:
         log_message('Finished epoch ' + str(epoch))
         prev_epoch_validation_accuracy = current_epoch_validation_accuracy
         current_epoch_validation_accuracy = run_network_on_validation(epoch)
+
+        util.make_folder_if_need_be('{}/epoch_{}'.format(model_root, epoch))
+        filename_to_save = '{}/epoch_{}/postagger_model_embdim{}_hiddim{}_lyr{}_e{}_trainloss{}_valacc{}.model'.format(
+            model_root,epoch,EMBED_DIM,HIDDEN_DIM,sLAYERS,epoch,last_loss,current_epoch_validation_accuracy)
+        model.save(filename_to_save)
+
         if current_epoch_validation_accuracy > best_validation_accuracy:
             best_validation_accuracy = current_epoch_validation_accuracy
             best_validation_accuracy_epoch_ind = epoch
+            best_validation_filename = filename_to_save
             early_stop_counter = 0
-            log_message("Best validation loss so far!");
-        if current_epoch_validation_accuracy < prev_epoch_validation_accuracy:
-            early_stop_counter += 1
+            log_message("Best validation loss so far!\n")
 
-        util.make_folder_if_need_be('{}/epoch_{}'.format(model_root, epoch))
-        filename_to_save = '{}/epoch_{}/postagger_model_embdim{}_hiddim{}_lyr{}_e{}_trainloss{}_trainprec.model'.format(model_root,epoch,EMBED_DIM,HIDDEN_DIM,sLAYERS,epoch,last_loss)
-        model.save(filename_to_save)
+        else:
+            if current_epoch_validation_accuracy < prev_epoch_validation_accuracy:
+                early_stop_counter += 1
+                log_message("Validation loss hasn't improved. Patience: {}/{}\n".format(early_stop_counter, EARLY_STOP_PATIENCE_N_EPOCHS))
+            else:
+                log_message("Validation loss improved. Resetting patience to 0\n")
 
         f = open("{}/epoch_{}/conf_matrix_e{}.html".format(model_root,epoch, epoch), 'w')
         f.write(lang_conf_matrix.to_html())
