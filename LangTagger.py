@@ -23,7 +23,7 @@ filename_to_load  = ''
 START_EPOCH = 0
 
 # How many epochs should we wait if the validation error doesn't decrease
-EARLY_STOP_PATIENCE_N_EPOCHS = 2
+EARLY_STOP_PATIENCE_N_EPOCHS = 3
 
 
 # argument parse
