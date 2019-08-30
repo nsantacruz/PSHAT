@@ -358,16 +358,24 @@ def make_word_hashtable(data):
         yo[w['word']].add(w['tag'])
     return yo
 
+
+def split_data(data, percent):
+    split_index = int(round(len(data) * percent))
+    a = data[split_index:]
+    b = data[:split_index]
+
+    return (a,b)
+
 # read in all the data
 all_data = list(read_data())
 
 random.shuffle(all_data)
 # train val will be split up 100-780
 
-percent_training = 0.2
-split_index = int(round(len(all_data) * percent_training))
-train_data = all_data[split_index:]
-val_data = all_data[:split_index]
+percent_training_validation = 0.2
+percent_training = 0.7
+train_val_data, test_data = split_data(all_data, percent_training_validation)
+train_data, val_data = split_data(train_val_data, percent_training)
 
 lang_hashtable = {}  # make_word_hashtable(train_data)
 
