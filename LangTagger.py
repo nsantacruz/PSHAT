@@ -243,6 +243,9 @@ class ConfusionMatrix:
         self.matrix = np.zeros((self.size, self.size))
 
 
+# When fValidation is true and fRunning is false
+# return (1 for true prediction; 0 for false) and a dict with word, predicted_lang, gold_lang and
+# confidence
 def CalculateLossForWord(word_obj, fValidation=False, fRunning=False):
     dy.renew_cg()
 
