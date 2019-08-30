@@ -503,7 +503,12 @@ if train_test:
         lang_conf_matrix.clear()
         if early_stop_counter >= EARLY_STOP_PATIENCE_N_EPOCHS:
             break
-    log_message('Epoch with lowest validation errror: {}'.format(best_validation_accuracy_epoch_ind))
+
+    log_message('Epoch: {} with highest validation accuracy: {}'.format(best_validation_accuracy_epoch_ind, best_validation_accuracy))
+    model.populate(best_validation_filename)
+    test_acc = run_network_on_test()
+    log_message('This model achieves test accuracy: {}'.format(test_acc))
+
 else:
     #tag all of shas!
     lang_tagged_path = 'data/3_lang_tagged'
