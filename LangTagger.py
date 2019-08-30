@@ -293,31 +293,42 @@ def CalculateLossForWord(word_obj, fValidation=False, fRunning=False):
 
 
 def run_network_on_validation(epoch_num):
-    val_lang_prec = 0.0
-    val_lang_items = 0
+    return run_network_on_data(epoch_num, val_data, "Validation", True)
+
+
+
+def run_network_on_test():
+    return run_network_on_data(-1, test_data, "Test", False)
+
+
+# Return accuracy (TP + TN / N) of model on validation set `test_data`
+def run_network_on_data(epoch_num, data, data_name, shouldPersist):
+    data_lang_prec = 0.0
+    data_lang_items = 0
     # iterate
     num_words_to_save = 1000
     words_to_save = []
 
 
-    for idaf, word in enumerate(val_data):
+    for idaf, word in enumerate(data):
         lang_prec, tagged_word = CalculateLossForWord(word, fValidation=True)
         # increment and continue
-        val_lang_prec += lang_prec
-        val_lang_items += 1
-        if epoch_num >= 0 and idaf % round(1.0 * len(val_data) / num_words_to_save) == 0:
+        data_lang_prec += lang_prec
+        data_lang_items += 1
+        if epoch_num >= 0 and idaf % round(1.0 * len(data) / num_words_to_save) == 0:
             words_to_save.append(tagged_word)
 
     # divide
-    val_lang_prec = val_lang_prec / val_lang_items * 100 if val_lang_items > 0 else 0.0
+    data_lang_prec = data_lang_prec / data_lang_items * 100 if data_lang_items > 0 else 0.0
     # print the results
-    log_message('Validation: pos_prec: ' + str(val_lang_prec))
+    log_message('{} accuracy: {}%'.format(data_name, data_lang_prec))
 
-    objStr = json.dumps(words_to_save, indent=4, ensure_ascii=False)
-    util.make_folder_if_need_be('{}/epoch_{}'.format(model_root,epoch_num))
-    with open("{}/epoch_{}/tagged.json".format(model_root,epoch_num), "w") as f:
-        f.write(objStr.encode('utf-8'))
-    return val_lang_prec
+    if shouldPersist:
+        objStr = json.dumps(words_to_save, indent=4, ensure_ascii=False)
+        util.make_folder_if_need_be('{}/epoch_{}'.format(model_root,epoch_num))
+        with open("{}/epoch_{}/tagged.json".format(model_root,epoch_num), "w") as f:
+            f.write(objStr.encode('utf-8'))
+    return data_lang_prec
 
 
 def print_tagged_corpus_to_html_table(lang_out):
