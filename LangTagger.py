@@ -22,6 +22,10 @@ model_root = 'data/3_lang_tagged/model'
 filename_to_load  = ''
 START_EPOCH = 0
 
+# How many epochs should we wait if the validation error doesn't decrease
+EARLY_STOP_PATIENCE_N_EPOCHS = 3
+
+
 # argument parse
 parser = argparse.ArgumentParser()
 parser.add_argument('-hiddim', '-hiddendim', help='Size of the RNN hidden layer, default 100', default=40,
@@ -239,6 +243,9 @@ class ConfusionMatrix:
         self.matrix = np.zeros((self.size, self.size))
 
 
+# When fValidation is true and fRunning is false
+# return (1 for true prediction; 0 for false) and a dict with word, predicted_lang, gold_lang and
+# confidence
 def CalculateLossForWord(word_obj, fValidation=False, fRunning=False):
     dy.renew_cg()
 
@@ -286,31 +293,42 @@ def CalculateLossForWord(word_obj, fValidation=False, fRunning=False):
 
 
 def run_network_on_validation(epoch_num):
-    val_lang_prec = 0.0
-    val_lang_items = 0
+    return run_network_on_data(epoch_num, val_data, "Validation", True)
+
+
+
+def run_network_on_test():
+    return run_network_on_data(-1, test_data, "Test", False)
+
+
+# Return accuracy (TP + TN / N) of model on validation set `test_data`
+def run_network_on_data(epoch_num, data, data_name, shouldPersist):
+    data_lang_prec = 0.0
+    data_lang_items = 0
     # iterate
     num_words_to_save = 1000
     words_to_save = []
 
 
-    for idaf, word in enumerate(val_data):
+    for idaf, word in enumerate(data):
         lang_prec, tagged_word = CalculateLossForWord(word, fValidation=True)
         # increment and continue
-        val_lang_prec += lang_prec
-        val_lang_items += 1
-        if epoch_num >= 0 and idaf % round(1.0 * len(val_data) / num_words_to_save) == 0:
+        data_lang_prec += lang_prec
+        data_lang_items += 1
+        if epoch_num >= 0 and idaf % round(1.0 * len(data) / num_words_to_save) == 0:
             words_to_save.append(tagged_word)
 
     # divide
-    val_lang_prec = val_lang_prec / val_lang_items * 100 if val_lang_items > 0 else 0.0
+    data_lang_prec = data_lang_prec / data_lang_items * 100 if data_lang_items > 0 else 0.0
     # print the results
-    log_message('Validation: pos_prec: ' + str(val_lang_prec))
+    log_message('{} accuracy: {}%'.format(data_name, data_lang_prec))
 
-    objStr = json.dumps(words_to_save, indent=4, ensure_ascii=False)
-    util.make_folder_if_need_be('{}/epoch_{}'.format(model_root,epoch_num))
-    with open("{}/epoch_{}/tagged.json".format(model_root,epoch_num), "w") as f:
-        f.write(objStr.encode('utf-8'))
-    return val_lang_prec
+    if shouldPersist:
+        objStr = json.dumps(words_to_save, indent=4, ensure_ascii=False)
+        util.make_folder_if_need_be('{}/epoch_{}'.format(model_root,epoch_num))
+        with open("{}/epoch_{}/tagged.json".format(model_root,epoch_num), "w") as f:
+            f.write(objStr.encode('utf-8'))
+    return data_lang_prec
 
 
 def print_tagged_corpus_to_html_table(lang_out):
@@ -340,16 +358,24 @@ def make_word_hashtable(data):
         yo[w['word']].add(w['tag'])
     return yo
 
+
+def split_data(data, percent):
+    split_index = int(round(len(data) * percent))
+    a = data[split_index:]
+    b = data[:split_index]
+
+    return (a,b)
+
 # read in all the data
 all_data = list(read_data())
 
 random.shuffle(all_data)
 # train val will be split up 100-780
 
-percent_training = 0.2
-split_index = int(round(len(all_data) * percent_training))
-train_data = all_data[split_index:]
-val_data = all_data[:split_index]
+percent_training_validation = 0.2
+percent_training = 0.7
+train_val_data, test_data = split_data(all_data, percent_training_validation)
+train_data, val_data = split_data(train_val_data, percent_training)
 
 lang_hashtable = {}  # make_word_hashtable(train_data)
 
@@ -402,8 +428,14 @@ if filename_to_load:
 
 train_test = True
 if train_test:
-    run_network_on_validation(START_EPOCH - 1)
     lang_conf_matrix.clear()
+    current_epoch_validation_accuracy = 0.0
+    best_validation_accuracy = 0.0
+    best_validation_accuracy_epoch_ind = -1
+    best_validation_filename = None
+    early_stop_counter = 0
+    prev_epoch_validation_accuracy = run_network_on_validation(START_EPOCH - 1)
+
     # train!
     for epoch in range(START_EPOCH, 100):
         last_loss, last_lang_prec = 0.0, 0.0
@@ -443,16 +475,46 @@ if train_test:
                 total_lang_items = 0
 
         log_message('Finished epoch ' + str(epoch))
-        val_lang_prec = run_network_on_validation(epoch)
+        prev_epoch_validation_accuracy = current_epoch_validation_accuracy
+        current_epoch_validation_accuracy = run_network_on_validation(epoch)
 
         util.make_folder_if_need_be('{}/epoch_{}'.format(model_root, epoch))
-        filename_to_save = '{}/epoch_{}/postagger_model_embdim{}_hiddim{}_lyr{}_e{}_trainloss{}_trainprec.model'.format(model_root,epoch,EMBED_DIM,HIDDEN_DIM,sLAYERS,epoch,last_loss)
+        filename_to_save = '{}/epoch_{}/postagger_model_embdim{}_hiddim{}_lyr{}_e{}_trainloss{}_valacc{}.model'.format(
+            model_root,epoch,EMBED_DIM,HIDDEN_DIM,sLAYERS,epoch,last_loss,current_epoch_validation_accuracy)
         model.save(filename_to_save)
+
+        if current_epoch_validation_accuracy > best_validation_accuracy:
+            best_validation_accuracy = current_epoch_validation_accuracy
+            best_validation_accuracy_epoch_ind = epoch
+            best_validation_filename = filename_to_save
+            early_stop_counter = 0
+            log_message("Best validation loss so far!\n")
+
+        else:
+            if current_epoch_validation_accuracy < prev_epoch_validation_accuracy:
+                early_stop_counter += 1
+                log_message("Validation loss hasn't improved. Patience: {}/{}\n".format(early_stop_counter, EARLY_STOP_PATIENCE_N_EPOCHS))
+            else:
+                log_message("Validation loss improved. Resetting patience to 0\n")
 
         f = open("{}/epoch_{}/conf_matrix_e{}.html".format(model_root,epoch, epoch), 'w')
         f.write(lang_conf_matrix.to_html())
         f.close()
         lang_conf_matrix.clear()
+        if early_stop_counter >= EARLY_STOP_PATIENCE_N_EPOCHS:
+            break
+
+    log_message('Epoch: {} with highest validation accuracy: {}'.format(best_validation_accuracy_epoch_ind, best_validation_accuracy))
+    model.populate(best_validation_filename)
+    test_acc = run_network_on_test()
+    log_message('This model achieves test accuracy: {}'.format(test_acc))
+
+    # Symlink to the best model
+    import subprocess
+    cmd = 'ln -s {} {}/best_val_{:.2f}'.format(best_validation_filename, model_root, test_acc)
+    symlink_out = subprocess.check_output(cmd.split())
+    log_message(symlink_out)
+
 else:
     #tag all of shas!
     lang_tagged_path = 'data/3_lang_tagged'
