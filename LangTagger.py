@@ -359,10 +359,11 @@ def make_word_hashtable(data):
     return yo
 
 
-def split_data(data, percent):
-    split_index = int(round(len(data) * percent))
-    a = data[split_index:]
-    b = data[:split_index]
+# Split data to two sets with sizes: (percent_a %, (100 - percent_a) %)
+def split_data(data, percent_a):
+    split_index = int(round(len(data) * percent_a))
+    a = data[:split_index]
+    b = data[split_index:]
 
     return (a,b)
 
