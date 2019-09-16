@@ -535,5 +535,3 @@ def unknown_word_stats():
                                      bl_known_head_word_unknown_word_count[1] / sum(bl_known_head_word_unknown_word_count))
     print "UNK   {}/{} {}".format(bl_unknown_word_count[1], sum(bl_unknown_word_count),
                                   bl_unknown_word_count[1] / sum(bl_unknown_word_count))
-#stats_on_lang_mixing()
-unknown_word_stats()
