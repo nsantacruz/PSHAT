@@ -373,8 +373,8 @@ all_data = list(read_data())
 random.shuffle(all_data)
 # train val will be split up 100-780
 
-percent_training_validation = 0.2
-percent_training = 0.7
+percent_training_validation = 0.7
+percent_training = 0.6
 train_val_data, test_data = split_data(all_data, percent_training_validation)
 train_data, val_data = split_data(train_val_data, percent_training)
 
