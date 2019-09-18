@@ -24,5 +24,5 @@ I gratefully thank [CAL](http://cal1.cn.huc.edu/) and especially Steve Kaufman f
 1. `DatasetMatcher.py`: takes input from `data/1_cal_input` and outputs to `data/2_matched_sefaria`.
 2. `make_lang_training.py`: generates language training dataset from Sefaria library and CAL files. Aramaic training comes from `data/1_cal_input/caldbfull.txt` and Mishnaic training comes from Sefaria's Mishnah. Outputs training as json file to `data/3_lang_tagged/model/lstm_training.json`.
 3. `LangTagger.py`: takes input from `data/3_lang_tagged/model/lstm_training.json` and trains an LSTM to differentiate between Hebrew and Aramaic (only on individual words). Outputs to `data/3_lang_tagged`.
-4. Dilate language tagged output. Run `LangDatasetGenerator.py`. Outputs to `4_lang_tagged_dilated`
+4. Dilate language tagged output. Run `dilate_lang.py`. Outputs to `4_lang_tagged_dilated`
 5. `POSTagger2MLP-beam.py`: takes input from `4_lang_tagged_dilated`, `2_sefaria_matched` and outputs to `5_pos_tagged`. Trains LSTM to learn POS tags of Aramaic words in Talmud
