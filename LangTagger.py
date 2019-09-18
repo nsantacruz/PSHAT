@@ -508,7 +508,6 @@ if train_test:
     log_message('Epoch: {} with highest validation accuracy: {}'.format(best_validation_accuracy_epoch_ind, best_validation_accuracy))
     model.populate(best_validation_filename)
     test_acc = run_network_on_test()
-    log_message('This model achieves test accuracy: {}'.format(test_acc))
 
     # Symlink to the best model
     import subprocess
