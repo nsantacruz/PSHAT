@@ -13,12 +13,6 @@ from os.path import isfile, join
 # set the seed
 random.seed(2823274491)
 model_root = 'data/3_lang_tagged/model'
-#filename_to_load = '' #'epoch_9-11-3/langtagger_model_embdim20_hiddim40_lyr2_e9_trainloss0.179809275561_trainprec95.34_valprec95.8651582151.model'
-#filename_to_load = 'epoch_10-11-4-with-Tanakh/langtagger_model_embdim20_hiddim40_lyr2_e10_trainloss0.206057158064_trainprec94.26_valprec93.2793903924.model'
-#filename_to_load = 'epoch_9-11-4-with-better-ambiguous/langtagger_model_embdim20_hiddim40_lyr2_e9_trainloss0.23960972284_trainprec93.48_valprec93.1008844017.model'
-#filename_to_load = '{}/epoch_9-12-22-bigger-dataset/langtagger_model_embdim20_hiddim40_lyr2_e9_trainloss0.201322334121_trainprec95.12_valprec94.1795254687.model'.format(model_root)
-#filename_to_load = '{}/epoch_15-1-22-koren/postagger_model_embdim20_hiddim40_lyr2_e15_trainloss0.26523680206_trainprec.model'.format(model_root)
-#filename_to_load = '{}/epoch_13-purim-final/postagger_model_embdim20_hiddim40_lyr2_e13_trainloss0.250547084775_trainprec.model'.format(model_root)
 filename_to_load  = ''
 START_EPOCH = 0
 
