@@ -9,6 +9,7 @@ import numpy as np
 import argparse,re,codecs
 from os import listdir
 from os.path import isfile, join
+from abc import ABCMeta, abstractmethod
 
 # set the seed
 random.seed(2823274491)
@@ -515,7 +516,60 @@ if train_test:
     symlink_out = subprocess.check_output(cmd.split())
     log_message(symlink_out)
 
-else:
+'''
+We're implementing the Decorator Design Pattern for StopPredicate.
+A combination of predicates can be achieved by wrapping a base predicate
+(MaxEpochsStopPredicate) in multiple StopPredicateDecorator-s.
+'''
+
+class StopPredicate(object):
+    __metaclass__ = ABCMeta
+
+    @abstractmethod
+    def should_stop(self, context):
+        pass
+
+class StopPredicateDecorator(StopPredicate):
+    __metaclass__ = ABCMeta
+
+    def __init__(self, decorated_predicate):
+        self.decorated_predicate = decorated_predicate
+
+    def should_stop(self, context):
+        return self.decorated_predicate.should_stop(context)
+
+
+class MaxEpochsStopPredicate(StopPredicate):
+    def __init__(self, max_epochs):
+        self.max_epochs = max_epochs
+
+    def should_stop(self, context):
+        if context['current_epoch_num'] > self.max_epochs:
+            return (True, 'Max number of epochs reached')
+        else:
+            return (False, '')
+
+
+class ValidationStopPredicate(StopPredicateDecorator):
+    def __init__(self, decorated_predicate, n_patience_epochs):
+        self.decorated_predicate = decorated_predicate
+        self.N_PATIENCE_EPOCHS = n_patience_epochs
+        self.patience_counter = 0
+
+    def should_stop(self, context):
+        if context['current_epoch_validation_accuracy'] < context['prev_epoch_validation_accuracy']:
+            self.patience_counter += 1
+            if self.patience_counter >= self.N_PATIENCE_EPOCHS:
+                return (True, 'Max patience reached')
+            else:
+                log_message("Validation loss hasn't improved. Patience: {}/{}\n".format(self.patience_counter, self.N_PATIENCE_EPOCHS))
+                return self.decorated_predicate.should_stop(context)
+        else:
+            log_message("Validation loss improved. Resetting patience to 0\n")
+            self.patience_counter = 0
+            return self.decorated_predicate.should_stop(context)
+
+
     #tag all of shas!
     lang_tagged_path = 'data/3_lang_tagged'
     mesechtot_names = ['Berakhot','Shabbat','Eruvin','Pesachim','Bava Kamma','Bava Metzia','Bava Batra']
