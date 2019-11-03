@@ -158,15 +158,9 @@ class MLP:
             self.mb3 = model.add_parameters((out_dim))
 
     def __call__(self, x):
-        W = dy.parameter(self.mw)
-        b = dy.parameter(self.mb)
-        W2 = dy.parameter(self.mw2)
-        b2 = dy.parameter(self.mb2)
-        mlp_output = W2 * (dy.tanh(W * x + b)) + b2
+        mlp_output = self.mw2 * (dy.tanh(self.mw * x + self.mb)) + self.mb2
         if fDo_3_Layers:
-            W3 = dy.parameter(self.mw3)
-            b3 = dy.parameter(self.mb3)
-            mlp_output = W3 * (dy.tanh(mlp_output)) + b3
+            mlp_output = self.mw3 * (dy.tanh(mlp_output)) + self.mb3
         return dy.softmax(mlp_output)
 
 
