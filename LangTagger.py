@@ -9,6 +9,33 @@ import numpy as np
 import argparse,re,codecs
 from os import listdir
 from os.path import isfile, join
+import timeit
+import time
+
+def _template_func(setup, func):
+    """Create a timer function. Used if the "statement" is a callable."""
+    def inner(_it, _timer, _func=func):
+        setup()
+        _t0 = _timer()
+        for _i in _it:
+            retval = _func()
+        _t1 = _timer()
+        return _t1 - _t0, retval
+    return inner
+
+timeit._template_func = _template_func
+
+def timereturn(fun, iters, setup):
+    t = timeit.Timer(fun)
+    times = []
+    results = []
+    for i in xrange(0, iters):
+        setup()
+        time1, result = t.timeit(number=1)
+        times.append(time1)
+        results.append(result)
+
+    return (times, results)
 
 # set the seed
 random.seed(2823274491)
@@ -555,4 +582,13 @@ else:
                 fp.close()
                 html_out = OrderedDict()
 
+
+def run_experiment(method, n_repetitions):
+    times, results = timereturn(method, n_repetitions, reset_weights)
+    for i, res in enumerate(results):
+        res['time'] = times[i]
+
+    experiment = {'title' : '{}_X_{}'.format(method.func_name, n_repetitions), 'results': results}
+    with open("{}.json".format(experiment['title']), 'w') as res_file:
+        json.dump(experiment, res_file)
 
