@@ -13,6 +13,9 @@ Despite these issues, LSTMs were able to achieve above 90% POS tagging on a vali
 
 I gratefully thank [CAL](http://cal1.cn.huc.edu/) and especially Steve Kaufman for working with me on this project. The use of his dataset was crucial and his help working with the dataset was just as important. 
 
+## Thesis PDF
+The thesis is located [here](https://github.com/nsantacruz/PSHAT/blob/master/thesis.pdf)
+
 ## Requirements
 
 1. This project uses the [Sefaria](https://sefaria.org) library. Certain scripts require you to have Sefaria set up on your computer. Follow the instructions on their [repo](https://github.com/Sefaria/Sefaria-Project) to set it up.
